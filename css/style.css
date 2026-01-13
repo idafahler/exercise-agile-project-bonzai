@@ -8,6 +8,7 @@
     --grey-filter: #DBDBDB;
     --grey-btn: #CBCBCB;
     --grey-box: #D9D9D9;
+    --grey-border: #686868;
 
     --green: #009966;
     --darkgreen: #009688;
@@ -16,7 +17,7 @@
     --purple: #9810FA;
 
     --font-inter: "Inter", sans-serif;
-    --font-fira: "Montserrat", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
 }
 
 /* NORMALIZATION */
@@ -38,4 +39,107 @@ body{
 .button{
     border-radius: 10px;
     border-style: none;
+}
+
+/* Information boxes - specific styling */
+.info-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container--vision{
+    .info-container__text{
+        font-family: var(--font-montserrat); /*different font for this section*/
+    }
+}
+
+.info-container--sustainability{
+    background-color: var(--turquoise); /*specific background colour for this section*/
+}
+
+.wrapper-info__intro{
+    display:flex; /*flexbox for titles and text*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    .info-container__title{
+        padding:4rem 0 3rem 0;
+
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    .info-container__text{
+        padding: 0 3rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
+
+.wrapper-info__box{
+    display:flex; /*flexbox for placing out boxes*/
+    flex-direction: row;
+    flex:1;
+    justify-content: space-between;
+    gap:1rem;
+    padding: 4rem 0;
+}
+
+.info-box{
+    padding:1rem 1rem 2rem 1rem;
+    max-width:300px;
+    max-height: 450px;
+
+    border: 1px solid var(--grey-border);
+    border-radius: 24px;
+    
+    .info-box__icon{
+        max-width:4rem;
+        padding:1rem;
+
+        background-color: var(--lightgreen); /*giving background to icon*/
+        border-radius: 50%;
+    }
+
+    .info-box__title{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .info-box__text{
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .info-box__number{
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--green);
+    }
+}
+
+.info-box--vision{
+    display:grid; /*grid to layout elements inside box, with specific styling*/
+    grid-template-rows: repeat(auto-fit, minmax(120px,1fr));
+    gap:1rem;
+    place-self: start;
+}
+
+.info-box--sustainability{
+    display:grid; /*grid to layout elements inside box, with specific styling*/
+    grid-template-rows: repeat(auto-fit, minmax(60px,1fr));
+    gap:2rem;
+    
+    padding-bottom: 4rem;
+    text-align: center; /*centered elements for this section*/
+
+    background-color: var(--white);
+
+    .info-box__icon{
+        justify-self: center;
+    }
 }
