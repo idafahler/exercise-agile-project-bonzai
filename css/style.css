@@ -8,6 +8,11 @@
     padding: 0;
 }
 
+
+header {
+
+}
+
 body{
     font-family: var(--font-inter);
 }
@@ -16,11 +21,12 @@ body{
 
 nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
 }
 
 .logo {
-    width: 20px;
-    height: 50px;
+    max-width: 100px;
+    height: 70px;
+    
 }
