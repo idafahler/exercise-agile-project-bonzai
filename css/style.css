@@ -21,6 +21,8 @@
 /* BASE STYLING*/
 body{
     font-family: var(--font-inter);
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper{
@@ -96,23 +98,34 @@ nav {
 .Hero-sektionen {
     position: relative;
     width: 100%;
-    background-image: #00000099;
+    margin: 0;
 
+    
     .hero {
         width: 100%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        height: 100vh;
+        display: block;
+        
     }
-
+    
     .hero-text {
         position: absolute;
         top: 21.6rem;
-        left: 50rem;
+        left: 48rem;
         transform: translate(-50%, -50%);
         color: var(--white);
         text-align: center;
         font-size: 2rem;
+    }
+
+    .welcome {
+        font-weight: 400;
+        --font-inter: "Inter", sans-serif;
+        font-size: 5rem;
+        white-space: nowrap;
     }
 
     .overlay {
@@ -144,8 +157,6 @@ nav {
         cursor: pointer;
         font-weight: 600;
         --font-inter: "Inter", sans-serif;
-
-
     }
 
     .learnmore {
@@ -159,11 +170,14 @@ nav {
         background-color: transparent;
         cursor: pointer;
     }
-
-
-
 }
 
+
+.checkin {
+    width: 100%;
+    padding: 6rem;
+    background-color: #009966;
+}
 
 
 
