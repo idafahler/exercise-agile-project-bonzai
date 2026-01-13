@@ -72,6 +72,7 @@ nav {
         text-decoration: none;
         font-size: 1.2rem;
         color: var(--black);
+        font-weight: 600;
     }
 
     .Home {
@@ -127,6 +128,7 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 1rem;
     }
 
     .button {
@@ -141,9 +143,9 @@ nav {
     }
 
     .learnmore {
-        padding: 1.5rem 2rem;
+        padding: 1.1rem 2.5rem;
         border-radius: 5px;
-        
+        border: var(--white);
     }
 
 
