@@ -46,9 +46,25 @@ body{
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 250px);
 }
+    
+.top-footer-grid {
+    display: inline-grid;
+    grid-template-columns: 1fr 2fr;
+
+    background-color: red;
+
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.bottom-footer-grid {
+    /* display: inline; */
+    background-color: blue;
+}
+
 
 .button{
     border-radius: 10px;
