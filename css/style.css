@@ -83,11 +83,12 @@ nav {
         white-space: nowrap;
         padding: 0.8rem 0.7rem;
         background-color: var(--green);
-        font-size: 22px;
+        font-size: 1.2rem;
         color: white;
         border-radius: 5px;
         border: none;
         cursor: pointer;
+        font-weight: 600;
     }
 }
 
@@ -106,8 +107,8 @@ nav {
 
     .hero-text {
         position: absolute;
-        top: 25%;
-        left: 50%;
+        top: 21.6rem;
+        left: 50rem;
         transform: translate(-50%, -50%);
         color: var(--white);
         text-align: center;
@@ -128,24 +129,35 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: 0.6rem;
+        margin-top: 2rem;
     }
 
     .button {
         white-space: nowrap;
-        padding: 0.8rem 0.7rem;
+        padding: 1rem 0.7rem;
         background-color: var(--green);
-        font-size: 22px;
+        font-size: 1.2rem;
         color: white;
-        border-radius: 5px;
+        border-radius: 10px;
         border: none;
         cursor: pointer;
+        font-weight: 600;
+        --font-inter: "Inter", sans-serif;
+
+
     }
 
     .learnmore {
-        padding: 1.1rem 2.5rem;
-        border-radius: 5px;
+        padding: 0.8rem 1.6rem;
+        border-radius: 10px;
         border: var(--white);
+        border:  0.1875rem solid var(--white);
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
     }
 
 
