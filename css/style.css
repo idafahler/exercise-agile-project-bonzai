@@ -39,7 +39,6 @@ header {
 background-color: #FFFFFF;
 display: flex;
 justify-content: center;
-background-color: #eee;
 }
 
 body{
@@ -90,6 +89,32 @@ nav {
         cursor: pointer;
     }
 }
+
+
+.Hero-sektionen {
+    position: relative;
+    width: 100%;
+
+    .hero {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--white);
+        text-align: center;
+        font-size: 2rem;
+    }
+
+}
+
 
 
 
