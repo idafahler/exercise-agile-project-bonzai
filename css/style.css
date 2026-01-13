@@ -9,5 +9,26 @@
 }
 
 body{
+    min-height: 100vh;
+    width: 100%;
     font-family: var(--font-inter);
 }
+
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+
+footer {
+    background: #101828;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr, 1fr, 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* FOOTER */
