@@ -94,13 +94,13 @@ nav {
 .Hero-sektionen {
     position: relative;
     width: 100%;
+    background-image: #00000099;
 
     .hero {
         width: 100%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        object-fit: cover;
     }
 
     .hero-text {
@@ -112,6 +112,41 @@ nav {
         text-align: center;
         font-size: 2rem;
     }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+
+    .bookit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button {
+        white-space: nowrap;
+        padding: 0.8rem 0.7rem;
+        background-color: var(--green);
+        font-size: 22px;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .learnmore {
+        padding: 1.5rem 2rem;
+        border-radius: 5px;
+        
+    }
+
+
 
 }
 
