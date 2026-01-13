@@ -39,6 +39,7 @@ header {
 background-color: #FFFFFF;
 display: flex;
 justify-content: center;
+background-color: #eee;
 }
 
 body{
@@ -86,7 +87,7 @@ nav {
         color: white;
         border-radius: 5px;
         border: none;
-
+        cursor: pointer;
     }
 }
 
