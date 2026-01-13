@@ -1,13 +1,32 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* COLOUR & FONT VARIABLES */
+:root{
+    --black: #000000;
+    --box-shadow: #00000040;
+    --white: #FFFFFF;
+    --grey-filter: #DBDBDB;
+    --grey-btn: #CBCBCB;
+    --grey-box: #D9D9D9;
+
+    --green: #009966;
+    --darkgreen: #009688;
+    --lightgreen: #88DC84;
+    --turquoise: #D4FFF3;
+    --purple: #9810FA;
+
+    --font-inter: "Inter", sans-serif;
+    --font-fira: "Montserrat", sans-serif;
 }
 
+/* NORMALIZATION */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* BASE STYLING*/
 body{
     min-height: 100vh;
     width: 100%;
@@ -21,14 +40,17 @@ body{
 
 /* FOOTER */
 
-footer {
+.footer {
     background: #101828;
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr, 1fr, 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
 }
 
-/* FOOTER */
+.button{
+    border-radius: 10px;
+    border-style: none;
+}
