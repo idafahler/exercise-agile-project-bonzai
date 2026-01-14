@@ -122,9 +122,6 @@ nav {
     
     .hero-text {
         position: absolute;
-        /* top: 21.6rem; */
-        /* left: 48rem; */
-        /* transform: translate(-50%, -50%); */
         color: var(--white);
         text-align: center;
         font-size: 2rem;
@@ -215,7 +212,7 @@ nav {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        
+
         /* justify-content: center;
         align-items: center; */
     }
