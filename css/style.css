@@ -110,5 +110,5 @@ body{
     grid-row: 2 / span 1;
     padding-top: 2rem;
     font-size: 1.5rem;
-    border-top: 2px solid white;
+    border-top: 0.125rem solid white;
 }
