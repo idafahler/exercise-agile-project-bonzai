@@ -45,15 +45,17 @@ body{
 /* FOOTER */
 
 .footer {
+    display: flex;
     background: var(--footer-color);
     color: var(--white);
-    padding: 10rem;
+    padding: 5rem;
 }
+
 /* The grid */
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 15rem 12.5rem;
+    grid-template-rows: 15rem 6rem;
     gap: 1rem;
     
     /* Logo and filler text */
@@ -100,6 +102,7 @@ body{
         }
     }
 }
+
 /* Copyright text/border */
 .bottom-footer-grid {
     width: 100%;
