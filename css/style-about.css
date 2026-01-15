@@ -26,18 +26,20 @@
 }
 
 /*----------------------READY TO TRANSFORM YOUR STAY------------------------------*/
-
+/* flexes the elements in to a row */
 .displayflex-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: var(--white);
-
-    .card-h2 {
-        font-weight: 400;
-        font-size: 4rem;
-    }
-    
+        /* adding unique attribtes to the <h2> */
+        .card-h2 {
+            text-align: center;
+            font-weight: 400;
+            font-size: 4rem;
+        }
+        
+        /* adding unique attribtes to the <p> */
     .card-p {
         font-weight: 400;
         font-size: 1.25rem;
