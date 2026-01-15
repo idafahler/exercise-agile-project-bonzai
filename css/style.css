@@ -218,6 +218,7 @@ nav {
     .aiknappen {
         display: flex;
         align-self: flex-start;
+        margin-top: 2rem;
         padding: 1.3rem 2.5rem;
         display: inline-block;
         background-color: var(--green);
