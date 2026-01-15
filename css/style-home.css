@@ -23,7 +23,9 @@
         text-align: center;
         font-size: 2rem;
     }
-
+    .wrapper {
+        max-width: 1240px;
+    }
     .welcome {
         font-weight: 400;
         font-size: 5rem;
@@ -247,13 +249,12 @@
     .AI-text-p {
         padding-top: 2rem;
 
-        span{
+        span {
             color: var(--dark-grey);
         }
     }
 
     .AI-bilden {
-    /* max-width: 100%; */
     width: 38.2rem;
     height: auto;
     border-radius: 1.5rem;
@@ -270,6 +271,7 @@
         color: var(--white);
         font-weight: 600;
         --font-inter: "Inter", sans-serif;
+        font-size: 1.1rem;
     }
 }
 /* ------------------------Ready To Transform Your Stay-------------------------- */
