@@ -193,8 +193,8 @@ main {
     padding-top: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    /* justify-content: center; */
+    /* justify-content: space-between; */
+    justify-content: center;
     gap: 2rem;
     
 
@@ -206,7 +206,7 @@ main {
     }
 
     .AI-bilden {
-    max-width: 100%;
+    /* max-width: 100%; */
     width: 38.2rem;
     height: auto;
     border-radius: 1.5rem;
