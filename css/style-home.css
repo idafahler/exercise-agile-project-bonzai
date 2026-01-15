@@ -31,7 +31,6 @@
 
     .welcome {
         font-weight: 400;
-        --font-inter: "Inter", sans-serif;
         font-size: 5rem;
         white-space: nowrap;
     }
@@ -64,7 +63,6 @@
         border: none;
         cursor: pointer;
         font-weight: 600;
-        --font-inter: "Inter", sans-serif;
     }
 
     .learnmore-button-undertext {
