@@ -166,7 +166,7 @@ nav {
         font-weight: 600;
         --font-inter: "Inter", sans-serif;
     }
-
+    
     .learnmore-button-undertext {
         padding: 0.8rem 1.6rem;
         border-radius: 10px;
@@ -180,20 +180,13 @@ nav {
     }
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .yourai {
-    max-width: 1240px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    flex-direction: row;
     width: 100%;
     padding-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
     justify-content: center;
     gap: 1rem;
     
@@ -202,7 +195,10 @@ main {
         /* margin-top: 10rem; */
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 1rem;
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/7;
     }
     .AI-text h2 {
         font-weight: 400;
@@ -218,6 +214,9 @@ main {
     width: 38.2rem;
     height: 38rem;
     border-radius: 1.5rem;
+    /* display: grid; */
+    grid-column: 2/3;
+    grid-row: 1/7;
     }
 
     .aiknappen {
@@ -230,6 +229,7 @@ main {
         color: var(--white);
         font-weight: 600;
         --font-inter: "Inter", sans-serif;
+        font-size: 1.2rem;
     }
 }
 
