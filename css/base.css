@@ -16,6 +16,7 @@
     --lightgreen: #88DC84;
     --turquoise: #D4FFF3;
     --purple: #9810FA;
+    --linear-gradient: linear-gradient(90deg, rgba(0, 153, 102, 0.8) 0%, #009688 100%);
 
     --font-inter: "Inter", sans-serif;
     --font-montserrat: "Montserrat", sans-serif;
@@ -100,6 +101,37 @@ nav {
         cursor: pointer;
         font-weight: 600;
     }
+}
+/* ----------------- READY TO TRANSFORM YOUR STAY ---------------------- */
+
+.Ready-to-Transform-Your-Stay {
+    background: var(--linear-gradient);
+    padding: 5rem;
+    
+    /* aligning text and button */
+    .displayflex {
+        display: flex;
+        flex-direction: column;
+        
+        /* giving the <h2> unique atributes */
+        .rttys-text-h2 {
+            align-self: center;
+            color: var(--white);
+            padding-bottom: 2rem;
+            font-weight: 400;
+            font-size: 3rem;
+        }
+
+        /* giving the <p> unique atributes */
+        .rttys-text-p {
+            text-align: center;
+            color: var(--white);
+            padding-bottom: 2rem;
+            font-weight: 400;
+            font-size: 2rem;
+        }
+    }
+
 }
 
 /* ----------------- FOOTER ---------------------- */
