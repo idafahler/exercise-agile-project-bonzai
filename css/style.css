@@ -59,7 +59,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 7rem;
+    /* padding: 1rem 7rem; */
     
     .logo {
         max-width: 20.1rem;
@@ -70,12 +70,12 @@ nav {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        margin-right: 3rem;
+        /* margin-right: 3rem; */
     }
     
     li {
         list-style: none;
-        padding: 0rem 1.2rem;
+        /* padding: 0rem 1.2rem; */
     }
     
     a {
@@ -184,31 +184,34 @@ nav {
     display: flex;
     flex-direction: row;
     max-width: 1240px;
-    width: 100%;
-    padding-top: 2rem;
-    justify-content: center;
-    gap: 1rem;
+    width: auto;
+    padding: 10rem 0;
+    justify-content: space-between;
     
 
     .AI-text {
-        /* margin-top: 10rem; */
         display: flex;
         flex-direction: column;
-        gap: 3rem;
     }
     .AI-text h2 {
         font-weight: 400;
         font-size: 2rem;
-        line-height: 2rem;
     }  
     .AI-text p {
-        padding-top: 1rem;
+        
+    }
+    .themoment {
+        gap: 10rem;
+    }
+
+    .ändrafärgen {
+        color: #393939;
     }
 
     .AI-bilden {
     /* max-width: 100%; */
     width: 38.2rem;
-    height: 38rem;
+    height: auto;
     border-radius: 1.5rem;
     }
 
