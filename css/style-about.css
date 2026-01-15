@@ -17,6 +17,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align:center;
 
         width:100%; /*take up all space given*/
     }
