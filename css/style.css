@@ -42,6 +42,7 @@ header {
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
+    position: sticky;
 }
 
 
@@ -179,6 +180,38 @@ nav {
     }
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yourai {
+    max-width: 1240px;
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* justify-content: center; */
+    gap: 2rem;
+    
+
+    .AI-text {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+    }
+
+    .AI-bilden {
+    max-width: 100%;
+    width: 38.2rem;
+    height: auto;
+    border-radius: 1.5rem;
+    }
+}
 
 
 /* @media (max-width: 768px) {
