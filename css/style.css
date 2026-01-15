@@ -195,21 +195,41 @@ main {
     flex-direction: row;
     /* justify-content: space-between; */
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     
 
     .AI-text {
+        /* margin-top: 10rem; */
         display: flex;
         flex-direction: column;
-        gap: 4rem;
-
+        gap: 3rem;
+    }
+    .AI-text h2 {
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2rem;
+    }  
+    .AI-text p {
+        padding-top: 1rem;
     }
 
     .AI-bilden {
     /* max-width: 100%; */
     width: 38.2rem;
-    height: auto;
+    height: 38rem;
     border-radius: 1.5rem;
+    }
+
+    .aiknappen {
+        display: flex;
+        align-self: flex-start;
+        padding: 1.3rem 2.5rem;
+        display: inline-block;
+        background-color: var(--green);
+        border-radius: 10px;
+        color: var(--white);
+        font-weight: 600;
+        --font-inter: "Inter", sans-serif;
     }
 }
 
