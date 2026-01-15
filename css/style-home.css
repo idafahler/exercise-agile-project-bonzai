@@ -188,3 +188,18 @@
         justify-self: center;
     }
 }
+
+/* Ready To Transform Your Stay */
+
+.rttys-button {
+    background: var(--grey-btn);
+    color: var(--green);
+    border: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 15px;
+    align-self: center;
+}
