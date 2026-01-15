@@ -1,0 +1,190 @@
+/*-------------------------------------------------------------
+-------- SPECIFIC STYLING FOR ELEMENTS IN INDEX.HTML-----------
+---------------------------------------------------------------*/
+
+/* The section of the hero with background-picture and titles */
+.Hero-section {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    .hero-img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: block;
+        
+    }
+    
+    .hero-text {
+        position: absolute;
+        color: var(--white);
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .welcome {
+        font-weight: 400;
+        font-size: 5rem;
+        white-space: nowrap;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--overlay);
+    }
+
+    /* The button for booking and reading more about the hotel */
+    .bookit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6rem;
+        margin-top: 2rem;
+    }
+
+    .button-undertext {
+        white-space: nowrap;
+        padding: 1rem 0.7rem;
+        background-color: var(--green);
+        font-size: 1.2rem;
+        color: var(--white);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .learnmore-button-undertext {
+        padding: 0.8rem 1.6rem;
+        border-radius: 10px;
+        border: var(--white);
+        border:  0.1875rem solid var(--white);
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: var(--white);
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+
+
+/* ----------------- INFO BOXES ------------------- */
+.info-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Specific styling for each section - vision / sustainability*/
+.info-container--vision{
+    .info-container__text{
+        font-family: var(--font-montserrat); /*different font for this section*/
+    }
+}
+
+.info-container--sustainability{
+    background-color: var(--turquoise); /*specific background colour for this section*/
+}
+
+/* Wrapper for title sections and their elements */
+.wrapper-info__title{
+    display:flex; /*flexbox for titles and text*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    .info-container__title{
+        padding:4rem 0 3rem 0;
+
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    .info-container__text{
+        padding: 0 3rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
+
+/* Wrapper for box sections */
+.wrapper-info__box{
+    display:flex; /*flexbox for placing out boxes*/
+    flex-direction: row;
+    flex:1;
+    justify-content: space-between;
+    gap:1rem;
+    padding: 4rem 0;
+}
+
+/* Styling for boxes and their elements */
+.info-box{
+    padding:1rem 1rem 2rem 1rem;
+    max-width:300px;
+    max-height: 450px;
+
+    border: 1px solid var(--grey-border);
+    border-radius: 24px;
+    
+    .info-box__icon{
+        max-width:4rem;
+        padding:1rem;
+
+        background-color: var(--lightgreen); /*round, green background for icon*/
+        border-radius: 50%;
+    }
+
+    .info-box__title{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .info-box__text{
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    /* Specific for section 2 "Sustainability" */
+    .info-box__number{ 
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--green);
+    }
+}
+
+/* Styling for boxes in each section */
+.info-box--vision{
+    display:grid; /*grid to layout elements inside box, with specific styling*/
+    grid-template-rows: repeat(auto-fit, minmax(120px,1fr));
+    gap:1rem;
+    place-self: start;
+}
+
+.info-box--sustainability{
+    display:grid; /*grid to layout elements inside box, with specific styling*/
+    grid-template-rows: repeat(auto-fit, minmax(60px,1fr));
+    gap:2rem;
+    
+    padding-bottom: 4rem;
+    text-align: center; /*centered elements for these boxes*/
+
+    background-color: var(--white);
+
+    .info-box__icon{
+        justify-self: center;
+    }
+}

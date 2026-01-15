@@ -1,41 +1,52 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
- </head>
- <body>
-     <header class="header">
-         <nav class="wrapper">
-            <!-- <div class="wrapper"> -->
-                <a href="">
-                <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="Logga för hotellet" class="wrapper logo">
-                </a>
-                <ul>
-                    <li><a href="" class="Home-nav">Home</a></li>
-                    <li><a href="">Booking</a></li>
-                    <li><a href="">About</a></li>
-                </ul>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/style-home.css">
+    </head>
 
-                <button class="button-hero">Book your stay</button>
-            <!-- </div> -->
+<body>    
+    <!-- --------------------------HEADER------------------------------------ -->
+    <header class="header">
+        <nav class="wrapper">
+
+            <a href="index.html">
+            <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="Bonx.ai logo" class="wrapper logo">
+            </a>
+                
+            <ul>
+                <li><a href="index.html" class="link link--active">Home</a></li>
+                <li><a href="booking.html" class="link">Booking</a></li>
+                <li><a href="about.html" class="link">About</a></li>
+            </ul>
+
+            <a href="booking.html">
+            <button class="button-nav">Book your stay</button>
+            </a>
+
         </nav>
-    </header>
-    <main>
-        <article class="Hero-sektionen">
-        <img src="assets/photos/10-hero.jpg" alt="Bild på Hero-sektionen" class="hero">
+     </header>
+     
+     <!-- HERO -->
+    <article class="Hero-section">
+        <img src="assets/photos/10-hero.jpg" alt="Hotel" class="hero-img">
         <div class="overlay"></div>
             <div class="hero-text">
                 <h2 class="welcome">Welcome to the Future of</h2>
                 <h2 class="welcome">Hospitality</h2>
                 <p>Where AI innovation meets sustainable luxury. <br>
                 Experience Bonz.ai.</p>
-
+     
                 <div class="bookit">
-                <button class="button-undertext">Book your stay</button>
-                <button class="learnmore-button-undertext">Learn more</button>
+                    <a href="booking.html">
+                    <button class="button-undertext">Book your stay</button>
+                    </a>
+                    <a href="about.html">
+                    <button class="learnmore-button-undertext">Learn more</button>
+                    </a>
                 </div>
             </div>
         </article>
