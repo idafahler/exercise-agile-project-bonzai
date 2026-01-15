@@ -193,17 +193,17 @@ nav {
         display: flex;
         flex-direction: column;
     }
-    .AI-text h2 {
+    .AI-text-h2 {
+        padding-bottom: 2rem;
         font-weight: 400;
         font-size: 2rem;
     }  
-    .AI-text p {
-        
+    .AI-text-p {
+        padding-top: 2rem;
     }
-    .themoment {
-        gap: 10rem;
+    .extra-padding {
+        padding-bottokm: 2rem;
     }
-
     .ändrafärgen {
         color: #393939;
     }
