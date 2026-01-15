@@ -211,12 +211,10 @@
     }  
     .AI-text-p {
         padding-top: 2rem;
-    }
-    .extra-padding {
-        padding-bottokm: 2rem;
-    }
-    .ändrafärgen {
-        color: #393939;
+
+        span{
+            color: #393939;
+        }
     }
 
     .AI-bilden {
