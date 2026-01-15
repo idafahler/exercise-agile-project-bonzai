@@ -51,6 +51,33 @@
             </div>
     </article>
 
+    <!--FORM-->
+    <section class="form-section form-section--home">
+        <!--WRAPPER-->
+        <div class="wrapper wrapper-form--home">
+            <!--FORM-->
+            <form class="form form--home">
+
+                <!--DATE elements-->
+                <input type="date" class="form-element input-date" name="checkin">
+                <input type="date" class="form-element input-date" name="checkout">
+
+                <!--SELECT element with different options-->
+                <select class="form-element select-guests" name="guests">
+                    <option value="1" class="option-guests">1 guest</option>
+                    <option value="2" class="option-guests">2 guests</option>
+                    <option value="3" class="option-guests">3 guests</option>
+                    <option value="4" class="option-guests">4 guests</option>
+                </select>
+
+                <!--BUTTON-->
+                <button type="button" class="button form-element button-form--home" 
+                onclick="window.location.href='booking.html'">Check Availability</button>
+                <!--when button is clicked, user is navigated to booking.html-->
+            </form>
+        </div>
+    </section>
+
 
    <!-- INFO SECTION - "Our vision"-->
     <section class="info-container info-container--vision">
