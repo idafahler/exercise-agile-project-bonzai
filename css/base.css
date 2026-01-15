@@ -84,7 +84,7 @@ nav {
         font-weight: 600;
     }
 
-    .Home-nav {
+    .link--active {
         color: var(--green);
     }
 
