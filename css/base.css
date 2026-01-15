@@ -109,14 +109,14 @@ nav {
     padding: 5rem;
     
     /* aligning text and button */
-    .displayflex {
+    .displayflex-column {
         display: flex;
         flex-direction: column;
+        color: var(--white);
         
         /* giving the <h2> unique atributes */
         .rttys-text-h2 {
             align-self: center;
-            color: var(--white);
             padding-bottom: 2rem;
             font-weight: 400;
             font-size: 3rem;
@@ -125,7 +125,6 @@ nav {
         /* giving the <p> unique atributes */
         .rttys-text-p {
             text-align: center;
-            color: var(--white);
             padding-bottom: 2rem;
             font-weight: 400;
             font-size: 2rem;
