@@ -99,7 +99,7 @@
     flex:1; /*each element has 1 fraction of the available space*/
     gap:1rem; /*gap between each element*/
 
-    margin: 0 4rem; /*margin only on sides*/
+    margin: 0 6rem; /*margin only on sides*/
 
     /* All elements in form*/
     .form-element{
