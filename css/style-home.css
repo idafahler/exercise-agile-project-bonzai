@@ -4,23 +4,18 @@
 
 /* The section of the hero with background-picture and titles */
 .Hero-section {
+    background: linear-gradient(var(--overlay), var(--overlay)), 
+    url('../assets/photos/10-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+
     position: relative;
     width: 100%;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
-    .hero-img {
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        display: block;
-        
-    }
     
     .hero-text {
         position: absolute;
@@ -33,15 +28,6 @@
         font-weight: 400;
         font-size: 5rem;
         white-space: nowrap;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--overlay);
     }
 
     /* The button for booking and reading more about the hotel */
@@ -78,6 +64,55 @@
     }
 }
 
+/* -------------------- FORM ----------------------*/
+.form-section--home{
+    background: linear-gradient(to right, var(--green), var(--darkgreen)); /*background for whole section*/
+    height: 20vh; /*setting height*/
+}
+
+.wrapper-form--home{
+    display:flex; /*flexbox for wrapping form*/
+    justify-content: center;
+    align-items: center;
+
+    height: 100%; /*taking all available height*/
+}
+
+.form--home{
+    display:flex; /*flexbox for form elements*/
+    justify-content: space-evenly;
+    align-items: center;
+    flex:1; /*each element has 1 fraction of the available space*/
+    gap:1rem; /*gap between each element*/
+
+    margin: 0 6rem; /*margin only on sides*/
+
+    /* All elements in form*/
+    .form-element{
+        padding:1rem 1rem; /*padding inside of element*/
+        width:100%; /*each element takes up its space*/
+
+        font-size: 1.5rem; /*increasing font-size and font-weight*/
+        font-weight:600;
+    }
+
+    /* options in select menu*/
+    .option-guests{
+        font-weight: 400; /*lower font-weight than other elements inside option dropdown menu*/
+    }
+}
+
+/* styling for date and select element */
+.input-date, .select-guests{
+    border: 1px solid var(--black); /*black small border*/
+    border-radius: 1rem; /*rounds out edges*/
+}
+
+/*specific styling for button inside of form*/
+.button-form--home{
+    background-color: var(--black); /*black background-color*/
+    color: var(--white); /*and white text*/
+}
 
 
 /* ----------------- INFO BOXES ------------------- */
@@ -236,4 +271,15 @@
         font-weight: 600;
         --font-inter: "Inter", sans-serif;
     }
+}
+/* ------------------------Ready To Transform Your Stay-------------------------- */
+
+.rttys-button {
+    background: var(--grey-btn);
+    color: var(--green);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    border-radius: 10px;
+    align-self: center;
 }

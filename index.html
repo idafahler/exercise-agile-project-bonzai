@@ -33,26 +33,167 @@
      
      <!-- HERO -->
     <article class="Hero-section">
-        <img src="assets/photos/10-hero.jpg" alt="Hotel" class="hero-img">
-        <div class="overlay"></div>
-            <div class="hero-text">
-                <h2 class="welcome">Welcome to the Future of</h2>
-                <h2 class="welcome">Hospitality</h2>
-                <p>Where AI innovation meets sustainable luxury. <br>
-                Experience Bonz.ai.</p>
+        <div class="hero-text">
+            <h2 class="welcome">Welcome to the Future of</h2>
+            <h2 class="welcome">Hospitality</h2>
+            <p>Where AI innovation meets sustainable luxury. <br>
+            Experience Bonz.ai.</p>
      
-                <div class="bookit">
-                    <a href="booking.html">
-                    <button class="button-undertext">Book your stay</button>
-                    </a>
-                    <a href="about.html">
-                    <button class="learnmore-button-undertext">Learn more</button>
-                    </a>
-                </div>
+            <div class="bookit">
+                <a href="booking.html">
+                <button class="button-undertext">Book your stay</button>
+                </a>
+                <a href="about.html">
+                <button class="learnmore-button-undertext">Learn more</button>
+                </a>
             </div>
         </article>
-        
-        <div class="wrapper">
+        </div>
+    </article>
+
+    <!--FORM-->
+    <section class="form-section form-section--home">
+        <!--WRAPPER-->
+        <div class="wrapper wrapper-form--home">
+            <!--FORM-->
+            <form class="form form--home">
+
+                <!--DATE elements-->
+                <input type="date" class="form-element input-date" name="checkin">
+                <input type="date" class="form-element input-date" name="checkout">
+
+                <!--SELECT element with different options-->
+                <select class="form-element select-guests" name="guests">
+                    <option value="1" class="option-guests">1 guest</option>
+                    <option value="2" class="option-guests">2 guests</option>
+                    <option value="3" class="option-guests">3 guests</option>
+                    <option value="4" class="option-guests">4 guests</option>
+                </select>
+
+                <!--BUTTON-->
+                <button type="button" class="button form-element button-form--home" 
+                onclick="window.location.href='booking.html'">Check Availability</button>
+                <!--when button is clicked, user is navigated to booking.html-->
+            </form>
+        </div>
+    </section>
+
+
+   <!-- INFO SECTION - "Our vision"-->
+    <section class="info-container info-container--vision">
+        <!-- WRAPPER for title and text -->
+        <div class="wrapper wrapper-info__title">
+        <!-- TITLE AND TEXT -->
+            <h2 class="info-container__title">Our vision</h2>
+            <p class="info-container__text">
+                Bonz.ai reimagines the hotel experience by 
+                harmonizing cutting-edge artificial intelligence 
+                with unwavering environmental stewardship. We 
+                believe the future of travel is both smart and 
+                sustainable.
+            </p>
+        </div>
+
+        <!-- WRAPPER for box-->
+        <div class="wrapper wrapper-info__box">
+            <!--Box-->
+            <article class="info-box info-box--vision">
+                <img src="assets/icons/brain.png" class="info-box__icon" alt="Brain">
+                <h3 class="info-box__title">AI-Powered Experience</h3>
+                <p class="info-box__text">
+                    Personalized room settings, smart recommendations, 
+                    and seamless service through advanced AI technology.
+                </p>
+            </article>
+
+            <!--Box-->
+            <article class="info-box info-box--vision">
+                <img src="assets/icons/leaf.svg" class="info-box__icon" alt="Leaf">
+                <h3 class="info-box__title">100% Sustainable</h3>
+                <p class="info-box__text">
+                    Carbon-neutral operations, renewable energy, 
+                    and eco-friendly materials throughout the property.
+                </p>
+            </article>
+
+            <!--Box-->
+            <article class="info-box info-box--vision">
+                <img src="assets/icons/sparkles.svg" class="info-box__icon" alt="Sparkles">
+                <h3 class="info-box__title">Luxury Redefined</h3>
+                <p class="info-box__text">
+                    Premium comfort meets environmental responsibility 
+                    without compromise on quality or experience.
+                </p>
+            </article>
+
+            <!--Box-->
+            <article class="info-box info-box--vision">
+                <img src="assets/icons/zap.svg" class="info-box__icon" alt="Zap">
+                <h3 class="info-box__title">Smart Everything</h3>
+                <p class="info-box__text">
+                    Voice-controlled rooms, automated climate control, and 
+                    intelligent lighting that adapts to you.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- INFO SECTION - "Sustainability by the numbers"-->
+    <section class="info-container info-container--sustainability">
+        <!-- WRAPPER for title and text-->
+        <div class="wrapper wrapper-info__title">
+            <!-- TITLE AND TEXT -->
+            <h2 class="info-container__title">Sustainablility by the Numbers</h2>
+            <p class="info-container__text">
+                Our commitment to the planet, measured and verified
+            </p>
+        </div>
+
+        <!-- WRAPPER for box-->
+        <div class="wrapper wrapper-info__box">
+            <!--Box-->
+            <article class="info-box info-box--sustainability">
+                <img src="assets/icons/droplet.png" class="info-box__icon" alt="Droplet">
+                <h2 class="info-box__number">50% Less</h2>
+                <h3 class="info-box__title">Water Conservation</h3>
+                <p class="info-box__text">
+                    Advanced water recycling and smart usage monitoring
+                </p>
+            </article>
+
+            <!--Box-->
+            <article class="info-box info-box--sustainability">
+                <img src="assets/icons/battery.png" class="info-box__icon" alt="Battery">
+                <h2 class="info-box__number">100%</h2>
+                <h3 class="info-box__title">Solar Powered</h3>
+                <p class="info-box__text">
+                    All energy sourced from renewable solar panels
+                </p>
+            </article>
+
+            <!--Box-->
+            <article class="info-box info-box--sustainability">
+                <img src="assets/icons/wind.png" class="info-box__icon" alt="Wind">
+                <h2 class="info-box__number">99.9%</h2>
+                <h3 class="info-box__title">Clean Air</h3>
+                <p class="info-box__text">
+                    HEPA filtration and natural ventilation systems
+                </p>
+            </article>
+
+            <!--Box-->
+            <article class="info-box info-box--sustainability">
+                <img src="assets/icons/recycle.png" class="info-box__icon" alt="Recycle">
+                <h2 class="info-box__number">95%</h2>
+                <h3 class="info-box__title">Zero Waste</h3>
+                <p class="info-box__text">
+                    Comprehensive recycling and composting programs
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <div class="wrapper">
             <article class="yourai">
                 <article class="AI-text">
                     <h2 class="AI-text-h2">Your AI-Enhanced Stay</h2>
@@ -90,6 +231,26 @@
 
             <img src="assets/photos/11.jpg" alt="bilden som ligger i AI-Enhanced delen" class="AI-bilden">
         </article>
-        </div>
+    </div>
+
+    <!-- INFO SECTION - "Ready to transform your stay"-->
+   <section class="Ready-to-Transform-Your-Stay">
+      <!--WRAPPER-->
+      <article class="wrapper displayflex-column">
+         <h2 class="rttys-text-h2">Ready to Transform Your Stay?</h2>
+         <p class="rttys-text-p">Join us in creating a sustainable future without sacrificing luxury or comfort. Your perfect stay awaits.</p>
+         <a href="booking.html" class="rttys-button">
+            <button class="button rttys-button">Book now</button>
+         </a>
+      </article>
+   </section>
+
+    <!-- --------------------------FOOTER------------------------------------ -->
+    <footer class="footer">
+
+        <!-- Wrapper-->
+        <section class="wrapper footer-grid">
+        
+        
  </body>
  </html>
