@@ -2,28 +2,6 @@
 -------- SPECIFIC STYLING FOR ELEMENTS IN ABOUT.HTML-----------
 ---------------------------------------------------------------*/
 
-:root{
-    --black: #000000;
-    --dark-grey: #393939;
-    --box-shadow: #00000040;
-    --footer-color: #101828;
-    --white: #FFFFFF;
-    --grey-filter: #DBDBDB;
-    --grey-btn: #CBCBCB;
-    --grey-box: #D9D9D9;
-    --grey-border: #686868;
-    --overlay: #00000099;
-
-    --green: #009966;
-    --darkgreen: #009688;
-    --lightgreen: #88DC84;
-    --turquoise: #D4FFF3;
-    --purple: #9810FA;
-    --linear-gradient: linear-gradient(90deg, rgba(0, 153, 102, 0.8) 0%, #009688 100%);
-
-    --font-inter: "Inter", sans-serif;
-    --font-montserrat: "Montserrat", sans-serif;
-}
 
 /*----------------------HERO------------------------------*/
 .hero--about{
