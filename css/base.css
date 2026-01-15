@@ -88,7 +88,7 @@ nav {
         color: var(--green);
     }
 
-    .button-hero {
+    .button-nav {
         white-space: nowrap;
         padding: 0.8rem 0.7rem;
         background-color: var(--green);
