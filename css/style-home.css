@@ -188,3 +188,54 @@
         justify-self: center;
     }
 }
+
+/*-------------------------AI-INFO-BOX---------------------------------*/
+ 
+.yourai {
+    display: flex;
+    flex-direction: row;
+    max-width: 1240px;
+    width: auto;
+    padding: 10rem 0;
+    justify-content: space-between;
+    
+
+    .AI-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .AI-text-h2 {
+        padding-bottom: 2rem;
+        font-weight: 400;
+        font-size: 2rem;
+    }  
+    .AI-text-p {
+        padding-top: 2rem;
+    }
+    .extra-padding {
+        padding-bottokm: 2rem;
+    }
+    .ändrafärgen {
+        color: #393939;
+    }
+
+    .AI-bilden {
+    /* max-width: 100%; */
+    width: 38.2rem;
+    height: auto;
+    border-radius: 1.5rem;
+    }
+
+    .aiknappen {
+        display: flex;
+        align-self: flex-start;
+        margin-top: 2rem;
+        padding: 1.3rem 2.5rem;
+        display: inline-block;
+        background-color: var(--green);
+        border-radius: 10px;
+        color: var(--white);
+        font-weight: 600;
+        --font-inter: "Inter", sans-serif;
+    }
+}

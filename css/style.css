@@ -179,7 +179,7 @@ nav {
         cursor: pointer;
     }
 }
-
+/* 
 .yourai {
     display: flex;
     flex-direction: row;
@@ -209,7 +209,7 @@ nav {
     }
 
     .AI-bilden {
-    /* max-width: 100%; */
+     max-width: 100%; 
     width: 38.2rem;
     height: auto;
     border-radius: 1.5rem;
@@ -227,7 +227,7 @@ nav {
         font-weight: 600;
         --font-inter: "Inter", sans-serif;
     }
-}
+} */
 
 
 /* @media (max-width: 768px) {
