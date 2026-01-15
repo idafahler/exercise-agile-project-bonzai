@@ -42,7 +42,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #00000099;
+        background-color: var(--overlay);
     }
 
     /* The button for booking and reading more about the hotel */
@@ -59,7 +59,7 @@
         padding: 1rem 0.7rem;
         background-color: var(--green);
         font-size: 1.2rem;
-        color: white;
+        color: var(--white);
         border-radius: 10px;
         border: none;
         cursor: pointer;
@@ -74,7 +74,7 @@
         border:  0.1875rem solid var(--white);
         font-weight: 600;
         font-size: 1.2rem;
-        color: white;
+        color: var(--white);
         background-color: transparent;
         cursor: pointer;
     }
