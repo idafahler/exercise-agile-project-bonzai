@@ -149,6 +149,10 @@ nav {
         font-weight: 400;
         --font-inter: "Inter", sans-serif;
         font-size: 3rem;
+
+        .skicka-meddelande-knappen {
+            background-color: var(--green);
+        }
     }
 
     .text-above-contacts {
@@ -179,8 +183,9 @@ nav {
     grid-column: auto/span 2; */
 
     .skicka-meddelande {
+        padding: 5rem 0;
         display: grid;
-        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 2fr);
     }
 }
 
@@ -197,6 +202,8 @@ nav {
     background-color: var(--lightgrey);
     border-radius: 0.4rem;
 }
+
+
 /* ----------------- FOOTER ---------------------- */
 
 .footer {
