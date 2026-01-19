@@ -55,6 +55,7 @@ header {
     top: 0;
     background-color: var(--white);
     z-index: 1000;
+    box-shadow: 0 4px 10px var(--box-shadow);
 }
 
 /* Navigation menu, the links & logo  */
