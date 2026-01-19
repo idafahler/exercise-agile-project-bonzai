@@ -136,6 +136,14 @@ nav {
 
 }
 
+.contact-us-formulär {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20rem;
+}
+
 /* ----------------- FOOTER ---------------------- */
 
 .footer {
