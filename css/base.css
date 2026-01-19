@@ -10,7 +10,7 @@
     --grey-box: #D9D9D9;
     --grey-border: #686868;
     --overlay: #00000099;
-
+    --lightgrey: #F9FAFB;
     --green: #009966;
     --darkgreen: #009688;
     --lightgreen: #88DC84;
@@ -161,22 +161,42 @@ nav {
         margin: 3rem 5rem;
         padding: 0.7rem 6rem; 
         border-radius: 0.3rem;
-        /* display: grid;
-        grid-auto-flow: row; */
     }
-
 }
 
-
 .förälder-formulär {
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr;
     width: 100%;
     min-height: 37.5rem;
     border: solid black 1px;
     border-radius: 1.25rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    box-sizing: border-box;
 }
 
+.contact-us-formulären {
+    /* display: grid;
+    grid-column: auto/span 2; */
+
+    .skicka-meddelande {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+.fält {
+    display: grid;
+    padding: 15rem;
+}
+.Name-fält {
+    padding: 10rem;
+}
+
+.input-formulären {
+    padding: 1rem 5rem;
+    background-color: var(--lightgrey);
+    border-radius: 0.4rem;
+}
 /* ----------------- FOOTER ---------------------- */
 
 .footer {
