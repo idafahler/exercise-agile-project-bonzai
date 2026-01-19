@@ -238,14 +238,17 @@
     .AI-text {
         display: flex;
         flex-direction: column;
+        font-size: 1.2rem;
+
     }
     .AI-text-h2 {
         padding-bottom: 2rem;
         font-weight: 400;
-        font-size: 2rem;
+        font-size: 3rem;
     }  
     .AI-text-p {
         padding-top: 2rem;
+        font-size: 1.25rem;
 
         span {
             color: var(--dark-grey);
@@ -253,7 +256,7 @@
     }
 
     .AI-bilden {
-    width: 38.2rem;
+    width: 35rem;
     height: auto;
     border-radius: 1.5rem;
     }
@@ -262,14 +265,14 @@
         display: flex;
         align-self: flex-start;
         margin-top: 2rem;
-        padding: 1.3rem 2.5rem;
+        padding: 1.3rem 1rem;
         display: inline-block;
         background-color: var(--green);
         border-radius: 10px;
         color: var(--white);
         font-weight: 600;
         --font-inter: "Inter", sans-serif;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 }
 /* ------------------------Ready To Transform Your Stay-------------------------- */
