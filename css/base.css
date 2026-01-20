@@ -173,14 +173,12 @@ nav {
     box-sizing: border-box;
     margin-top: 1rem;
     align-content: start;
-    /* box-sizing: border-box; */
 }
 
 .fält {
     display: grid;
     width: 100%;
     padding: 2rem 12rem 1rem 4rem;
-    /* gap: 0.1rem; */
 }
 
 .fält input {
@@ -210,22 +208,20 @@ nav {
     
 }
 
-.stora-fält-contacts input {
+.stora-fält-contacts textarea {
     padding: 5rem 34.4rem;
     background-color: var(--lightgrey);
     border-radius: 0.3rem;
     width: 100%;
     box-sizing: border-box;
     border: 1px solid var(--black);
-
-
+    resize: none;
 }
 
 .stora-fält-contacts label {
     font-size: 1.25rem;
     --font-inter: "Inter", sans-serif;
     font-weight: 700;
-
 }
 
 .skicka-meddelande-knappen {
@@ -240,8 +236,6 @@ nav {
     font-size: 1.3rem;
     border: none;
     margin-top: 2rem;
-
-
 }
 
 /* ----------------- FOOTER ---------------------- */
