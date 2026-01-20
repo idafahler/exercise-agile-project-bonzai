@@ -201,12 +201,15 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    gap: 2rem;
 }
 
 .skicka-meddelande-knappen {
     width: 100%;
     padding: 1rem 10rem;
     cursor: pointer;
+    border-radius: 0.7rem;
+
 }
 
 /* ----------------- FOOTER ---------------------- */
