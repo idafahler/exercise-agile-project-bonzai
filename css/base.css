@@ -167,7 +167,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 100%;
-    height: 55rem;
+    min-height: 30rem;
     border: solid black 1px;
     border-radius: 1.25rem;
     box-sizing: border-box;
@@ -176,29 +176,32 @@ nav {
 
 .fält {
     display: grid;
-    padding-bottom: 12rem;
-    padding-left: 4rem;
-    padding-right: 12rem;
-    /* gap: 0.4rem;
-    padding: 0.5rem; */
-    padding-top: 2rem;
-    
+    width: 100%;
+    padding: 2rem 12rem 1rem 4rem;
+    /* gap: 0.1rem; */
 }
 
 .fält input {
     background-color: var(--lightgrey);
-    border-radius: 0.2rem;
-    padding: 0.8rem 10rem;
+    border-radius: 0.3rem;
+    padding: 0.5rem 10rem;
     gap: 1rem;
+    border: 1px solid var(--black);
+    box-sizing: border-box;
 }
 
 .fält label {
     font-weight: 700;
     --font-inter: "Inter", sans-serif;
     font-size: 1.25rem;
-
+    margin-top: 2rem;
 }
 
+.stora-fält-contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
 /* ----------------- FOOTER ---------------------- */
 
 .footer {
