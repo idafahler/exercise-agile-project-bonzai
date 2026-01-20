@@ -167,11 +167,13 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 100%;
-    min-height: 30rem;
+    min-height: 40rem;
     border: solid black 1px;
     border-radius: 1.25rem;
     box-sizing: border-box;
     margin-top: 1rem;
+    align-content: start;
+    /* box-sizing: border-box; */
 }
 
 .fält {
@@ -192,16 +194,38 @@ nav {
 
 .fält label {
     font-weight: 700;
-    --font-inter: "Inter", sans-serif;
+    font-style: var(--font-inter);
     font-size: 1.25rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .stora-fält-contacts {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
-    gap: 2rem;
+    box-sizing: border-box;
+    /* gap: 2rem; */
+    height: 8rem;
+    padding: 2rem 12rem 1rem 4rem;
+    
+}
+
+.stora-fält-contacts input {
+    padding: 5rem 34.4rem;
+    background-color: var(--lightgrey);
+    border-radius: 0.3rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--black);
+
+
+}
+
+.stora-fält-contacts label {
+    font-size: 1.25rem;
+    --font-inter: "Inter", sans-serif;
+    font-weight: 700;
+
 }
 
 .skicka-meddelande-knappen {
@@ -209,6 +233,14 @@ nav {
     padding: 1rem 10rem;
     cursor: pointer;
     border-radius: 0.7rem;
+    background-color: var(--green);
+    color: var(--white);
+    --font-inter: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: none;
+    margin-top: 2rem;
+
 
 }
 
