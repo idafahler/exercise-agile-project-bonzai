@@ -209,10 +209,10 @@ nav {
 }
 
 .stora-fält-contacts textarea {
-    padding: 5rem 34.4rem;
+    padding: 5rem 34.4rem; 
+    width: 100%;
     background-color: var(--lightgrey);
     border-radius: 0.3rem;
-    width: 100%;
     box-sizing: border-box;
     border: 1px solid var(--black);
     resize: none;
