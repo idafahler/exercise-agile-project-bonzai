@@ -61,26 +61,22 @@
             <form id="form--home">
 
                 <!--DATE elements-->
-                <article class="form-box--home">
-                    <label for="checkin" class="form-element form__label--home">Check in</label>
-                    <input type="date" class="form-element input-date" name="checkin" id="checkin">
-                </article>
-                
-                <article class="form-box--home">
-                    <label for="checkout" class="form-element form__label--home">Check out</label>
-                    <input type="date" class="form-element input-date" name="checkout" id="checkout">
-                </article>
+                <label for="form__date--checkin" class="form__label" id="form__label--home-checkin">Check in</label>
+                <input type="date" class="form-element input-date" name="checkin" id="form__date--checkin">
+
+                <label for="form__date--checkout" class="form__label" id="form__label--home-checkout">Check out</label>
+                <input type="date" class="form-element input-date" name="checkout" id="form__date--checkout">
+
 
                 <!--SELECT element with different options-->
-                <article class="form-box--home">
-                    <label for="guests" class="form-element form__label--home">Amount guests</label>
-                    <select class="form-element select-guests" name="guests" id="guests">
-                        <option value="1" class="option-guests">1 guest</option>
-                        <option value="2" class="option-guests">2 guests</option>
-                        <option value="3" class="option-guests">3 guests</option>
-                        <option value="4" class="option-guests">4 guests</option>
-                    </select>
-                </article>
+                <label for="form__select--guests" class="form__label" id="form__label--home-select">Amount guests</label>
+                <select class="form-element select-guests" name="guests" id="form__select--guests">
+                    <option value="1" class="option-guests">1 guest</option>
+                    <option value="2" class="option-guests">2 guests</option>
+                    <option value="3" class="option-guests">3 guests</option>
+                    <option value="4" class="option-guests">4 guests</option>
+                </select>
+
 
                 <!--BUTTON-->
                 <button type="button" class="button form-element" id="form__button--home"
