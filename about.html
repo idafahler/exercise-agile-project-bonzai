@@ -79,37 +79,33 @@
 
         <article class="wrapper">
             
-            <form action="" class="wrapper förälder-formulär">
+        <form class="wrapper förälder-formulär">
+            <div class="form-group">
+                <label for="Namn">Name:</label>
+                <input type="text" id="Namn" name="Namn" required>
+            </div>
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <input type="text" id="Email" name="Email" required>
+            </div>
 
-                <div class="fält">
-                <label for="">Name:  *</label>
-                <input type="text">
-                    </div>
+            <div class="form-group">
+                <label for="Phone">Phone:</label>
+                <input type="text" id="Phone" name="Phone">
+            </div>
 
-                    <div class="fält">
-                <label for="">Email:  *</label>
-                <input type="text">
-                        </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
 
-                        <div class="fält">
-                <label for="">Phone:</label>
-                <input type="text">
-                            </div>
-
-                            <div class="fält">
-                <label for="">Subject:  *</label>
-                <input type="text">
-                            </div>
-
-                            <div class="wrapper stora-fält-contacts">
-                <label for="">Message:  *</label>
-                <textarea name="message" rows="1" cols="1" id=""></textarea>
-                <!-- <input type="text"> -->
-                <button class="skicka-meddelande-knappen" type="submit">Send Message</button>
-                            </div>
-            </form>
+            <div class="form-group span-all">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="10" required></textarea>
+                <button>Send Message</button>
+            </div>
+        </form>
         </article>
-        <!-- Lägg de i en och samma förälder och sedan använd grid -->
      </section>
         
     <!-- --------------------------FOOTER------------------------------------ -->

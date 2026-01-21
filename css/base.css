@@ -147,7 +147,7 @@ nav {
 
     .contact-us-rubrik {
         font-weight: 400;
-        --font-inter: "Inter", sans-serif;
+        font-family: var(--font-inter);
         font-size: 3rem;
 
         .skicka-meddelande-knappen {
@@ -158,15 +158,15 @@ nav {
 
     .text-above-contacts {
         font-weight: 400;
-        --font-inter: "Inter", sans-serif;
+        font-family: var(--font-inter);
         font-size: 2rem;
     }
 }
 
 .förälder-formulär {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); */
+    width: 1240px;
     min-height: 39rem;
     border: solid black 1px;
     border-radius: 1.25rem;
@@ -175,7 +175,66 @@ nav {
     align-content: start;
 }
 
-.fält {
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.form-group {
+    display: grid;
+    padding: 1.5rem 3rem;
+    
+    label {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    input {
+        border: 1px solid var(--black);
+        border-radius: 0.3rem;
+        background-color: var(--lightgrey);
+        height: 2.5rem;
+        padding-left: 0.5rem;
+    }
+    
+    textarea {
+        border-radius: 0.6rem;
+        resize: none;
+        padding: 0.5rem;
+    }
+
+    button {
+        border-radius: 0.3rem;
+        margin-top: 2rem;
+        background-color: var(--green);
+        color: var(--white);
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: var(--font-inter);
+        padding: 0.7rem;
+        cursor: pointer;
+        border: none;
+    }
+}
+    .form-group:has([required]) label {
+        display: flex;
+        gap: 3px;
+        &::after {
+        color: var(--black);
+        content: '*';
+    }
+}
+
+@layer layout {
+        .span-all {
+            grid-column: 1/ -1;
+        }
+    }
+
+
+
+/* .fält {
     display: grid;
     width: 100%;
     padding: 2rem 12rem 1rem 4rem;
@@ -202,7 +261,7 @@ nav {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     box-sizing: border-box;
-    /* gap: 2rem; */
+     gap: 2rem; 
     height: 8rem;
     padding: 2rem 12rem 1rem 4rem;
     
@@ -237,7 +296,7 @@ nav {
     font-size: 1.3rem;
     border: none;
     margin-top: 2rem;
-}
+} */
 
 /* ----------------- FOOTER ---------------------- */
 
