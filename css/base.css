@@ -120,6 +120,7 @@ nav {
         
         /* giving the <h2> unique atributes */
         .rttys-text-h2 {
+            text-align: center;
             align-self: center;
             padding-bottom: 1.5rem;
             font-weight: 400;
