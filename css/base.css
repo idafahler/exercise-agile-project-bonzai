@@ -220,13 +220,32 @@ nav {
 }
 
 
+/*----------------------------------------------------------------------------------------*/
+/* ------------------------------- MEDIA QUERIES ---------------------------------------- */
+/*----------------------------------------------------------------------------------------*/
 
-
-/* ------------- MEDIA QUERIES -------------- */
+/* ----------------------- MAX-WIDTH:1240px ----------------------------- */
 
 @media (max-width: 1240px){
-    /* HEADER STYLING */
+        /*------------------ HEADER ------------------------*/
     .header{
-        padding: 0 2rem;
+        padding: 0 2rem; /*some padding for smaller units*/
     }
+}
+
+@media (max-width: 1000px){
+
+    /*--------- READY TO TRANSFORM YOUR STAY -------*/
+    .displayflex-column{
+        max-width: 732px; /*max-width to align with other sections*/
+    }
+}
+
+/* ----------------------- MAX-WIDTH:810px -------------------------------- */
+@media (max-width: 810px){
+    /*--------- READY TO TRANSFORM YOUR STAY -------*/
+    .Ready-to-Transform-Your-Stay{
+        padding: 2rem; /*less padding for smaller units*/
+    }
+    
 }
