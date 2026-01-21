@@ -404,16 +404,22 @@
             display:flex;
             flex-direction: column;
         }
+        .welcome{
+            white-space: wrap;
+        }
+        .button-undertext{
+            white-space: wrap;
+        }
     }
 
 
     /*-------------- AI INFO BOX ---------------------*/
     .yourai{
-        padding: 2rem 0;
+        padding: 2rem 0; /*less padding for smaller units*/
 
         .AI-text{
-            margin-top: 1rem;
-            display:flex;
+            margin-top: 1rem; /*less margin for smaller units*/
+            display:flex; /*flexbox for text, centering*/
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -424,19 +430,22 @@
         }
         .AI-bilden{
             align-self: center;
-            max-width:732px;
+            max-width:732px; /*aligning different sections*/
         }
         
-    }
-
-    /*--------- READY TO TRANSFORM YOUR STAY -------*/
-    .displayflex-column{
-        max-width: 732px;
     }
 }
 
 /* ----------------------- MAX-WIDTH:810px -------------------------------- */
 @media (max-width:810px){
+    /*------------------ HERO ------------------------*/
+    .Hero-section{
+        height:60vh; /*changing height for hero*/
+
+        .welcome{
+            font-size: 4rem;
+        }
+    }
 
     /*------------------ FORM ------------------------*/
     .form-section--home{ /*hiding form*/
