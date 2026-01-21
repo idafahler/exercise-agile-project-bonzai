@@ -457,10 +457,19 @@
 @media (max-width:630px){
 
     /*------------------ INFO BOXES ------------------*/
-    .wrapper-info__box{
-        gap:1rem; /*less gap between boxes and less padding for smaller units*/
-        padding:1rem 0;
+    .wrapper-info__title{
+
+        .info-container__title{
+            padding:1rem; /*less padding title*/
+        }
     }
+    .wrapper-info__box{
+        gap:0.5rem; /*less gap between boxes and less padding for smaller units*/
+    }
+    .info-box{
+        padding:0.5rem; /*less padding inside info-boxes*/
+    }
+
 
     /*-------------- AI INFO BOX ---------------------*/
     .yourai{
