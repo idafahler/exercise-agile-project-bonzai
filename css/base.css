@@ -144,6 +144,7 @@ nav {
     padding-top: 4rem;
     padding-bottom: 5rem;
     gap: 1rem;
+    position: relative;
 
     .contact-us-rubrik {
         font-weight: 400;
@@ -229,6 +230,35 @@ form {
             grid-column: 1/ -1;
         }
     }
+
+.confirmation-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #e6ffed;
+    border: 1px solid #0a8a0a;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a8a0a;
+    max-width: 500px;
+}
+
+.tick {
+    font-size: 2.5rem;
+    animation: bounceTick 0.5s ease;
+}
+
+@keyframes bounceTick {
+    0% { transform: scale(0); }
+    60% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+
+
+
 
 
 
