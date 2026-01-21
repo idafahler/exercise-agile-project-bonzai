@@ -10,6 +10,8 @@
     --grey-box: #D9D9D9;
     --grey-border: #686868;
     --overlay: #00000099;
+    --About-Selector: #ECECF0;
+
 
     --green: #009966;
     --darkgreen: #009688;
@@ -49,13 +51,9 @@ body{
 
 /* ----------------- HEADER ------------------- */
 header {
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
     background-color: var(--white);
-    z-index: 1000;
-    box-shadow: 0 4px 10px var(--box-shadow);
+    display: flex;
+    justify-content: center;
 }
 
 /* Navigation menu, the links & logo  */
@@ -63,8 +61,9 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem 7rem;
     
     .logo {
         max-width: 20.1rem;

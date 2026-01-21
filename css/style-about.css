@@ -40,7 +40,74 @@
         font-size: 2.25rem;
     }
 }
+/*----------------------READY TO TRANSFORM YOUR STAY------------------------------*/
+.Our-Story {
+    justify-self: center;
+    justify-items: center;
+    padding: 1rem 0;
+    
+    .h2 {
+        
+    }
+    
+    .p {
+        
+    }
+}
 
+.About-turquoise {
+    background-color: var(--turquoise);
+    padding: 5rem 0;
+}
+
+.About-Flex-Row {
+    padding-bottom: 3rem;
+
+}
+
+.About-Menu {
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 100px 100px;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: var(--About-Selector);
+    
+    .About-Padding {
+        padding: 0 3rem;
+    }
+    
+    .Button-With-No-White-Active {
+        border: none;
+        cursor:pointer;
+        padding: 1rem 3rem;
+        border-radius: 100px 100px;
+        background-color: var(--white);
+
+    }
+
+    .Button-With-No-White {
+        background-color: var(--About-Selector);
+        padding: 1rem 3rem;
+        border: none;
+        cursor:pointer;
+    }
+}
+
+.World-Class {
+    justify-self: center;
+    padding: 0.5rem;
+
+    .h2 {
+        font-weight: 500;
+    }
+    
+    .p {
+        font-weight: 400;
+    }
+}
 /*----------------------READY TO TRANSFORM YOUR STAY------------------------------*/
 /* flexes the elements in to a row */
 .displayflex-row {
