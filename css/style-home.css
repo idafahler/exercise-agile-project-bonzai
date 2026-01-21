@@ -276,6 +276,10 @@
 }
 /* ------------------------Ready To Transform Your Stay-------------------------- */
 
+.rttys-text-h2{
+    text-align: center;
+}
+
 .rttys-button {
     background: var(--grey-btn);
     color: var(--green);
@@ -393,6 +397,7 @@
 @media (max-width:1000px){
     .yourai{
         padding: 2rem 0;
+        
         .AI-text{
             margin-top: 1rem;
             display:flex;
