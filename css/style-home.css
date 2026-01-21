@@ -322,7 +322,7 @@
         grid-template-columns: auto / span 1; /*placing out boxes*/
         grid-template-rows: auto / span 1;
 
-        max-width:350px;
+        max-width:350px; /*changing size of boxes*/
         max-height:400px;
     }
 
