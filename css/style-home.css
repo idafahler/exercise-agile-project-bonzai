@@ -290,13 +290,18 @@
 /* ------------------------------- MEDIA QUERIES ---------------------------------------- */
 /*----------------------------------------------------------------------------------------*/
 
+/* ----------------------- MAX-WIDTH:1240px ----------------------------- */
 @media (max-width:1240px){
+
+    /*-------------- AI INFO BOX ---------------------*/
     .yourai{
         padding: 5rem 2rem;
     }
 }
 
+/* ----------------------- MAX-WIDTH:1130px ----------------------------- */
 @media (max-width: 1130px){
+
     /*------------------ INFO BOXES ------------------*/
     .wrapper-info__title{
         max-width: 690px; /*making sure text segment does not expand beyond box width*/
@@ -390,7 +395,19 @@
     }
 }
 
+/* ----------------------- MAX-WIDTH:1000px ----------------------------- */
 @media (max-width:1000px){
+    /*------------------ HERO ------------------------*/
+    .Hero-section{
+
+        .hero-text{
+            display:flex;
+            flex-direction: column;
+        }
+    }
+
+
+    /*-------------- AI INFO BOX ---------------------*/
     .yourai{
         padding: 2rem 0;
 
@@ -412,12 +429,16 @@
         
     }
 
+    /*--------- READY TO TRANSFORM YOUR STAY -------*/
     .displayflex-column{
         max-width: 732px;
     }
 }
 
+/* ----------------------- MAX-WIDTH:810px -------------------------------- */
 @media (max-width:810px){
+
+    /*------------------ FORM ------------------------*/
     .form-section--home{ /*hiding form*/
         display: none;
     }

@@ -58,7 +58,7 @@ header {
     box-shadow: 0 4px 10px var(--box-shadow);
 }
 
-/* Navigation menu, the links & logo  */
+/* -------------------- NAV ---------------------- */
 nav {
     width: 100%;
     display: flex;
