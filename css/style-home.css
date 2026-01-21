@@ -344,7 +344,6 @@
 
         .AI-text{
             margin-top:3rem; /*some space between picture and text*/
-            padding-left: 1rem;
 
             order:1; /*text positioned below img*/
 
@@ -452,4 +451,31 @@
         display: none;
     }
 }
+
+
+/* ----------------------- MAX-WIDTH:630px -------------------------------- */
+@media (max-width:630px){
+
+    /*------------------ INFO BOXES ------------------*/
+    .wrapper-info__box{
+        gap:1rem; /*less gap between boxes and less padding for smaller units*/
+        padding:1rem 0;
+    }
+
+    /*-------------- AI INFO BOX ---------------------*/
+    .yourai{
+        padding:0 0 1rem 0; /*removing padding from section, except for bottom padding*/
+
+        .AI-text{
+            gap:1.5rem; /*less gap for smaller units*/
+        }
+
+        .AI-bilden{
+            border-radius: 0; /*no rounded edges for picture for smaller units*/
+        }
+    }
+}
+
+
+/* ----------------------- MAX-WIDTH:576px -------------------------------- */
 
