@@ -9,7 +9,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height:70vh;
+    height:70vh; 
 
     position: relative;
     width: 100%;
@@ -315,7 +315,7 @@
         grid-template-rows: repeat(2, auto);
         gap:2rem; /*more gap between boxes*/
 
-        padding: 3rem 0; /*less padding around info-boxes*/
+        padding: 2rem 0; /*less padding around info-boxes*/
     }
 
     .info-box{
@@ -339,6 +339,7 @@
 
         .AI-text{
             margin-top:3rem; /*some space between picture and text*/
+            padding-left: 1rem;
 
             order:1; /*text positioned below img*/
 
@@ -388,3 +389,32 @@
         }
     }
 }
+
+@media (max-width:1000px){
+    .yourai{
+        padding: 2rem 0;
+        .AI-text{
+            margin-top: 1rem;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .yourai--text{ /*hiding p elements*/
+                display:none;
+            }
+        }
+        .AI-bilden{
+            align-self: center;
+            max-width:732px;
+        }
+        
+    }
+}
+
+@media (max-width:810px){
+    .form-section--home{ /*hiding form*/
+        display: none;
+    }
+}
+
