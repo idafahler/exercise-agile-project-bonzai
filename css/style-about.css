@@ -42,21 +42,22 @@
 }
 /*----------------------READY TO TRANSFORM YOUR STAY------------------------------*/
 .About-Our-Story {
-background-color: var(--white);
+    background-color: var(--white);
 
     .Our-Story {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        text-align: center;
         justify-content: space-between;
         padding: 5rem 0;
         font-weight: 400;
         
-        .h2 {
+        .Our-Story-h2 {
             font-size: 3rem;
+            padding-bottom: 3rem;
         }
         
-        .p {
+        .Our-Story-p {
             font-size: 1.5rem;
         }
     }
@@ -81,6 +82,11 @@ background-color: var(--white);
     justify-content: space-between;
     padding: 0.5rem 1rem;
     background-color: var(--About-Selector);
+
+    .about-menu-font {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
     
     .About-Padding {
         padding: 0 3rem;
@@ -102,41 +108,65 @@ background-color: var(--white);
         cursor:pointer;
     }
 }
-
-.World-Class {
+    
+.World-Class-h2 {
+    font-size: 2rem;
+    font-weight: 500;
     justify-self: center;
     padding: 0.5rem;
-
-    .h2 {
-        font-weight: 500;
-    }
-    
-    .p {
-        font-weight: 400;
-    }
 }
+
+.World-Class-p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    justify-self: center;
+    padding: 0.5rem;
+}
+
 
 .About-Pictures-Grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
+    grid-template-rows: auto;
     gap: 2rem;
     padding: 5rem 0;
     border: 10px black;
 
-    .img-size {
-        /* border: 10px black; */
-        /* display:flex; */
-        width:100%;
-        /* height:50%; */
-        /* object-fit:contain; */
-        /* display:block; */
-        /* margin: 1rem; */
-    }
+    
+    .pictures-and-text {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--white);
+        border-radius: 15px;
+        overflow: hidden;
+        font-family: var(--font-inter);
+        border-style: solid;
+        
+        .img-size {
+            /* width:100%; */
+            height: 50%;
+        }
 
-    .img-size-12 {
-        width:100%;
-        height: 50%;
+        .img-size-12 {
+            width:100%;
+            /* height: 50%; */
+            object-fit: contain;
+        }
+
+        .About-text-border {
+            border-style: solid none none none;
+        }
+        
+        .about-pictures-h2 {
+            font-weight: 400;
+            padding: 1rem 0.5rem;
+            padding-top: 2rem;
+        }
+        
+        .about-pictures-p {
+            font-weight: 400;
+            padding: 1rem 0.5rem;
+        }
     }
 }
 /*----------------------READY TO TRANSFORM YOUR STAY------------------------------*/
