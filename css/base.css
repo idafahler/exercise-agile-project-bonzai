@@ -223,4 +223,9 @@ nav {
 
 /* ------------- MEDIA QUERIES -------------- */
 
-
+@media (max-width: 1240px){
+    /* HEADER STYLING */
+    .header{
+        padding: 0 2rem;
+    }
+}
