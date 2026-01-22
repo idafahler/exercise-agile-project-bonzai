@@ -127,7 +127,7 @@
 .About-Pictures-Grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: repeat(2, 25rem);
     gap: 2rem;
     padding: 5rem 0;
     border: 10px black;
@@ -140,21 +140,20 @@
         border-radius: 15px;
         overflow: hidden;
         font-family: var(--font-inter);
-        border-style: solid;
+        border: 1px solid black;
         
         .img-size {
-            /* width:100%; */
-            height: 50%;
+            height: 6%;
         }
 
         .img-size-12 {
-            width:100%;
-            /* height: 50%; */
-            object-fit: contain;
+            max-width:100%;
+            height: 60%;
+            object-fit: cover;
         }
 
         .About-text-border {
-            border-style: solid none none none;
+            border-top: 1px solid black;
         }
         
         .about-pictures-h2 {
