@@ -6,6 +6,7 @@
         <title>About</title>
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/style-about.css">
+        <script src="js/about.js" defer></script>
     </head>
     
     <body>
@@ -168,14 +169,16 @@
         </article>
      </section>
 
-     <section class="wrapper contact-us-container">
+     <!------------------------------------ FORMS -------------------------------------->
+
+    <section class="wrapper contact-us-container">
 
         <h2 class="contact-us-rubrik">Contact Us</h2>
         <p class="text-above-contacts">Get in touch with us to learn more about our sustainable hospitality solutions</p>
         
-        <article class="wrapper">
+        <article>
             
-            <form class="wrapper förälder-formulär">
+            <form class="förälder-formulär">
                 <div class="form-group">
                     <label for="Namn">Name:</label>
                     <input type="text" id="Namn" name="Namn" required>
@@ -183,52 +186,52 @@
                 <div class="form-group">
                     <label for="Email">Email:</label>
                 <input type="text" id="Email" name="Email" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="Phone">Phone:</label>
-                <input type="text" id="Phone" name="Phone">
-            </div>
-            
-            <div class="form-group">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-            </div>
-            
-            <div class="form-group span-all">
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" rows="10" required></textarea>
-                <button type="button" id="send-btn">Send Message</button>
-            </div>
-        </form>
-    </article>
-</section>
+                </div>
+                
+                <div class="form-group">
+                    <label for="Phone">Phone:</label>
+                    <input type="text" id="Phone" name="Phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group span-all">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="10" required></textarea>
+                    <button type="button" id="send-btn">Send Message</button>
+                </div>
+            </form>
+        </article>
+    </section>
 
-<!-- --------------------------FOOTER------------------------------------ -->
-<footer class="footer">
-    
-    <!-- Wrapper-->
-    <section class="wrapper footer-grid">
-        
-        <!-- Top left box-->
-        <section class="top-left-footer-grid">
-            <section class="tlfg-img">
-                <img src="assets/logo/bonz.ai-logo-color-portrait-full.png" alt="Bonx.ai logo">            
+    <!-- --------------------------FOOTER------------------------------------ -->
+   
+    <footer class="footer">
+        <!-- Wrapper-->
+        <section class="wrapper footer-grid">
+            
+            <!-- Top left box-->
+            <section class="top-left-footer-grid">
+                <section class="tlfg-img">
+                    <img src="assets/logo/bonz.ai-logo-color-portrait-full.png" alt="Bonx.ai logo">            
+                </section>
+                <p class="tlfg-text">
+                    The hotel of the future, where sustainability meets smart technology. Experience AI-driven hospitality with an eco-conscious heart.
+                </p>
             </section>
-            <p class="tlfg-text">
-                The hotel of the future, where sustainability meets smart technology. Experience AI-driven hospitality with an eco-conscious heart.
-            </p>
-        </section>
-        
-        <!-- Top middle box -->
-        <section class="top-middle-footer-grid">
-            <h2>Contact</h2>
-            <p>123 Green Street, Eco City, EC 12345</p>
-            <p>+1 (555) 123-4567</p>
-            <p>hello@bonz.ai</p>
-        </section>
-        
-        <!-- Top right box -->
+            
+            <!-- Top middle box -->
+            <section class="top-middle-footer-grid">
+                <h2>Contact</h2>
+                <p>123 Green Street, Eco City, EC 12345</p>
+                <p>+1 (555) 123-4567</p>
+                <p>hello@bonz.ai</p>
+            </section>
+            
+            <!-- Top right box -->
             <section class="top-right-footer-grid">
                 <h2>Quick Links</h2>
                 <p>Privacy Policy</p>
@@ -245,7 +248,5 @@
             </section>
         </section>
     </footer>
-    
-    <script src="js/about.js"></script>
 </body>
 </html>

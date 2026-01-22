@@ -1,28 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const sendBtn = document.getElementById("send-btn");
-    const container = document.querySelector(".contact-us-container");
+    const sendBtn = document.getElementById("form__button--home-booking");
+    const container = document.getElementById("form-section--home-booking");
+    const containerDateIn = document.getElementById("form__date--checkin");
+    const containerDateOut = document.getElementById("form__date--checkout");
 
     sendBtn.addEventListener("click", () => {
 
-        container.style.transition = "opacity 0.4s ease";
-        container.style.opacity = "0";
-
-        setTimeout(() => {
-            container.innerHTML = "";
-
-            const confirmation = document.createElement("div");
-            confirmation.className = "confirmation-message";
-            confirmation.innerHTML = `
-                <span class="tick">✔</span>
-                <div>
-                    <h3>Tack för ditt meddelande</h3>
-                    <p>Vi återkommer till dig så snart som möjligt.</p>
-                </div>
-            `;
-
-            container.appendChild(confirmation);
-
-            container.style.opacity = "1";
-        }, 400);
+        if (containerDateIn !== "" || containerDateOut !== "") {
+            
+            container.style.transition = "opacity 0.4s ease";
+            container.style.opacity = "0";
+            
+            setTimeout(() => {
+                const confirmation = document.createElement("main");
+                confirmation.innerHTML = ` TEMP `;
+                
+                container.appendChild(confirmation);
+                
+                container.style.opacity = "1";
+            }, 400);
+        };
     });
 });

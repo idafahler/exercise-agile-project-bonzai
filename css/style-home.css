@@ -65,7 +65,7 @@
 }
 
 /* -------------------- FORM ----------------------*/
-#form-section--home{
+#form-section--home, .form-section--home-booking{
     background: linear-gradient(to right, var(--green), var(--darkgreen)); /*background for whole section*/
     height: 20vh; /*setting height*/
 }
