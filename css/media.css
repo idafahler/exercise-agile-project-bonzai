@@ -10,6 +10,11 @@
         padding: 0 2rem; /*some padding for smaller units*/
     }
 
+    /*------------------ FORM ------------------------*/
+    #form--home{
+        margin: 0; /*removing padding on sides to prevent elements from wrapping*/
+    }
+
     /*-------------- AI INFO BOX ---------------------*/
     .yourai{
         padding: 5rem 2rem;
@@ -21,6 +26,55 @@
 
 /* ----------------------- MAX-WIDTH:1130px ----------------------------- */
 @media (max-width: 1130px){
+
+    /*------------------ FORM ------------------------*/
+    #wrapper-form--home{
+        padding:0;
+    }
+    
+    #form--home{
+        grid-template-columns: repeat(2, 1fr);/*new grid layout, for smaller widths*/
+        grid-template-rows: repeat(4, auto);
+
+        align-items: center;
+        gap:0.3rem;
+
+        /*placing out elements inside of grid*/
+        #form__label--home-checkin{
+            grid-column: 1/2;
+            grid-row:1/2;
+        }
+
+        #form__date--checkin{
+            grid-column: 1/2;
+            grid-row:2/3;
+        }
+
+        #form__label--home-checkout{
+            grid-column: 2/3;
+            grid-row:1/2;
+        }
+
+        #form__date--checkout{
+            grid-column: 2/3;
+            grid-row:2/3;
+        }
+
+        #form__label--home-select{
+            grid-column: 1/2;
+            grid-row:3/4;
+        }
+
+        #form__select--guests{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+
+        #form__button--home{
+            grid-column: 2/3;
+            grid-row: 4/5
+        }
+    }
 
     /*------------------ INFO BOXES ------------------*/
     .wrapper-info__title{
