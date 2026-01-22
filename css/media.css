@@ -169,7 +169,7 @@
     }
 
     /*------------------ FORM ------------------------*/
-    .form-section--home{ /*hiding form*/
+    #form-section--home{ /*hiding form*/
         display: none;
     }
 
