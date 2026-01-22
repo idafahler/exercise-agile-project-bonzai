@@ -171,10 +171,9 @@
 @media (max-width:1000px){
     /*------------------ HEADER/NAV ------------------------*/
     nav{
-        
 
         ul{
-            margin:0;
+            margin:0; /*layout can keep shrinking without breaking*/
         }
     }
 
