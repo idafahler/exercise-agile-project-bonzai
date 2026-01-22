@@ -262,9 +262,12 @@ form {
     100% { transform: scale(1); }
 }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 48-footer-mobillayout
 /* ----------------- FOOTER ---------------------- */
 
 .footer {
@@ -305,6 +308,11 @@ form {
             padding-top: 2rem;
             grid-column: 1 / span 1;
             grid-row: 2;
+            display: block;
+
+            @media (max-width: 1000px) {
+            display: none;
+        }
         }
     }
 
@@ -343,5 +351,46 @@ form {
         padding-top: 2rem;
         font-size: 1.5rem;
         border-top: 0.125rem solid white;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .top-left-footer-grid {
+        display: grid;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .footer {
+        max-width: 375px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    
+    img {
+        display: none;
+    }
+    
+    .bottom-footer-grid p {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .footer-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
     }
 }
