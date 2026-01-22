@@ -1,34 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Hämta knappen och formuläret
     const sendBtn = document.getElementById("send-btn");
-    const form = document.querySelector(".förälder-formulär");
     const container = document.querySelector(".contact-us-container");
 
     sendBtn.addEventListener("click", () => {
-        // 1. Fade out formuläret
-        form.style.transition = "opacity 0.5s ease, transform 0.5s ease";
-        form.style.opacity = "0";
-        form.style.transform = "translateY(-10px)";
 
-        // 2. Efter fade-animationen
+        container.style.transition = "opacity 0.4s ease";
+        container.style.opacity = "0";
+
         setTimeout(() => {
-            // Dölj formuläret helt men behåll det i DOM
-            form.style.display = "none";
+            container.innerHTML = "";
 
-            // Skapa tack-meddelande
             const confirmation = document.createElement("div");
-            confirmation.classList.add("confirmation-message");
+            confirmation.className = "confirmation-message";
             confirmation.innerHTML = `
                 <span class="tick">✔</span>
                 <div>
-                    <strong>Tack för ditt meddelande</strong><br>
-                    Vi återkommer till dig så snart som möjligt.
+                    <h3>Tack för ditt meddelande</h3>
+                    <p>Vi återkommer till dig så snart som möjligt.</p>
                 </div>
             `;
 
-            // Lägg tack-meddelandet precis i containern
             container.appendChild(confirmation);
 
-        }, 500); // matchar fade-out
+            container.style.opacity = "1";
+        }, 400);
     });
 });
