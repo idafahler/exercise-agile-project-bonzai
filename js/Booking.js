@@ -6,19 +6,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     sendBtn.addEventListener("click", () => {
 
-        if (containerDateIn !== "" || containerDateOut !== "") {
+        if (containerDateIn == "" || containerDateOut == "") {
             
             container.style.transition = "opacity 0.4s ease";
             container.style.opacity = "0";
             
             setTimeout(() => {
                 const confirmation = document.createElement("main");
-                confirmation.innerHTML = ` TEMP `;
+                // confirmation.innerHTML = ` TEMPin `;
+                alert("WE balling");
                 
-                container.appendChild(confirmation);
+                // container.appendChild(confirmation);
                 
                 container.style.opacity = "1";
             }, 400);
+        }
+        else {
+            // const confirmation = document.createElement("main");
+            // confirmation.innerHTML = ` TEMPout `;
+            alert("WE could be balling");
         };
     });
 });
