@@ -166,7 +166,7 @@ nav {
 
 .förälder-formulär {
     width: 1240px;
-    min-height: 39rem;
+    min-height: 33rem;
     border: solid black 1px;
     border-radius: 1.25rem;
     box-sizing: border-box;
@@ -178,11 +178,12 @@ form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    padding-top: 1rem;
 }
 
 .form-group {
     display: grid;
-    padding: 1.5rem 3rem;
+    padding: 0.4rem 3rem;
     
     label {
         font-size: 1.25rem;
