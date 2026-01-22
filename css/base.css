@@ -347,10 +347,26 @@ form {
     }
 }
 
+
+@media (max-width: 1000px) {
+    .top-left-footer-grid {
+        display: grid;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .footer {
+        max-width: 375px;
+        width: 100%;
+    }
+}
+
 @media (max-width: 600px) {
     .footer-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+
     }
     
     img {
@@ -371,23 +387,3 @@ form {
         justify-content: start;
     }
 }
-
-/* @media (max-width: 375px) {
-    .footer-grid {
-        grid-template-columns: 3fr;
-    }
-} */
-
-
-/* @media (max-width: 500px) {
-    .tlfg-text {
-        display: none;
-        color: red;
-        grid-template-rows: repeat(1, 1fr);
-    }
-    
-    .top-middle-footer-grid {
-        font-size: 1rem;
-        white-space: none;
-    }
-} */
