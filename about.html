@@ -8,41 +8,41 @@
         <link rel="stylesheet" href="css/style-about.css">
     </head>
     
-<body>
+    <body>
 
-    <!-- --------------------------HEADER------------------------------------ -->
-    <header class="header">
-        <nav class="wrapper">
-
-            <a href="index.html">
-            <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="Bonx.ai logo" class="wrapper logo">
-            </a>
+        <!-- --------------------------HEADER------------------------------------ -->
+        <header class="header">
+            <nav class="wrapper">
                 
+            <a href="index.html">
+                <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="Bonx.ai logo" class="wrapper logo">
+            </a>
+            
             <ul>
                 <li><a href="index.html" class="link">Home</a></li>
                 <li><a href="booking.html" class="link">Booking</a></li>
                 <li><a href="about.html" class="link link--active">About</a></li>
             </ul>
-
+            
             <a href="booking.html">
             <button class="button-nav">Book your stay</button>
-            </a>
+        </a>
 
-        </nav>
-    </header>
+    </nav>
+</header>
 
-    <!--HERO-->
-    <article class="hero--about">
-        <!--WRAPPER-->
-        <div class="wrapper wrapper--about-hero">
-            <h1 class="hero__title">About Bonz.ai</h1>
-            <h2 class="hero__text">Pioneering the future of sustainable hospitality through AI generation</h2>
+<!--HERO-->
+<article class="hero--about">
+    <!--WRAPPER-->
+    <div class="wrapper wrapper--about-hero">
+        <h1 class="hero__title">About Bonz.ai</h1>
+        <h2 class="hero__text">Pioneering the future of sustainable hospitality through AI generation</h2>
         </div>
     </article>
 
     <!-- --------------------------READY TO TRANSFORM YOUR STAY------------------------------------ -->
-
-     <section class="Ready-to-Transform-Your-Stay">
+    
+    <section class="Ready-to-Transform-Your-Stay">
         <!--wrapper-->
         <article class="wrapper displayflex-column">
             <h2 class="rttys-text-h2">Ready to Transform Your Stay?</h2>
@@ -72,31 +72,67 @@
         </article>
      </section>
 
-    <!-- --------------------------FOOTER------------------------------------ -->
-    <footer class="footer">
+     <section class="wrapper contact-us-container">
 
-        <!-- Wrapper-->
-        <section class="wrapper footer-grid">
+        <h2 class="contact-us-rubrik">Contact Us</h2>
+        <p class="text-above-contacts">Get in touch with us to learn more about our sustainable hospitality solutions</p>
         
-            <!-- Top left box-->
-            <section class="top-left-footer-grid">
-                <section class="tlfg-img">
-                    <img src="assets/logo/bonz.ai-logo-color-portrait-full.png" alt="Bonx.ai logo">            
-                </section>
-                <p class="tlfg-text">
-                    The hotel of the future, where sustainability meets smart technology. Experience AI-driven hospitality with an eco-conscious heart.
-                </p>
+        <article class="wrapper">
+            
+            <form class="wrapper förälder-formulär">
+                <div class="form-group">
+                    <label for="Namn">Name:</label>
+                    <input type="text" id="Namn" name="Namn" required>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+                <input type="text" id="Email" name="Email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="Phone">Phone:</label>
+                <input type="text" id="Phone" name="Phone">
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group span-all">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="10" required></textarea>
+                <button type="button" id="send-btn">Send Message</button>
+            </div>
+        </form>
+    </article>
+</section>
+
+<!-- --------------------------FOOTER------------------------------------ -->
+<footer class="footer">
+    
+    <!-- Wrapper-->
+    <section class="wrapper footer-grid">
+        
+        <!-- Top left box-->
+        <section class="top-left-footer-grid">
+            <section class="tlfg-img">
+                <img src="assets/logo/bonz.ai-logo-color-portrait-full.png" alt="Bonx.ai logo">            
             </section>
+            <p class="tlfg-text">
+                The hotel of the future, where sustainability meets smart technology. Experience AI-driven hospitality with an eco-conscious heart.
+            </p>
+        </section>
         
-            <!-- Top middle box -->
-            <section class="top-middle-footer-grid">
-                <h2>Contact</h2>
-                <p>123 Green Street, Eco City, EC 12345</p>
-                <p>+1 (555) 123-4567</p>
-                <p>hello@bonz.ai</p>
-            </section>
+        <!-- Top middle box -->
+        <section class="top-middle-footer-grid">
+            <h2>Contact</h2>
+            <p>123 Green Street, Eco City, EC 12345</p>
+            <p>+1 (555) 123-4567</p>
+            <p>hello@bonz.ai</p>
+        </section>
         
-            <!-- Top right box -->
+        <!-- Top right box -->
             <section class="top-right-footer-grid">
                 <h2>Quick Links</h2>
                 <p>Privacy Policy</p>
@@ -113,6 +149,7 @@
             </section>
         </section>
     </footer>
-
+    
+    <script src="css/About.js"></script>
 </body>
 </html>

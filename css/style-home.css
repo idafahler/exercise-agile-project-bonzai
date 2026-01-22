@@ -256,7 +256,8 @@
     }
 
     .AI-bilden {
-    width: 35rem;
+    max-width: 100%;
+    width: 31.5rem;
     height: auto;
     border-radius: 1.5rem;
     }
