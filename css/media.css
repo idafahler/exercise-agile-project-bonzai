@@ -52,7 +52,7 @@
     .yourai{
         flex-direction: column; /*changing direction to column*/
 
-        .AI-bilden{
+        .yourai__img{
             width:100%; /*img true size*/
             height:100%;
 
@@ -144,7 +144,7 @@
                 display:none;
             }
         }
-        .AI-bilden{
+        .yourai__img{
             align-self: center;
             max-width:732px; /*aligning different sections*/
         }
@@ -210,7 +210,7 @@
             gap:1.5rem; /*less gap for smaller units*/
         }
 
-        .AI-bilden{
+        .yourai__img{
             border-radius: 0; /*no rounded edges for picture for smaller units*/
         }
     }
