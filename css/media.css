@@ -5,11 +5,6 @@
 /* ----------------------- MAX-WIDTH:1240px ----------------------------- */
 @media (max-width:1240px){
 
-    /*------------------ HEADER ------------------------*/
-    .header{
-        padding: 0 2rem; /*some padding for smaller units*/
-    }
-
     /*------------------ FORM ------------------------*/
     #form--home{
         margin: 0; /*removing padding on sides to prevent elements from wrapping*/
