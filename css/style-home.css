@@ -65,25 +65,27 @@
 }
 
 /* -------------------- FORM ----------------------*/
-.form-section--home{
+#form-section--home{
     background: linear-gradient(to right, var(--green), var(--darkgreen)); /*background for whole section*/
     height: 20vh; /*setting height*/
 }
 
-.wrapper-form--home{
-    display:flex; /*flexbox for wrapping form*/
+#wrapper-form--home{
+    display:flex; /*flexbox for positioning form inside of section*/
     justify-content: center;
-    align-items: center;
 
     height: 100%; /*taking all available height*/
+
+    align-items: flex-start; /*positioning with padding instead*/
+    padding-top:3.5vh; /*form is not centered, box/buttons is centered inside of section*/
 }
 
-.form--home{
-    display:flex; /*flexbox for form elements*/
-    justify-content: space-evenly;
-    align-items: center;
-    flex:1; /*each element has 1 fraction of the available space*/
-    gap:1rem; /*gap between each element*/
+#form--home{
+    display:grid; /*layout with grid for form elements*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto); /*row with labels is smaller*/
+    align-items: flex-start; /*making sure label and element doesn't separate from each other*/
+    column-gap: 1rem; /*gap only between columns not rows*/
 
     margin: 0 6rem; /*margin only on sides*/
 
@@ -94,6 +96,48 @@
 
         font-size: 1.5rem; /*increasing font-size and font-weight*/
         font-weight:600;
+    }
+
+    .form__label{
+        display:flex;
+        align-self: flex-end; /*text is aligned with its element*/
+        justify-self: flex-start;
+
+        padding: 0.5rem;
+
+        font-size:1.5rem;
+        font-weight: 600;
+    }
+
+    /*placing out elements inside of grid*/
+    #form__label--home-checkin{
+        grid-column: 1/2;
+        grid-row:1/2;
+    }
+
+    #form__date--checkin{
+        grid-row:2/3;
+        grid-column: 1/2;
+    }
+
+    #form__label--home-checkout{
+        grid-column: 2/3;
+        grid-row:1/2;
+    }
+
+    #form__date--checkout{
+        grid-row:2/3;
+        grid-column: 2/3;
+    }
+
+    #form__label--home-select{
+        grid-column: 3/4;
+        grid-row:1/2;
+    }
+
+    #form__select--guests{
+        grid-row: 2/3;
+        grid-column: 3/4;
     }
 
     /* options in select menu*/
@@ -109,7 +153,12 @@
 }
 
 /*specific styling for button inside of form*/
-.button-form--home{
+#form__button--home{
+    grid-column: 4/5;
+    grid-row: 2/3;
+
+    padding: 0 0.6rem;
+
     background-color: var(--black); /*black background-color*/
     color: var(--white); /*and white text*/
 }
