@@ -247,5 +247,11 @@ nav {
     .Ready-to-Transform-Your-Stay{
         padding: 2rem; /*less padding for smaller units*/
     }
-    
+}
+
+/* ----------------------- MAX-WIDTH:500px -------------------------------- */
+@media (max-width:500px){
+    .Ready-to-Transform-Your-Stay{
+        padding: 0.5rem; /*less padding for smaller units*/
+    }
 }
