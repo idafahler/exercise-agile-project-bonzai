@@ -61,7 +61,7 @@ header {
     box-shadow: 0 4px 10px var(--box-shadow);
 }
 
-/* Navigation menu, the links & logo  */
+/* -------------------- NAV ---------------------- */
 nav {
     width: 100%;
     display: flex;
@@ -123,6 +123,7 @@ nav {
         
         /* giving the <h2> unique atributes */
         .rttys-text-h2 {
+            text-align: center;
             align-self: center;
             padding-bottom: 1.5rem;
             font-weight: 400;
