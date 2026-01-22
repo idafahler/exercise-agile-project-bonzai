@@ -168,6 +168,20 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+    .About-Pictures-Grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 500px) {
+      .About-Pictures-Grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
 /*----------------------READY TO TRANSFORM YOUR STAY------------------------------*/
 /* flexes the elements in to a row */
 .displayflex-row {
