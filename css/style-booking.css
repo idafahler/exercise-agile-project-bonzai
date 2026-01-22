@@ -78,6 +78,16 @@
         grid-column: 3/4;
     }
 
+    #form__label--room-type{
+        grid-column: 4/5;
+        grid-row:1/2;
+    }
+ 
+    #form__select--room-type{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
     /* options in select menu*/
     .option-guests{
         font-weight: 400; /*lower font-weight than other elements inside option dropdown menu*/
@@ -85,7 +95,7 @@
 }
 
 /* styling for date and select element */
-.input-date, .select-guests{
+.input-date, .select-guests, .select-room-type{
     border: 1px solid var(--black); /*black small border*/
     border-radius: 1rem; /*rounds out edges*/
 }
