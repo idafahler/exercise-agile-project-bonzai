@@ -246,12 +246,16 @@
         display:none; /*hiding other elements for smaller units*/
     }
     .header--nav{
-        .nav-burger{
-            display:block; /*displaying burger menu*/
-            
-        }
+        height:0;
+        
     }
     
+    .nav-burger{
+            display:block; /*displaying burger menu*/
+            background-color: var(--white);
+            padding:1rem;
+            border-radius: 50%;
+        }
     /*------------------ HERO ------------------------*/
     .Hero-section{
         height:65vh; /*changing height for hero*/

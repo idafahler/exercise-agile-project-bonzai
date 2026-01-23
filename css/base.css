@@ -36,6 +36,8 @@
 /* BASE STYLING*/
 body{
     font-family: var(--font-inter);
+
+    position: relative;
 }
 
 .wrapper{
@@ -54,31 +56,42 @@ body{
 .header--nav {
     display: flex;
     justify-content: space-between;
-    position: sticky;
+    position: relative;
     top: 0;
     background-color: var(--white);
     z-index: 1000;
     box-shadow: 0 4px 10px var(--box-shadow);
 
-    .nav-burger{
+    
+}
+
+.nav-burger{
         display: none; /*defualt for nav-burger is to not show*/
         align-self: flex-start; /*aligning to start*/
         padding:2rem;
+        position:fixed;
+        top:1rem;
+        left:1rem;
+        width:4rem;
+
+        z-index: 99;
 
         .burger__btn{
             display:flex; /*flexbox for lines*/
             justify-content: center;
             align-items: center;
 
-            max-width:2rem; /*setting a width*/
+            max-width:3rem; /*setting a width*/
             width:100%;
             aspect-ratio: 1; /*making sure burger__btn is square*/
             
             z-index:99; /*always showing*/
             cursor:pointer; /*cursor i changed to a pointer when hovering over button*/
-            position: fixed;
+
+            position: relative;
+            /* position: fixed;
             top:30px;
-            left:30px;
+            left:30px; */
         }
 
         .burger__btn > span,
@@ -91,14 +104,13 @@ body{
         }
         .burger__btn > span::before{
             content: '';
-            top: 10px; /*placing out line*/
+            top: -10px; /*placing out line*/
         }
         .burger__btn > span::after{
             content: '';
-            top: 20px; /*placing out line*/
+            top: 10px; /*placing out line*/
         }
     }
-}
 
 /* -------------------- NAV ---------------------- */
 nav {
