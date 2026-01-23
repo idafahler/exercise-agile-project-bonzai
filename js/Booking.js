@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     sendBtn.addEventListener("click", () => {
 
-        if (containerDateIn == "" || containerDateOut == "") {
+        if (containerDateIn === null || containerDateOut === null) {
             
             container.style.transition = "opacity 0.4s ease";
             container.style.opacity = "0";
