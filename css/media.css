@@ -246,7 +246,6 @@
         display:none; /*hiding other elements for smaller units*/
     }
     .header--nav{
-        position: sticky;
         .nav-burger{
             display:block; /*displaying burger menu*/
             
