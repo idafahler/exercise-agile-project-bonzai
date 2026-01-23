@@ -51,7 +51,7 @@ body{
 
 
 /* ----------------- HEADER ------------------- */
-header {
+.header--big-screen {
     display: flex;
     justify-content: space-between;
     position: sticky;
