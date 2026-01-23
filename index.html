@@ -6,7 +6,7 @@
         <title>Home</title>
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/style-home.css">
-        <link rel="stylesheet" href="css/media-styling.css">
+        <link rel="stylesheet" href="css/media.css">
     </head>
 
 <body>    
@@ -47,31 +47,36 @@
                 <button class="learnmore-button-undertext">Learn more</button>
                 </a>
             </div>
-        </article>
         </div>
     </article>
 
     <!--FORM-->
-    <section class="form-section form-section--home">
+    <section id="form-section--home">
         <!--WRAPPER-->
-        <div class="wrapper wrapper-form--home">
+        <div class="wrapper" id="wrapper-form--home">
             <!--FORM-->
-            <form class="form form--home">
+            <form id="form--home">
 
                 <!--DATE elements-->
-                <input type="date" class="form-element input-date" name="checkin">
-                <input type="date" class="form-element input-date" name="checkout">
+                <label for="form__date--checkin" class="form__label" id="form__label--home-checkin">Check in</label>
+                <input type="date" class="form-element input-date" name="checkin" id="form__date--checkin">
+
+                <label for="form__date--checkout" class="form__label" id="form__label--home-checkout">Check out</label>
+                <input type="date" class="form-element input-date" name="checkout" id="form__date--checkout">
+
 
                 <!--SELECT element with different options-->
-                <select class="form-element select-guests" name="guests">
+                <label for="form__select--guests" class="form__label" id="form__label--home-select">Guests</label>
+                <select class="form-element select-guests" name="guests" id="form__select--guests">
                     <option value="1" class="option-guests">1 guest</option>
                     <option value="2" class="option-guests">2 guests</option>
                     <option value="3" class="option-guests">3 guests</option>
                     <option value="4" class="option-guests">4 guests</option>
                 </select>
 
+
                 <!--BUTTON-->
-                <button type="button" class="button form-element button-form--home" 
+                <button type="button" class="button form-element" id="form__button--home"
                 onclick="window.location.href='booking.html'">Check Availability</button>
                 <!--when button is clicked, user is navigated to booking.html-->
             </form>
@@ -194,44 +199,47 @@
     </section>
 
     <div class="wrapper">
-            <article class="yourai">
-                <article class="AI-text">
-                    <h2 class="AI-text-h2">Your AI-Enhanced Stay</h2>
-                    <p class="themoment">
-                        From the moment you arrive, our AI concierge learns <br>
-                        your preferences and personalizes every aspect of <br> 
-                        your stay. Your room knows your ideal temperature, <br>
-                        lighting, and even suggests local experiences based <br> 
-                        on your interests.
-                    </p>
+        <article class="yourai">
+            <article class="AI-text">
+                <h2 class="AI-text-h2">Your AI-Enhanced Stay</h2>
+                <p class="themoment">
+                    From the moment you arrive, our AI concierge learns <br>
+                    your preferences and personalizes every aspect of <br> 
+                    your stay. Your room knows your ideal temperature, <br>
+                    lighting, and even suggests local experiences based <br> 
+                    on your interests.
+                </p>
+                
+                <article class="yourai--text">
                     <!--card-->
                     <p class="AI-text-p">
                     Voice-activated room controls <br>
-                    <span>
+                    <span class="ai__text--grey">
                         Adjust everything with simple voice commands
                     </span>
                     </p>
-                <!--card-->
-                <p class="AI-text-p">
-                    Predictive service 24/7 <br>
-                    <span>
-                        AI anticipates your needs before you ask
-                    </span>
-                </p>
-                <!--card-->
-                <p class="AI-text-p">
-                    Smart recommendations <br>
-                    <span>
-                        Personalized dining and activity suggestions
-                    </span>
-                </p>
-                <a href="booking.html">
-                <button class="button aiknappen">Experience it yourself</button>
-                </a>
+                    <!--card-->
+                    <p class="AI-text-p">
+                        Predictive service 24/7 <br>
+                        <span class="ai__text--grey">
+                            AI anticipates your needs before you ask
+                        </span>
+                    </p>
+                    <!--card-->
+                    <p class="AI-text-p">
+                        Smart recommendations <br>
+                        <span class="ai__text--grey">
+                            Personalized dining and activity suggestions
+                        </span>
+                    </p>
+                </article>
+                    <a href="booking.html" class="AI-button-a">
+                        <button class="button AI-button">Experience it yourself</button>
+                    </a>
             </article>
 
-            <img src="assets/photos/11.jpg" alt="bilden som ligger i AI-Enhanced delen" class="AI-bilden">
-        </article>
+        <img src="assets/photos/11.jpg" alt="Room" class="yourai__img">
+    </article>
     </div>
 
     <!-- INFO SECTION - "Ready to transform your stay"-->
