@@ -5,7 +5,7 @@
 /* ----------------------- MAX-WIDTH:1240px ----------------------------- */
 @media (max-width:1240px){
 /*------------------ HEADER ------------------------*/
-    .header{
+    .header--big-screen{
         padding: 0 2rem; /*some padding for smaller units*/
     }
     
@@ -174,7 +174,7 @@
 /* ----------------------- MAX-WIDTH:1000px ----------------------------- */
 @media (max-width:1000px){
     /*------------------ HEADER/NAV ------------------------*/
-    .header{
+    .header--big-screen{
         padding: 0;
     }
     
