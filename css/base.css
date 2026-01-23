@@ -73,8 +73,8 @@ body{
     top:1rem;
     left:1rem;
     width:4rem;
-
-    z-index: 99;
+    border: 1px solid black;
+    z-index: 2000;
 
     .burger__btn{
         display:flex; /*flexbox for lines*/
@@ -85,7 +85,7 @@ body{
         width:100%;
         aspect-ratio: 1; /*making sure burger__btn is square*/
         
-        z-index:99; /*always showing*/
+        z-index: 99; /*always showing*/
         cursor:pointer; /*cursor i changed to a pointer when hovering over button*/
 
         position: relative;

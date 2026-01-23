@@ -245,9 +245,35 @@
     .nav-logo, .nav-links, .button-nav{
         display:none; /*hiding other elements for smaller units*/
     }
-    .header--nav{
-        height:0;
-        
+    .header--nav {
+        height: 0;
+
+        .nav {
+            .nav-links {
+                flex-direction: column;
+                position: fixed;
+                display: flex;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: white;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                z-index: 10;
+
+                transform: translateX(-100%);
+                opacity: 0;
+
+                transition: transform .4s ease, opacity .3s ease;
+            }
+        }
+    }
+
+    .header--nav.open .nav-links {
+        transform: translateX(0);
+        opacity: 1;
     }
     
     .nav-burger{
