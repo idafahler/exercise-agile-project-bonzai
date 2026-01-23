@@ -222,20 +222,21 @@ form {
         border: none;
     }
 }
-    .form-group:has([required]) label {
-        display: flex;
-        gap: 3px;
-        &::after {
-        color: var(--black);
-        content: '*';
+.form-group:has([required]) label {
+    display: flex;
+    gap: 3px;
+    
+    &::after {
+    color: var(--black);
+    content: '*';
     }
 }
 
 @layer layout {
-        .span-all {
-            grid-column: 1/ -1;
-        }
+    .span-all {
+        grid-column: 1/ -1;
     }
+}
 
 .confirmation-message {
     display: flex;
