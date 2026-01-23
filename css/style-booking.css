@@ -57,17 +57,14 @@
 }
 
 #wrapper-form--home{
-    display:grid; /*flexbox for positioning form inside of section*/
-    justify-content: center;
+    display:flexbox; /*flexbox for positioning form inside of section*/
+    flex-direction: row;
+    align-content: center;
+    padding-bottom: 1.5rem;
+    border-radius: 25px;
     background-color: var(--white); /*background for whole section*/
 
-
-    height: 100%; 
-    /* taking all available height */
-
-    align-items: flex-start; /*positioning with padding instead*/
-    /* padding-top:3vh;  */
-    /*form is not centered, box/buttons is centered inside of section*/
+    height: 100%; /* taking all available height */
 }
 
 #form--home{
