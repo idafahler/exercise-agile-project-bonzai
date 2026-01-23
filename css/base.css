@@ -61,8 +61,8 @@ body{
     box-shadow: 0 4px 10px var(--box-shadow);
 
     .nav-burger{
-        display: none;
-        align-self: flex-start;
+        display: none; /*defualt for nav-burger is to not show*/
+        align-self: flex-start; /*aligning to start*/
         padding:2rem;
 
         .burger__btn{
@@ -70,12 +70,13 @@ body{
             justify-content: center;
             align-items: center;
 
-            width:2rem; /*setting a width*/
+            max-width:2rem; /*setting a width*/
+            width:100%;
             aspect-ratio: 1; /*making sure burger__btn is square*/
             
             z-index:99; /*always showing*/
             cursor:pointer; /*cursor i changed to a pointer when hovering over button*/
-            position: fixed; /*always in frame*/
+            position: fixed;
             top:30px;
             left:30px;
         }
@@ -88,7 +89,6 @@ body{
             background-color: var(--black);
             position: absolute; /*allows to place out lines*/
         }
-
         .burger__btn > span::before{
             content: '';
             top: 10px; /*placing out line*/
@@ -97,7 +97,6 @@ body{
             content: '';
             top: 20px; /*placing out line*/
         }
-
     }
 }
 
