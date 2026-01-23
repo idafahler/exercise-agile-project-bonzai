@@ -394,17 +394,3 @@
 }
 
 /* ----------------------- MAX-WIDTH:375px -------------------------------- */
-
-@media (max-width: 375px){
-/*--------------------- FOOTER ------------------*/
-    .footer {
-        max-width: 375px;
-        width: 100%;
-    }
-
-    .footer-grid {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-}
