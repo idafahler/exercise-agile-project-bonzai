@@ -36,7 +36,6 @@
     display: flex;
 
     width:100%;/*box is taking up all available width space*/
-    height: 35vh;
 
     background-color: var(--white);
     box-shadow: 0 4px 10px var(--box-shadow); /*box-shadow beneath box*/
