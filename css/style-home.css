@@ -67,7 +67,7 @@
 /* -------------------- FORM ----------------------*/
 #form-section--home{
     background: linear-gradient(to right, var(--green), var(--darkgreen)); /*background for whole section*/
-    height: 20vh; /*setting height*/
+    min-height: 20vh; /*setting height*/
 }
 
 #wrapper-form--home{
