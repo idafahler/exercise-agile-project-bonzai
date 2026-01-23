@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
             confirmation.innerHTML = `
                 <span class="tick">✔</span>
                 <div>
-                    <h3>Tack för ditt meddelande</h3>
-                    <p>Vi återkommer till dig så snart som möjligt.</p>
+                    <h3>Thank you for your message</h3>
+                    <p>We will get back to you as soon as possible.</p>
                 </div>
             `;
 
