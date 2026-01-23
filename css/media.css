@@ -241,6 +241,13 @@
 
 /* ----------------------- MAX-WIDTH:810px -------------------------------- */
 @media (max-width:810px){
+    /*------------------ HEADER/NAV ------------------------*/
+    .nav-logo, .nav-links, .button-nav{
+        display:none;
+    }
+    .nav-burger{
+        display:block;
+    }
     /*------------------ HERO ------------------------*/
     .Hero-section{
         height:65vh; /*changing height for hero*/
