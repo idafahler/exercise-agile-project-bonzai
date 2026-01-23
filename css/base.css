@@ -356,13 +356,6 @@ form {
     }
 }
 
-@media (max-width: 375px) {
-    .footer {
-        max-width: 375px;
-        width: 100%;
-    }
-}
-
 @media (max-width: 600px) {
     .footer-grid {
         display: grid;
@@ -380,11 +373,3 @@ form {
         font-size: 0.95rem;
     }
 }
-
-/* @media (max-width: 375px) {
-    .footer-grid {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-} */
