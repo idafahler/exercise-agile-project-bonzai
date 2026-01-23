@@ -61,7 +61,43 @@ body{
     box-shadow: 0 4px 10px var(--box-shadow);
 
     .nav-burger{
-        display:none; /*hiding burger menu default*/
+        display: none;
+        align-self: flex-start;
+        padding:2rem;
+
+        .burger__btn{
+            display:flex; /*flexbox for lines*/
+            justify-content: center;
+            align-items: center;
+
+            width:2rem; /*setting a width*/
+            aspect-ratio: 1; /*making sure burger__btn is square*/
+            
+            z-index:99; /*always showing*/
+            cursor:pointer; /*cursor i changed to a pointer when hovering over button*/
+            position: fixed; /*always in frame*/
+            top:30px;
+            left:30px;
+        }
+
+        .burger__btn > span,
+        .burger__btn > span::before,
+        .burger__btn > span::after{
+            width:100%; /*takes upp 100% of parent width*/
+            height:3px; /*thickness of lines*/
+            background-color: var(--black);
+            position: absolute; /*allows to place out lines*/
+        }
+
+        .burger__btn > span::before{
+            content: '';
+            top: 10px; /*placing out line*/
+        }
+        .burger__btn > span::after{
+            content: '';
+            top: 20px; /*placing out line*/
+        }
+
     }
 }
 
