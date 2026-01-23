@@ -245,9 +245,12 @@
     .nav-logo, .nav-links, .button-nav{
         display:none;
     }
-    .nav-burger{
-        display:block;
+    .header--nav{
+        .nav-burger{
+            display:block;
+        }
     }
+    
     /*------------------ HERO ------------------------*/
     .Hero-section{
         height:65vh; /*changing height for hero*/
