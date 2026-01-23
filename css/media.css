@@ -243,11 +243,13 @@
 @media (max-width:810px){
     /*------------------ HEADER/NAV ------------------------*/
     .nav-logo, .nav-links, .button-nav{
-        display:none;
+        display:none; /*hiding other elements for smaller units*/
     }
     .header--nav{
+        position: sticky;
         .nav-burger{
-            display:block;
+            display:block; /*displaying burger menu*/
+            
         }
     }
     
