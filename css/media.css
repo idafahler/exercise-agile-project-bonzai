@@ -308,9 +308,13 @@
         grid-template-columns: repeat(1, 1fr);
 
     }
-    
-    img {
-        display: none;
+
+    .top-left-footer-grid{
+        .tlfg-img{
+            img{
+                display: none;
+            }
+        }
     }
     
     .bottom-footer-grid p {
