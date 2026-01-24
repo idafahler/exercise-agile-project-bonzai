@@ -6,25 +6,6 @@
     }
 }
 
-@media (max-width: 900px) {
-    .rttys-text-h2 {
-        display: none;
-    }
-
-    .displayflex-row {
-        display: flex;
-        justify-content: space-around;
-        gap: 2rem;
-        max-width: 100%;
-    }
-    
-    .displayflex-row > card {
-        display: grid;
-        min-width: 0;
-}
-}
-
-
 @media (max-width: 1000px) {
     .hero__title {
         font-size: 3rem;
@@ -39,7 +20,24 @@
     }
 }
 
+@media (max-width: 900px) {
+    .rttys-text-h2 {
+        display: none;
+    }
 
+    .displayflex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 4rem;
+        max-width: 100%;
+    }
+    
+    .displayflex-row > card {
+        display: grid;
+        min-width: 0;
+    }
+}
 
 @media (max-width: 500px) {
     .hero__title {
@@ -48,7 +46,7 @@
         display: inline-block;
         white-space: nowrap;
         background-color: burlywood;
-        padding-left: 4rem;
+        /* padding-left: 4rem; */
     }
 }
 
@@ -71,7 +69,7 @@
 
 @media (max-width: 876px) {
     .displayflex-row .card-h2 {
-        padding: 1rem;
+        /* padding: 1rem; */
         max-width: 100%;
         width: 100%;
         display: flex;
@@ -80,7 +78,6 @@
 
     .card-p {
         display: flex;
-        justify-content: space-around;
     }
 }
 
@@ -95,5 +92,29 @@
     
     .displayflex-row p {
         white-space: nowrap;
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 576px) {
+    .förälder-formulär {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .contact-us-container {
+        padding-left: 3rem;
+        max-width: 100%;
+    }
+
+    .förälder-formulär {
+        min-height: auto;
+        max-width: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
