@@ -112,9 +112,14 @@
 
     .förälder-formulär {
         min-height: auto;
-        max-width: 100%;
+        box-sizing: border-box;
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
+        padding: 3rem;
+    }
+
+    .form-group input {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 4rem;
     }
 }
