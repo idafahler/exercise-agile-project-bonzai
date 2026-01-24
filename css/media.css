@@ -1,70 +1,99 @@
 /* ---------------------- MOBIL LAYOUT ABOUT PAGE ----------------------- */
 
-
-/* 
-@media (max-width: 500px) {
-    .wrapper--about-hero {
-        display: flex;
-        flex-wrap: nowrap;
-        font-size: 1rem;
-    }
-    
-} */
-
 @media (max-width: 1000px) {
     .hero__text {
         display: none;
     }
+}
 
+@media (max-width: 900px) {
+    .rttys-text-h2 {
+        display: none;
+    }
+
+    .displayflex-row {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        max-width: 100%;
+    }
+    
+    .displayflex-row > card {
+        display: grid;
+        min-width: 0;
+}
 }
 
 
 @media (max-width: 1000px) {
-     .hero__title {
+    .hero__title {
         font-size: 3rem;
         font-weight: 200;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1000px) {
+    .displayflex-row {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+
+@media (max-width: 500px) {
     .hero__title {
-       font-size: 10rem; /* 0.2rem är för litet */
+        font-size: 10rem; /* 0.2rem är för litet */
         font-weight: 200;
         display: inline-block;
         white-space: nowrap;
         background-color: burlywood;
+        padding-left: 4rem;
     }
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
     .Ready-to-Transform-Your-Stay .card-h2 {
         display: flex;
         flex-direction: column;
     }
-
-}
+    
+} */
 
 @media (max-width: 600px) {
     .Ready-to-Transform-Your-Stay .card-h2 {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
     }
 }
 
 @media (max-width: 876px) {
-    .Ready-to-Transform-Your-Stay .card-h2 {
+    .displayflex-row .card-h2 {
         padding: 1rem;
         max-width: 100%;
         width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-direction: start;
     }
 
-    .displayflex-column h2 {
-        display: none;
+    .card-p {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    .displayflex-row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .displayflex-row p {
+        white-space: nowrap;
     }
 }
