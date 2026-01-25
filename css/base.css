@@ -61,8 +61,6 @@ body{
     background-color: var(--white);
     z-index: 1000;
     box-shadow: 0 4px 10px var(--box-shadow);
-
-    
 }
 
 .nav-burger{
@@ -81,17 +79,14 @@ body{
         justify-content: center;
         align-items: center;
 
-        max-width:3rem; /*setting a width*/
+        max-width:3rem;
         width:100%;
         aspect-ratio: 1; /*making sure burger__btn is square*/
         
         z-index: 99; /*always showing*/
-        cursor:pointer; /*cursor i changed to a pointer when hovering over button*/
+        cursor:pointer; /*cursor changes to a pointer when hovering over button*/
 
         position: relative;
-        /* position: fixed;
-        top:30px;
-        left:30px; */
     }
 
     .burger__btn > span,
@@ -101,7 +96,7 @@ body{
         height:3px; /*thickness of lines*/
         background-color: var(--black);
         position: absolute; /*allows to place out lines*/
-        transition: all .3s ease;
+        transition: all .3s ease; /*transforming style of hamburger button with transition*/
     }
     .burger__btn > span::before{
         content: '';
@@ -113,7 +108,7 @@ body{
     }
 
     .burger__btn.open > span{
-        transform: rotate(45deg);
+        transform: rotate(45deg); /*when clicked lines move to form cross instead of hamburger menu*/
     }
     .burger__btn.open > span::before{
         top:0;
