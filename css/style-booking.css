@@ -149,7 +149,7 @@
                 gap:0.5rem;
 
                 p{
-                    transition: transform 0.2s ease; /*transition for scaling up text*/
+                    transition: transform 0.2s ease, box-shadow 0.2s ease; /*transition for scaling up text and box-shadow*/
                 }
             }
         }
@@ -198,12 +198,13 @@
             font-size: 1.5rem;
             font-weight: 600;
 
-            transition: box-shadow 0.3s ease; /*transition for box-shadow*/
+            transition: box-shadow 0.3s ease, font-size 0.3s ease; /*transition for box-shadow*/
         }
 
         /*---------HOVERING--------*/
         .room__button:hover{
             box-shadow: 0 4px 10px var(--box-shadow); /*box shadow appearing when hovering*/
+            font-size: 1.6rem; /*increasing font-size when hovering*/
         }
 
         .room__price:hover{
@@ -212,6 +213,7 @@
 
         .room__text-container p:hover{
             transform: scale(1.05, 1.05); /*changing scale when hovering over text boxes*/
+            box-shadow: 0 2px 10px var(--box-shadow); /*box-shadow when hovering over*/
         }
     }
 }
