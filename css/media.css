@@ -100,6 +100,7 @@
     .förälder-formulär {
         display: grid;
         grid-template-columns: 1fr;
+        width: 100%;
     }
 }
 
@@ -107,22 +108,22 @@
 @media (max-width: 500px) {
     .contact-us-container {
         padding-left: 3rem;
-        max-width: 100%;
+    }
+
+    .wrapper {
+        width: 100%;
     }
 
     .förälder-formulär {
         min-height: auto;
-        box-sizing: border-box;
-        width: 100%;
-        /* padding: 3rem; */
+
     }
 
     .form-group input {
         display: flex;
         justify-content: flex-start;
-        padding: 0 4rem;
     }
-
+    
     .form-group {
         padding: 0;
         margin: 1rem;
