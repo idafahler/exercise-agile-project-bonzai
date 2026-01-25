@@ -89,6 +89,10 @@
 
     margin: 0 6rem; /*margin only on sides*/
 
+    #form__button--home:hover{
+        box-shadow: 0 6px 10px var(--box-shadow); /*box-shadow when hovering over button*/
+    }
+
     /* All elements in form*/
     .form-element{
         padding:1rem 1rem; /*padding inside of element*/
@@ -161,6 +165,8 @@
 
     background-color: var(--black); /*black background-color*/
     color: var(--white); /*and white text*/
+
+    transition: box-shadow 0.2s ease; /*transition for box-shadow when hovering*/
 }
 
 
