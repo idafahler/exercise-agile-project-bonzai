@@ -12,25 +12,34 @@
 <body>
     <!-- --------------------------HEADER------------------------------------ -->
     <header class="header--nav">
-        <nav class="wrapper">
-
+        <!--NAV-->
+        <nav class="wrapper nav">
+            <!--LOGO-->
             <a href="index.html">
-            <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="Bonx.ai logo" class="nav-logo">
+                <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="Bonz.ai logo" class="nav-logo">
             </a>
                 
-            <ul>
-                <li><a href="index.html" class="link">Home</a></li>
-                <li><a href="booking.html" class="link link--active">Booking</a></li>
+            <ul class="nav-links"> <!--NAV LINKS-->
+                <li><a href="index.html" class="link link--active">Home</a></li>
+                <li><a href="booking.html" class="link">Booking</a></li>
                 <li><a href="about.html" class="link">About</a></li>
             </ul>
-
+            <!--BUTTON-->
             <a href="booking.html">
-            <button class="button-nav">Book your stay</button>
+                <button class="button-nav">Book your stay</button>
             </a>
+            
 
         </nav>
      </header>
 
+     <!--BURGER MENU-->
+            <aside class="nav-burger" id="burgerBox">
+                <div class="burger__btn">
+                    <span></span>   
+                </div>
+            </aside>
+     
     <!-- --------------------------MAIN------------------------------------ -->
     <main class="main--booking">
         <!------------------------------FORM------------------------------->
