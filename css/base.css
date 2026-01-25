@@ -73,7 +73,7 @@ body{
     top:1rem;
     left:1rem;
     width:4rem;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     z-index: 2000;
 
     .burger__btn{
