@@ -12,10 +12,10 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    display:flex; /*flexbox for wrapper*/
+    display: flex; /*flexbox for wrapper*/
     /*wrapper for hero, flexbox to center elements*/
     .wrapper--about-hero{
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -39,6 +39,7 @@
     .hero__text{
         font-size: 2.25rem;
     }
+
 }
 /*----------------------READY TO TRANSFORM YOUR STAY------------------------------*/
 .About-Our-Story {
