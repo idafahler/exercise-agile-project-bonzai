@@ -242,7 +242,7 @@ nav {
 .förälder-formulär {
     width: 1240px;
     min-height: 33rem;
-    border: solid black 1px;
+    border: solid var(--black) 1px;
     border-radius: 1.25rem;
     box-sizing: border-box;
     margin-top: 1rem;
