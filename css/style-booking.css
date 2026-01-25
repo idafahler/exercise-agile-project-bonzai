@@ -45,6 +45,10 @@
         width:75%;
         position: relative; /*makes it possible to place score inside of picture*/
 
+        .room__score:hover{
+            transform: scale(1.05, 1.05); /*scaling when hovering over score box*/
+        }
+
         .room__score{
             display:flex; /*flexbox for elements inside, star and score points*/
             justify-content: center;
@@ -59,6 +63,8 @@
 
             border-radius: 100px; /*rounded edges*/
             background-color: var(--white);
+
+            transition: transform 0.3s ease; /*transition for scaling up box with score*/
         }
         
         .room__img{
@@ -81,14 +87,6 @@
 
         width:100%; /*takes upp all available width*/
         padding:1rem; /*elements do not line up against borders*/
-
-        .room__button:hover{
-            box-shadow: 0 4px 10px var(--box-shadow); /*box shadow appearing when hovering*/
-        }
-
-        .room__price:hover{
-            transform: scale(1.05, 1.05); /*subtle scale change when hovering over price*/
-        }
 
         .room__icon{
             max-width:1.4rem; /*setting max width to icons*/
@@ -149,6 +147,10 @@
                 display:flex;
                 margin-top: 0.5rem;
                 gap:0.5rem;
+
+                p{
+                    transition: transform 0.2s ease; /*transition for scaling up text*/
+                }
             }
         }
 
@@ -197,6 +199,19 @@
             font-weight: 600;
 
             transition: box-shadow 0.3s ease; /*transition for box-shadow*/
+        }
+
+        /*---------HOVERING--------*/
+        .room__button:hover{
+            box-shadow: 0 4px 10px var(--box-shadow); /*box shadow appearing when hovering*/
+        }
+
+        .room__price:hover{
+            transform: scale(1.05, 1.05); /*subtle scale change when hovering over price*/
+        }
+
+        .room__text-container p:hover{
+            transform: scale(1.05, 1.05); /*changing scale when hovering over text boxes*/
         }
     }
 }
