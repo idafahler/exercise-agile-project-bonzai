@@ -82,6 +82,14 @@
         width:100%; /*takes upp all available width*/
         padding:1rem; /*elements do not line up against borders*/
 
+        .room__button:hover{
+            box-shadow: 0 4px 10px var(--box-shadow); /*box shadow appearing when hovering*/
+        }
+
+        .room__price:hover{
+            transform: scale(1.05, 1.05); /*subtle scale change when hovering over price*/
+        }
+
         .room__icon{
             max-width:1.4rem; /*setting max width to icons*/
         }
@@ -101,6 +109,8 @@
 
             justify-self: flex-end; /*aligning titel and text in grid row*/
             margin-right:1rem; /*some margin to the right*/
+
+            transition: transform 0.2s ease; /*transition for scale*/
 
             .room__price--dollar{
                 color:var(--green);
@@ -185,6 +195,8 @@
             color: var(--white);
             font-size: 1.5rem;
             font-weight: 600;
+
+            transition: box-shadow 0.3s ease; /*transition for box-shadow*/
         }
     }
 }
