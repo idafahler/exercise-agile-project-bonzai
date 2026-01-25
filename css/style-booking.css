@@ -42,6 +42,7 @@
     border-radius: 25px; /*rounded corners*/
 
     .room__img-wrapper{
+        width:75%;
         position: relative; /*makes it possible to place score inside of picture*/
 
         .room__score{
@@ -61,7 +62,7 @@
         }
         
         .room__img{
-            width:30rem; /*smaller img*/
+            width:100%; /*smaller img*/
             height:100%;
             border-radius: 25px 0 0 25px; /*only round corners for left side*/
         }
@@ -200,4 +201,10 @@
 
 .room-box:nth-child(even) {
     flex-direction: row-reverse; /*even boxes change direction of img*/
+
+    .room__img-wrapper{
+        .room__img{
+            border-radius: 0 25px 25px 0; /*only round corners for right side*/
+        }
+    }
 }
