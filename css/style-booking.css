@@ -126,9 +126,13 @@
             display:flex;
             flex-direction: column;
 
-            .room__img-title{
+            .room__img-title{ /*styling for icon and text next to it*/
                 display:flex;
                 gap:0.5rem;
+                p{
+                    color: var(--black); /*making sure title is black and has no background-color*/
+                    background-color: transparent;
+                }
             }
 
             .room__text-container{
@@ -163,6 +167,9 @@
         .room__info--sustainability{
             grid-column: 1/3;
             grid-row: 4/5;
+            p{
+                font-size: 1.2rem;
+            }
         }
 
 
