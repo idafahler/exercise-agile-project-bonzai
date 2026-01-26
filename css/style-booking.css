@@ -53,7 +53,8 @@
 /* -------------------- FORM ----------------------*/
 #form-section--home-booking{
     background-color: var(--turquoise); /*background for whole section*/
-    height: 20vh; /*setting height*/
+    /* height: 20vh;  */
+    /*setting height*/
 }
 
 #wrapper-form--home{
@@ -63,8 +64,8 @@
     padding-bottom: 1.5rem;
     border-radius: 25px;
     background-color: var(--white); /*background for whole section*/
-
-    height: 100%; /* taking all available height */
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 #form--home{
@@ -74,7 +75,7 @@
     align-items: flex-start; /*making sure label and element doesn't separate from each other*/
     gap: 0.7rem; /*gap between elements*/
 
-    margin: 0 6rem; 
+    margin: 0 3rem; 
     /* margin  only on sides */
 
     /* All elements in form*/
@@ -143,6 +144,16 @@
         font-weight: 400; /*lower font-weight than other elements inside option dropdown menu*/
     }
 }
+
+.fill-out {
+    display: flex;
+    justify-content: center;
+    color: var(--black);
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+/*---------------------------------------------ROOMS AVIABLE----------------------------------------------*/
 
 /* styling for date and select element */
 .input-date, .select-guests, .select-room-type{

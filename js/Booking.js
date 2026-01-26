@@ -407,8 +407,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 container.style.opacity = "1";
             }, 400);
         } else {
-            alert("You must fill out check in/out");
-            container.style.opacity = "1";
+            setTimeout(() => {
+                const confirmation = document.createElement("main");
+                document.getElementById("grabbag").innerHTML = `<p class="fill-out wrapper"> Must fill out check in and out.</p>`;
+            
+                container.style.opacity = "1";
+            }, 400);
         }
     });
 });
