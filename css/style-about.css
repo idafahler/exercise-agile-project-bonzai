@@ -5,11 +5,11 @@
 
 /*----------------------HERO------------------------------*/
 
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: border-box;
-}
+} */
 
 .hero--about{
     height: 70vh;
