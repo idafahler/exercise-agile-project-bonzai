@@ -5,12 +5,6 @@
 
 /*----------------------HERO------------------------------*/
 
-/* *,
-*::before,
-*::after {
-    box-sizing: border-box;
-} */
-
 .hero--about{
     height: 70vh;
     background: linear-gradient(var(--overlay), var(--overlay)), /*dark overlay to make picture appear darker*/
@@ -73,7 +67,7 @@
     
 .About-turquoise {
     background-color: var(--turquoise);
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .About-Flex-Row {

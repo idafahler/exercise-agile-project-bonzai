@@ -115,6 +115,12 @@
         font-size: 1rem;
         margin: 0;
     }
+
+    .About-Pictures-Grid {
+        row-gap: 4rem;
+    }
+
+
 }
 
 
@@ -140,34 +146,58 @@
         padding: 0;
         margin: 1rem;
     }
-
-    .Button-With-No-White {
-        width: auto;
-    }
     
+    .rttys-text-p {
+        width: 100%;
+        padding: 0;
+    }
 }
 
 
-@media (max-width: 580px) {
-    .About-Menu {
+@media (max-width: 600px) {
+        .About-Menu {
         width: 100%;
-        display: flex;
-        justify-content: center;
+
     }
 
-    .Button-With-No-White-Active {
+    .Button-With-No-White-Active.About-Padding {
         width: auto;
-        padding: 0.2rem 0.5rem;
-        background-color: red;
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: start;
     }
 
-    .about-menu-font {
-        font-size: 0.5rem;
-
+    .Button-With-No-White.About-Padding {
+        width: auto;
+        padding: 0.5rem 1rem;
     }
 
     .About-Menu h2 {
-        font-size: 0.5rem;
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+@media (max-width: 400px) {
+      .About-Menu {
+        width: 100%;
+
+    }
+
+    .Button-With-No-White-Active.About-Padding {
+        width: auto;
+        padding: 0.5rem 0.5rem;
+        display: flex;
+        justify-content: start;
+    }
+
+    .Button-With-No-White.About-Padding {
+        width: auto;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .About-Menu h2 {
+        font-size: 1rem;
         margin: 0;
     }
 }
