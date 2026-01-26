@@ -5,7 +5,7 @@
 /* ----------------------- MAX-WIDTH:1240px ----------------------------- */
 @media (max-width:1240px){
 /*------------------ HEADER ------------------------*/
-    .header{
+    .header--nav{
         padding: 0 2rem; /*some padding for smaller units*/
     }
     
@@ -174,7 +174,7 @@
 /* ----------------------- MAX-WIDTH:1000px ----------------------------- */
 @media (max-width:1000px){
     /*------------------ HEADER/NAV ------------------------*/
-    .header{
+    .header--nav{
         padding: 0;
     }
     
@@ -241,6 +241,47 @@
 
 /* ----------------------- MAX-WIDTH:810px -------------------------------- */
 @media (max-width:810px){
+    /*------------------ HEADER/NAV ------------------------*/
+    .nav-logo, .nav-links, .button-nav{
+        display:none; /*hiding other elements for smaller units*/
+    }
+    .header--nav {
+        height: 0;
+
+        .nav {
+            .nav-links {
+                flex-direction: column;
+                position: fixed;
+                display: flex;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: var(--white);
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                z-index: 10;
+
+                transform: translateX(-100%);
+                opacity: 0;
+
+                transition: transform .4s ease, opacity .3s ease;
+            }
+        }
+    }
+
+    .header--nav.open .nav-links {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    .nav-burger{
+            display:block; /*displaying burger menu*/
+            background-color: var(--white);
+            padding:1rem;
+            border-radius: 50%;
+        }
     /*------------------ HERO ------------------------*/
     .Hero-section{
         height:65vh; /*changing height for hero*/
@@ -383,9 +424,13 @@
 @media(max-width:400px){
     /*--------------------- HERO ------------------*/
     .Hero-section{
-        .hero-text p{
+        .hero-text{
+            padding-top: 3rem;
+            p{
             padding:0;
+            } 
         }
+
         .bookit{
             margin-top: 0.5rem;
             gap:0.5rem;

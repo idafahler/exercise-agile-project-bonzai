@@ -36,6 +36,8 @@
 /* BASE STYLING*/
 body{
     font-family: var(--font-inter);
+
+    position: relative;
 }
 
 .wrapper{
@@ -51,14 +53,77 @@ body{
 
 
 /* ----------------- HEADER ------------------- */
-header {
+.header--nav {
     display: flex;
     justify-content: space-between;
-    position: sticky;
+    position: relative;
     top: 0;
     background-color: var(--white);
     z-index: 1000;
     box-shadow: 0 4px 10px var(--box-shadow);
+}
+
+.nav-burger{
+    display: none; /*defualt for nav-burger is to not show*/
+    align-self: flex-start; /*aligning to start*/
+    padding:2rem;
+    position:fixed;
+    top:1rem;
+    left:1rem;
+    width:4rem;
+    border: 1px solid var(--black);
+    z-index: 2000;
+
+    .burger__btn{
+        display:flex; /*flexbox for lines*/
+        justify-content: center;
+        align-items: center;
+
+        max-width:3rem;
+        width:100%;
+        aspect-ratio: 1; /*making sure burger__btn is square*/
+        
+        z-index: 99; /*always showing*/
+        cursor:pointer; /*cursor changes to a pointer when hovering over button*/
+
+        position: relative;
+    }
+
+    .burger__btn > span,
+    .burger__btn > span::before,
+    .burger__btn > span::after{
+        width:100%; /*takes upp 100% of parent width*/
+        height:3px; /*thickness of lines*/
+        background-color: var(--black);
+        position: absolute; /*allows to place out lines*/
+        transition: all .3s ease; /*transforming style of hamburger button with transition*/
+    }
+    .burger__btn > span::before{
+        content: '';
+        top: -10px; /*placing out line*/
+    }
+    .burger__btn > span::after{
+        content: '';
+        top: 10px; /*placing out line*/
+    }
+
+    .burger__btn.open > span{
+        transform: rotate(45deg); /*when clicked lines move to form cross instead of hamburger menu*/
+    }
+    .burger__btn.open > span::before{
+        top:0;
+    }
+    .burger__btn.open > span::after{
+        top:0;
+        transform: rotate(90deg);
+    }
+}
+.burger__btn.open ~ .nav-links{
+    display:flex;
+}
+
+.burger__btn.open ~ .header--nav{
+    height:4rem;
 }
 
 /* -------------------- NAV ---------------------- */
@@ -69,7 +134,7 @@ nav {
     align-items: center;
     padding: 1rem 0;
     
-    .logo {
+    .nav-logo {
         max-width: 20.1rem;
         height: 4.8rem;
     }
@@ -172,7 +237,7 @@ nav {
 .förälder-formulär {
     width: 1240px;
     min-height: 33rem;
-    border: solid black 1px;
+    border: solid var(--black) 1px;
     border-radius: 1.25rem;
     box-sizing: border-box;
     margin-top: 1rem;
