@@ -424,9 +424,13 @@
 @media(max-width:400px){
     /*--------------------- HERO ------------------*/
     .Hero-section{
-        .hero-text p{
+        .hero-text{
+            padding-top: 3rem;
+            p{
             padding:0;
+            } 
         }
+
         .bookit{
             margin-top: 0.5rem;
             gap:0.5rem;
