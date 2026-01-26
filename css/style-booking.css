@@ -55,6 +55,7 @@
     background-color: var(--turquoise); /*background for whole section*/
     /* height: 20vh;  */
     /*setting height*/
+    padding-bottom: 5rem;
 }
 
 #wrapper-form--home{
@@ -66,6 +67,7 @@
     background-color: var(--white); /*background for whole section*/
     padding-top: 1.5rem;
     padding-bottom: 2rem;
+    box-shadow: 0 8px 10px var(--box-shadow);
 }
 
 #form--home{
