@@ -8,32 +8,40 @@
         <link rel="stylesheet" href="css/style-about.css">
         <link rel="stylesheet" href="css/media.css">
 
+        <script src="./js/index.js" defer></script>
         <script src="js/About 2.0.js.js" defer></script>
     </head>
     
     <body>
 
         <!-- --------------------------HEADER------------------------------------ -->
-        <header class="header">
-            <nav class="wrapper">
-                
+    <header class="header--nav">
+        <!--NAV-->
+        <nav class="wrapper nav">
+            <!--LOGO-->
             <a href="index.html">
-                <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="Bonx.ai logo" class="wrapper logo">
+                <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="Bonz.ai logo" class="nav-logo">
             </a>
-            
-            <ul>
+                
+            <ul class="nav-links"> <!--NAV LINKS-->
                 <li><a href="index.html" class="link">Home</a></li>
                 <li><a href="booking.html" class="link">Booking</a></li>
                 <li><a href="about.html" class="link link--active">About</a></li>
             </ul>
-            
+            <!--BUTTON-->
             <a href="booking.html">
-            <button class="button-nav">Book your stay</button>
-        </a>
+                <button class="button-nav">Book your stay</button>
+            </a>
+        </nav>
+     </header>
 
-    </nav>
-</header>
-
+     <!--BURGER MENU-->
+    <aside class="nav-burger" id="burgerBox">
+        <div class="burger__btn">
+            <span></span>   
+        </div>
+    </aside>
+     
 <!--HERO-->
 <article class="hero--about">
     <!--WRAPPER-->

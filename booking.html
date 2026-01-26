@@ -8,40 +8,48 @@
         <link rel="stylesheet" href="css/style-booking.css">
         <link rel="stylesheet" href="css/media.css">
         <script src="js/Booking.js" defer></script>
+        <script src="./js/index.js" defer></script>
     </head>
 <body>
     <!-- --------------------------HEADER------------------------------------ -->
-    <header class="header">
-        <nav class="wrapper">
-
+    <header class="header--nav">
+        <!--NAV-->
+        <nav class="wrapper nav">
+            <!--LOGO-->
             <a href="index.html">
-            <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="Bonx.ai logo" class="wrapper logo">
+                <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="Bonz.ai logo" class="nav-logo">
             </a>
                 
-            <ul>
+            <ul class="nav-links"> <!--NAV LINKS-->
                 <li><a href="index.html" class="link">Home</a></li>
                 <li><a href="booking.html" class="link link--active">Booking</a></li>
                 <li><a href="about.html" class="link">About</a></li>
             </ul>
-
+            <!--BUTTON-->
             <a href="booking.html">
-            <button class="button-nav">Book your stay</button>
+                <button class="button-nav">Book your stay</button>
             </a>
-
         </nav>
      </header>
-     
-     <!-- --------------------------MAIN------------------------------------ -->
-     <main class="main--booking">
-     <!-- -------------------------- FORMS ------------------------------------ -->
-     
-     <section class="Booking-Top-Article">
-         <div class="wrapper Booking-second-to-top">
-             <h2 class="Booking-h2">Book Your Stay</h2>
-             <p class="Booking-p">Discover sustainable luxury powered by AI technology</p>
-            </div>
-        </section>
-        
+
+     <!--BURGER MENU-->
+    <aside class="nav-burger" id="burgerBox">
+        <div class="burger__btn">
+            <span></span>   
+        </div>
+    </aside>    
+
+    <!-- --------------------------MAIN------------------------------------ -->
+    <main class="main--booking">
+    <!-- ---------------------------FORMS------------------------ -->
+
+    <section class="Booking-Top-Article">
+        <div class="wrapper Booking-second-to-top">
+            <h2 class="Booking-h2">Book Your Stay</h2>
+            <p class="Booking-p">Discover sustainable luxury powered by AI technology</p>
+        </div>
+    </section>
+
         <!--FORM-->
         <section id="form-section--home-booking">
             <!--WRAPPER-->
@@ -83,8 +91,6 @@
             </div>
             <section id="grabbag"></section>
         </section>
-        
-        
         <!-- --------------------------FOOTER------------------------------------ -->
         <footer class="footer">
             

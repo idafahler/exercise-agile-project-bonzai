@@ -89,6 +89,10 @@
 
     margin: 0 6rem; /*margin only on sides*/
 
+    #form__button--home:hover{
+        box-shadow: 0 6px 10px var(--box-shadow); /*box-shadow when hovering over button*/
+    }
+
     /* All elements in form*/
     .form-element{
         padding:1rem 1rem; /*padding inside of element*/
@@ -161,13 +165,15 @@
 
     background-color: var(--black); /*black background-color*/
     color: var(--white); /*and white text*/
+
+    transition: box-shadow 0.2s ease; /*transition for box-shadow when hovering*/
 }
 
 
 /* ----------------- INFO BOXES ------------------- */
 .info-container{
-    display:flex;
-    flex-direction: column;
+    display:flex; /*flexbbox for entire section*/
+    flex-direction: column; /*each section is placed as columns and centered inside of container*/
     justify-content: center;
     align-items: center;
 }
@@ -208,28 +214,34 @@
 /* Wrapper for box sections */
 .wrapper-info__box{
     display:flex; /*flexbox for placing out boxes*/
-    flex-direction: row;
-    flex:1;
+    flex:1; /*each box takes up even space*/
     justify-content: space-between;
-    gap:1rem;
-    padding: 4rem 0;
+    gap:1rem; /*gap between boxes*/
+    padding: 4rem 0; /*padding around boxes*/
+
+    .info-box:hover{
+        transform: scale(1.05, 1.05); /*scaling up boxes when mouse is hovered over*/
+        box-shadow: 0 4px 10px var(--box-shadow); /*box shadow appearing when hovering*/
+    }
 }
 
 /* Styling for boxes and their elements */
 .info-box{
-    padding:1rem 1rem 2rem 1rem;
-    max-width:300px;
+    padding:1rem 1rem 2rem 1rem; /*padding inside of box*/
+    max-width:300px; /*max width and height for box*/
     max-height: 450px;
 
-    border: 1px solid var(--grey-border);
+    border: 1px solid var(--grey-border); /*grey border and rounded edges for boxes*/
     border-radius: 24px;
+
+    transition: transform 0.2s ease, box-shadow 0.3s ease; /*transition for transforming box*/
     
     .info-box__icon{
-        max-width:4rem;
+        max-width:4rem; /*styling icon inside of box*/
         padding:1rem;
 
         background-color: var(--lightgreen); /*round, green background for icon*/
-        border-radius: 50%;
+        border-radius: 50%; /*makes it round*/
     }
 
     .info-box__title{
@@ -244,8 +256,6 @@
 
     /* Specific for section 2 "Sustainability" */
     .info-box__number{ 
-        font-size: 2rem;
-        font-weight: 400;
         color: var(--green);
     }
 }
@@ -254,22 +264,20 @@
 .info-box--vision{
     display:grid; /*grid to layout elements inside box, with specific styling*/
     grid-template-rows: repeat(auto-fit, minmax(120px,1fr));
-    gap:1rem;
-    place-self: start;
+    gap:1rem; /*gap between elements inside of vision box*/
 }
 
 .info-box--sustainability{
     display:grid; /*grid to layout elements inside box, with specific styling*/
     grid-template-rows: repeat(auto-fit, minmax(60px,1fr));
-    gap:2rem;
-    
-    padding-bottom: 4rem;
-    text-align: center; /*centered elements for these boxes*/
+    gap:2rem; /*gap between elements inside of sustainability box*/
 
-    background-color: var(--white);
+    text-align: center; /*centered text for box*/
+
+    background-color: var(--white); /*needs to be specified or background-color is inherited*/
 
     .info-box__icon{
-        justify-self: center;
+        justify-self: center; /*centered icon*/
     }
 }
 

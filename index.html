@@ -7,29 +7,37 @@
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/style-home.css">
         <link rel="stylesheet" href="css/media.css">
+        <script src="./js/index.js" defer></script>
     </head>
 
 <body>    
     <!-- --------------------------HEADER------------------------------------ -->
-    <header class="header--big-screen">
-        <nav class="wrapper">
-
+    <header class="header--nav">
+        <!--NAV-->
+        <nav class="wrapper nav">
+            <!--LOGO-->
             <a href="index.html">
-            <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="Bonz.ai logo" class="wrapper logo">
+                <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="Bonz.ai logo" class="nav-logo">
             </a>
                 
-            <ul>
+            <ul class="nav-links"> <!--NAV LINKS-->
                 <li><a href="index.html" class="link link--active">Home</a></li>
                 <li><a href="booking.html" class="link">Booking</a></li>
                 <li><a href="about.html" class="link">About</a></li>
             </ul>
-
+            <!--BUTTON-->
             <a href="booking.html">
-            <button class="button-nav">Book your stay</button>
+                <button class="button-nav">Book your stay</button>
             </a>
-
         </nav>
      </header>
+
+     <!--BURGER MENU-->
+    <aside class="nav-burger" id="burgerBox">
+        <div class="burger__btn">
+            <span></span>   
+        </div>
+    </aside>
      
      <!-- HERO -->
     <article class="Hero-section">
@@ -53,7 +61,7 @@
     <!--FORM-->
     <section id="form-section--home">
         <!--WRAPPER-->
-        <div class="wrapper" id="wrapper-form--home">
+        <article class="wrapper" id="wrapper-form--home">
             <!--FORM-->
             <form id="form--home">
 
@@ -80,14 +88,14 @@
                 onclick="window.location.href='booking.html'">Check Availability</button>
                 <!--when button is clicked, user is navigated to booking.html-->
             </form>
-        </div>
+        </article>
     </section>
 
 
    <!-- INFO SECTION - "Our vision"-->
     <section class="info-container info-container--vision">
         <!-- WRAPPER for title and text -->
-        <div class="wrapper wrapper-info__title">
+        <article class="wrapper wrapper-info__title">
         <!-- TITLE AND TEXT -->
             <h2 class="info-container__title">Our vision</h2>
             <p class="info-container__text">
@@ -97,10 +105,10 @@
                 believe the future of travel is both smart and 
                 sustainable.
             </p>
-        </div>
+        </article>
 
         <!-- WRAPPER for box-->
-        <div class="wrapper wrapper-info__box">
+        <section class="wrapper wrapper-info__box">
             <!--Box-->
             <article class="info-box info-box--vision">
                 <img src="assets/icons/brain.png" class="info-box__icon" alt="Brain">
@@ -140,26 +148,26 @@
                     intelligent lighting that adapts to you.
                 </p>
             </article>
-        </div>
+        </section>
     </section>
 
     <!-- INFO SECTION - "Sustainability by the numbers"-->
     <section class="info-container info-container--sustainability">
         <!-- WRAPPER for title and text-->
-        <div class="wrapper wrapper-info__title">
+        <article class="wrapper wrapper-info__title">
             <!-- TITLE AND TEXT -->
             <h2 class="info-container__title">Sustainablility by the Numbers</h2>
             <p class="info-container__text">
                 Our commitment to the planet, measured and verified
             </p>
-        </div>
+        </article>
 
         <!-- WRAPPER for box-->
-        <div class="wrapper wrapper-info__box">
+        <section class="wrapper wrapper-info__box">
             <!--Box-->
             <article class="info-box info-box--sustainability">
                 <img src="assets/icons/droplet.png" class="info-box__icon" alt="Droplet">
-                <h2 class="info-box__number">50% Less</h2>
+                <h2 class="info-box__title info-box__number">50% Less</h2>
                 <h3 class="info-box__title">Water Conservation</h3>
                 <p class="info-box__text">
                     Advanced water recycling and smart usage monitoring
@@ -169,7 +177,7 @@
             <!--Box-->
             <article class="info-box info-box--sustainability">
                 <img src="assets/icons/battery.png" class="info-box__icon" alt="Battery">
-                <h2 class="info-box__number">100%</h2>
+                <h2 class="info-box__title info-box__number">100%</h2>
                 <h3 class="info-box__title">Solar Powered</h3>
                 <p class="info-box__text">
                     All energy sourced from renewable solar panels
@@ -179,7 +187,7 @@
             <!--Box-->
             <article class="info-box info-box--sustainability">
                 <img src="assets/icons/wind.png" class="info-box__icon" alt="Wind">
-                <h2 class="info-box__number">99.9%</h2>
+                <h2 class="info-box__title info-box__number">99.9%</h2>
                 <h3 class="info-box__title">Clean Air</h3>
                 <p class="info-box__text">
                     HEPA filtration and natural ventilation systems
@@ -189,15 +197,17 @@
             <!--Box-->
             <article class="info-box info-box--sustainability">
                 <img src="assets/icons/recycle.png" class="info-box__icon" alt="Recycle">
-                <h2 class="info-box__number">95%</h2>
+                <h2 class="info-box__title info-box__number">95%</h2>
                 <h3 class="info-box__title">Zero Waste</h3>
                 <p class="info-box__text">
                     Comprehensive recycling and composting programs
                 </p>
             </article>
-        </div>
+        </section>
     </section>
 
+    <!-- INFO SECTION - "Your AI-enhanced stay"-->
+     <!--WRAPPER-->
     <div class="wrapper">
         <article class="yourai">
             <article class="AI-text">
@@ -211,21 +221,20 @@
                 </p>
                 
                 <article class="yourai--text">
-                    <!--card-->
                     <p class="AI-text-p">
                     Voice-activated room controls <br>
                     <span class="ai__text--grey">
                         Adjust everything with simple voice commands
                     </span>
                     </p>
-                    <!--card-->
+                    
                     <p class="AI-text-p">
                         Predictive service 24/7 <br>
                         <span class="ai__text--grey">
                             AI anticipates your needs before you ask
                         </span>
                     </p>
-                    <!--card-->
+                    
                     <p class="AI-text-p">
                         Smart recommendations <br>
                         <span class="ai__text--grey">
