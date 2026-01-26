@@ -4,6 +4,13 @@
 
 
 /*----------------------HERO------------------------------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .hero--about{
     height: 70vh;
     background: linear-gradient(var(--overlay), var(--overlay)), /*dark overlay to make picture appear darker*/
@@ -74,15 +81,15 @@
 }
 
 .About-Menu {
-    justify-self: center;
-    align-items: center;
     display: flex;
     flex-direction: row;
+    justify-self: center;
+    align-items: center;
     border-radius: 100px 100px;
     justify-content: space-between;
     padding: 0.5rem 1rem;
     background-color: var(--About-Selector);
-
+}
     .about-menu-font {
         font-size: 1.5rem;
         font-weight: 600;
@@ -98,7 +105,6 @@
         padding: 1rem 3rem;
         border-radius: 100px 100px;
         background-color: var(--white);
-
     }
 
     .Button-With-No-White {
@@ -107,7 +113,6 @@
         border: none;
         cursor:pointer;
     }
-}
     
 .World-Class-h2 {
     font-size: 2rem;
