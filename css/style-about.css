@@ -140,6 +140,7 @@
         overflow: hidden;
         font-family: var(--font-inter);
         border: 1px solid black;
+        cursor: pointer;
         
         .img-size {
             height: 60%;

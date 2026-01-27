@@ -247,8 +247,12 @@ form {
 .Button-With-No-White:hover {
     background-color: var(--white);
     border-radius: 100px 100px;
+    transition: all .5s ease;
 }
 
+.pictures-and-text:hover {
+    transform: translateY(-10px);
+}
 
 
 
