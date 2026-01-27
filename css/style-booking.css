@@ -58,11 +58,10 @@
     padding-bottom: 5rem;
 }
 
-#wrapper-form--home-booking{
+#wrapper-form--home{
     display:flexbox; /*flexbox for positioning form inside of section*/
     flex-direction: row;
     align-content: center;
-    padding-bottom: 1.5rem;
     border-radius: 25px;
     background-color: var(--white); /*background for whole section*/
     padding-top: 1.5rem;
@@ -70,7 +69,7 @@
     box-shadow: 0 8px 10px var(--box-shadow);
 }
 
-#form--home-booking{
+#form--home{
     display:grid; /*layout with grid for form elements*/
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto); /*row with labels is smaller*/
@@ -145,6 +144,10 @@
     .option-guests{
         font-weight: 400; /*lower font-weight than other elements inside option dropdown menu*/
     }
+}
+
+#form--home-margin {
+    margin: 0 3rem;
 }
 
 .fill-out {
@@ -242,6 +245,7 @@
             font-size: 2rem;
             font-weight:400
         }
+
         .room__price{
             grid-column: 3/4;
             grid-row: 1/2;
@@ -257,6 +261,7 @@
                 font-weight:400;
             }
         }
+        
         .room__info--general{
             grid-column: 1/3;
             grid-row: 1/2;
