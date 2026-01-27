@@ -1,4 +1,528 @@
-/* ---------------------- MOBIL LAYOUT ABOUT PAGE ----------------------- */
+/*----------------------------------------------------------------------------------------*/
+/* ------------------------------- MEDIA QUERIES ---------------------------------------- */
+/*----------------------------------------------------------------------------------------*/
+
+/* ----------------------- MAX-WIDTH:1240px ----------------------------- */
+@media (max-width:1240px){
+/*------------------ HEADER ------------------------*/
+    .header--nav{
+        padding: 0 2rem; /*some padding for smaller units*/
+    }
+    
+    /*------------------ FORM ------------------------*/
+    #form--home{
+        margin: 0; 
+        /*removing padding on sides to prevent elements from wrapping*/
+    }
+
+    /*-------------- AI INFO BOX ---------------------*/
+    .yourai{
+        padding: 5rem 2rem;
+    }
+}
+
+
+
+
+/* ----------------------- MAX-WIDTH:1130px ----------------------------- */
+@media (max-width: 1130px){
+
+    /*------------------ FORM ------------------------*/
+    #wrapper-form--home{
+        padding:0;
+    }
+  
+    
+    #form--home{
+        grid-template-columns: repeat(2, 1fr);/*new grid layout, for smaller widths*/
+        grid-template-rows: repeat(4, auto);
+        
+        align-items: center;
+        gap:0.3rem;
+        
+        /*placing out elements inside of grid*/
+        #form__label--home-checkin{
+            grid-column: 1/2;
+            grid-row:1/2;
+        }
+        
+        #form__date--checkin{
+            grid-column: 1/2;
+            grid-row:2/3;
+        }
+        
+        #form__label--home-checkout{
+            grid-column: 2/3;
+            grid-row:1/2;
+        }
+        
+        #form__date--checkout{
+            grid-column: 2/3;
+            grid-row:2/3;
+        }
+        
+        #form__label--home-select{
+            grid-column: 1/2;
+            grid-row:3/4;
+        }
+        
+        #form__select--guests{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+        
+        #form__button--home{
+            grid-column: 2/3;
+            grid-row: 4/5
+        }
+    }
+    
+    /*------------------FORMS BOOKING--------------------*/
+    #form--home{
+
+        #form__label--room-type{
+            grid-column: 2/3;
+            grid-row:3/4;
+        }
+        
+        #form__select--room-type{
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+        
+        #form__button--home-booking {
+            grid-column: 1/3;
+            grid-row: 5/6;    
+        }
+    }
+
+    /*------------------ INFO BOXES ------------------*/
+    .wrapper-info__title{
+        max-width: 690px; /*making sure text segment does not expand beyond box width*/
+        
+        .info-container__title{
+            padding:2rem 0 1.5rem 0;
+        }
+        .info-container__text{
+            padding:0;
+        }
+    }
+    
+    .wrapper-info__box{
+        display:grid; /*grid for layout*/
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap:2rem; /*more gap between boxes*/
+
+        padding: 2rem 0; /*less padding around info-boxes*/
+    }
+
+    .info-box{
+        grid-template-columns: auto / span 1; /*placing out boxes*/
+        grid-template-rows: auto / span 1;
+
+        max-width:350px; /*changing size of boxes*/
+        max-height:400px;
+    }
+
+    /*-------------- AI INFO BOX ---------------------*/
+    .yourai{
+        flex-direction: column; /*changing direction to column*/
+
+        .yourai__img{
+            width:100%; /*img true size*/
+            height:100%;
+
+            order:0; /*img positioned above text*/
+        }
+
+        .AI-text{
+            margin-top:3rem; /*some space between picture and text*/
+
+            order:1; /*text positioned below img*/
+
+            display:grid; /*positioning text with grid*/
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap:2rem; /*gap between text sections*/
+
+            /*positioning elements with grid*/
+            .AI-text-h2{
+                grid-column: 1/2;
+                grid-row: 1/2;
+
+                padding:0;
+            }
+            .themoment{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+
+            /*styling container for p elements*/
+            .yourai--text{
+                grid-column: 2/3;
+                grid-row: 1/4;
+                align-self: center;
+                margin-top: 2rem;
+
+                display:flex;/*placing p elements in columns with flexbox*/
+                flex-direction: column;
+                gap:4rem; /*gap between p elements*/
+
+                .AI-text-p{
+                    padding:0; /*no padding for this element*/
+                }
+            }
+            .AI-button-a{
+                grid-column: 1/2;
+                grid-row: 3/4;
+
+                text-decoration: none; /*no underline for a element*/
+
+                .AI-button{
+                    margin:0;
+                }
+            }
+        }
+    }
+}
+
+/* .room-box {
+    flex-direction: column;
+} */
+
+
+
+/* ----------------------- MAX-WIDTH:1000px ----------------------------- */
+@media (max-width:1000px){
+    /*------------------ HEADER/NAV ------------------------*/
+    .header--nav{
+        padding: 0;
+    }
+    
+    nav{
+
+        ul{
+            margin:0; /*layout can keep shrinking without breaking*/
+        }
+    }
+
+    /*------------------ HERO ------------------------*/
+    .Hero-section{
+
+        .hero-text{
+            display:flex;
+            flex-direction: column;
+        }
+        .welcome{
+            white-space: wrap;
+        }
+        .button-undertext{
+            white-space: wrap;
+        }
+    }
+
+
+    /*-------------- AI INFO BOX ---------------------*/
+    .yourai{
+        padding: 2rem 0; /*less padding for smaller units*/
+
+        .AI-text{
+            margin-top: 1rem; /*less margin for smaller units*/
+            display:flex; /*flexbox for text, centering*/
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .yourai--text{ /*hiding p elements*/
+                display:none;
+            }
+        }
+        .yourai__img{
+            align-self: center;
+            max-width:732px; /*aligning different sections*/
+        }
+        
+    }
+
+    /*--------- READY TO TRANSFORM YOUR STAY -------*/
+    .displayflex-column{
+        max-width: 732px; /*max-width to align with other sections*/
+    }
+
+    /*--------------------- FOOTER ------------------*/
+    .top-left-footer-grid {
+        display: grid;
+        margin-top: 4rem;
+    }
+}
+
+
+
+
+
+/* ----------------------- MAX-WIDTH:810px -------------------------------- */
+@media (max-width:810px){
+    /*------------------ HEADER/NAV ------------------------*/
+    .nav-logo, .nav-links, .button-nav{
+        display:none; /*hiding other elements for smaller units*/
+    }
+    .header--nav {
+        height: 0;
+
+        .nav {
+            .nav-links {
+                flex-direction: column;
+                position: fixed;
+                display: flex;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: var(--white);
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                z-index: 10;
+
+                transform: translateX(-100%);
+                opacity: 0;
+
+                transition: transform .4s ease, opacity .3s ease;
+            }
+        }
+    }
+
+    .header--nav.open .nav-links {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    .nav-burger{
+            display:block; /*displaying burger menu*/
+            background-color: var(--white);
+            padding:1rem;
+            border-radius: 50%;
+        }
+    /*------------------ HERO ------------------------*/
+    .Hero-section{
+        height:65vh; /*changing height for hero*/
+
+        .welcome{
+            font-size: 4rem;
+        }
+    }
+
+    /*------------------ FORM ------------------------*/
+    #form-section--home{ /*hiding form*/
+        display: none;
+    }
+
+    /*--------- READY TO TRANSFORM YOUR STAY -------*/
+    .Ready-to-Transform-Your-Stay{
+        padding: 2rem; /*less padding for smaller units*/
+    }
+}
+
+
+
+
+
+/* ----------------------- MAX-WIDTH:630px -------------------------------- */
+@media (max-width:630px){
+
+    /*------------------ INFO BOXES ------------------*/
+    .wrapper-info__title{
+
+        .info-container__title{
+            padding:1rem; /*less padding title*/
+        }
+    }
+    .wrapper-info__box{
+        gap:0.5rem; /*less gap between boxes and less padding for smaller units*/
+        
+    }
+    .info-box{
+        padding:0.5rem; /*less padding inside info-boxes*/
+    }
+    .info-box--vision{
+        gap:0;
+    }
+
+
+    /*-------------- AI INFO BOX ---------------------*/
+    .yourai{
+        padding:0 0 1rem 0; /*removing padding from section, except for bottom padding*/
+
+        .AI-text{
+            gap:1.5rem; /*less gap for smaller units*/
+        }
+
+        .yourai__img{
+            border-radius: 0; /*no rounded edges for picture for smaller units*/
+        }
+    }
+}
+
+/* ----------------------- MAX-WIDTH:600px -------------------------------- */
+@media (max-width: 600px){
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .top-left-footer-grid{
+        .tlfg-img{
+            img{
+                display: none;
+            }
+        }
+    }
+    
+    .bottom-footer-grid p {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 0.95rem;
+    }
+}
+
+
+
+/* ----------------------- MAX-WIDTH:500px -------------------------------- */
+@media (max-width:500px){
+
+    /*------------------ HERO ------------------------*/
+    .Hero-section{
+
+        .welcome{
+            font-size: 2.5rem;
+        }
+        .hero-text p{
+            font-size: 1.2rem;
+            padding:1rem;
+        }
+        .button-undertext, .learnmore-button-undertext{
+            font-size:1rem;
+        }
+        .bookit{
+            flex-direction: column;
+            margin-top:1.5rem;
+            gap:1rem;
+        }
+    }
+    /*------------------ INFO BOXES ------------------*/
+    .wrapper-info__box{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+    .info-box{
+        grid-column: auto / span 1;
+        grid-row: auto / span 1;
+    }
+    .info-box--vision{
+        grid-template-rows: repeat(auto-fit,minmax(80px, 1fr));
+        height:100%;
+    }
+    .info-box--sustainability{
+        grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+    }
+
+    /*-------------- AI INFO BOX ---------------------*/
+    .yourai{
+        display:none;
+    }
+
+    /*--------- READY TO TRANSFORM YOUR STAY -------*/
+    .Ready-to-Transform-Your-Stay{
+        padding: 0.5rem; /*less padding for smaller units*/
+    }
+
+    /*----------FORMS BOOKING----------*/
+
+    #form--home{
+        grid-template-columns:repeat(1, 1fr); /*new grid layout, for smaller widths*/
+        grid-template-rows: repeat(9, 1fr);
+        
+        align-items: center;
+        gap: 0;
+        
+        /*placing out elements inside of grid*/
+        #form__label--home-checkin{
+            grid-column:1/2;
+            grid-row:1/2;
+        }
+        
+        #form__date--checkin{
+            grid-column:1/2;
+            grid-row:2/3;
+        }
+        
+        #form__label--home-checkout{
+            grid-column:1/2;
+            grid-row:3/4;
+        }
+        
+        #form__date--checkout{
+            grid-column:1/2;
+            grid-row:4/5;
+        }
+        
+        #form__label--home-select{
+            grid-column:1/2;
+            grid-row:5/6;
+        }
+        
+        #form__select--guests{
+            grid-column:1/2;
+            grid-row: 6/7;
+        }
+        
+        #form__label--room-type{
+            grid-column:1/2;
+            grid-row:7/8;
+        }
+        
+        #form__select--room-type{
+            grid-column:1/2;
+            grid-row: 8/9;
+        }
+        
+        #form__button--home-booking {
+            grid-column:1/2;
+            grid-row: 9/10;    
+        }
+    }
+}
+
+
+
+/* ----------------------- MAX-WIDTH:400px -------------------------------- */
+@media(max-width:400px){
+    /*--------------------- HERO ------------------*/
+    .Hero-section{
+        .hero-text{
+            padding-top: 3rem;
+            p{
+            padding:0;
+            } 
+        }
+
+        .bookit{
+            margin-top: 0.5rem;
+            gap:0.5rem;
+        }
+    }
+}
+
+/* ----------------------- MAX-WIDTH:375px -------------------------------- */
+
+@media (max-width: 500px) {
+    .footer {
+        padding: 1rem;
+    }
+}/* ---------------------- MOBIL LAYOUT ABOUT PAGE ----------------------- */
 
 @media (max-width: 1000px) {
     .hero__text {
@@ -20,13 +544,13 @@
         justify-content: space-around;
     }
 }
-
-@media (max-width: 1300px) {
+/*Här*/
+/* @media (max-width: 1300px) {
      .wrapper {
         width: 100%;
         padding: 0.5rem;
     }
-}
+} */
 
 
 @media (max-width: 900px) {
