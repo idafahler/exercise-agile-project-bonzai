@@ -151,6 +151,14 @@
         width: 100%;
         padding: 0;
     }
+
+    .World-Class-p {
+        padding-left: 2rem;
+    }
+
+    .About-turquoise {
+        padding-bottom: 0.5rem;
+    }
 }
 
 
@@ -199,5 +207,18 @@
     .About-Menu h2 {
         font-size: 1rem;
         margin: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .About-Pictures-Grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 500px) {
+      .About-Pictures-Grid {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

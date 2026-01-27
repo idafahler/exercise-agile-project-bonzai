@@ -189,6 +189,7 @@ form {
 .form-group {
     display: grid;
     padding: 0.4rem 3rem;
+    transition: transform 0.2s ease , var(--box-shadow) 0.2s ease;
     
     label {
         font-size: 1.25rem;
@@ -230,6 +231,29 @@ form {
         content: '*';
     }
 }
+
+.form-group:hover  input {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    background-color: #f3f3f3;
+}
+
+.form-group textarea:focus, .form-group textarea:hover {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+    outline: none;
+}
+
+
+
+
+
+#send-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    background-color: #28a745;
+    transition-duration: 500ms;
+}
+
 
 @layer layout {
         .span-all {
