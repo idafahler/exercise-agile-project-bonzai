@@ -544,13 +544,6 @@
         justify-content: space-around;
     }
 }
-/*Här*/
-/* @media (max-width: 1300px) {
-     .wrapper {
-        width: 100%;
-        padding: 0.5rem;
-    }
-} */
 
 
 @media (max-width: 900px) {

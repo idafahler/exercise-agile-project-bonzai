@@ -238,7 +238,7 @@ nav {
 
 .förälder-formulär {
     /*Här*/
-    width: 100%;
+    width: 1240px;
     min-height: 33rem;
     border: solid var(--black) 1px;
     border-radius: 1.25rem;
