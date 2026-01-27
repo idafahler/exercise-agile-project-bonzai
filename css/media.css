@@ -19,14 +19,11 @@
     .yourai{
         padding: 5rem 2rem;
     }
-    
-    .förälder-formulär {
+
+    .wrapper {
         width: 100%;
     }
 }
-
-
-
 
 /* ----------------------- MAX-WIDTH:1130px ----------------------------- */
 @media (max-width: 1130px){
