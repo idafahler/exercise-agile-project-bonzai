@@ -244,6 +244,11 @@ form {
 }
 
 
+.Button-With-No-White:hover {
+    background-color: var(--white);
+    border-radius: 100px 100px;
+}
+
 
 
 
