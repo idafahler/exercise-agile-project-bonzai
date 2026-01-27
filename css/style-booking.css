@@ -58,7 +58,7 @@
     padding-bottom: 5rem;
 }
 
-#wrapper-form--home{
+#wrapper-form--home-booking{
     display:flexbox; /*flexbox for positioning form inside of section*/
     flex-direction: row;
     align-content: center;
@@ -70,7 +70,7 @@
     box-shadow: 0 8px 10px var(--box-shadow);
 }
 
-#form--home{
+#form--home-booking{
     display:grid; /*layout with grid for form elements*/
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto); /*row with labels is smaller*/
