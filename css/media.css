@@ -680,13 +680,14 @@
 
 
 @media (min-width: 375px) and (max-width: 576px) {
-    .förälder-formulär {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-    .wrapper {
-    padding: 0.5rem;
+    .spacing {
+        padding: 0.5rem;
+        
+        .förälder-formulär {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+        }
     }
 }
 
