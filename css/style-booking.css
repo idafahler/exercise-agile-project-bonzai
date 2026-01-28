@@ -24,6 +24,7 @@
 /*------------------------------ROOMS AVAILABLE------------------------------*/
 .main--booking{
     background-color: var(--turquoise);
+    min-height: 60vh;
 }
 
 .rooms-section{
