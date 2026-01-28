@@ -432,3 +432,7 @@ form {
         border-top: 0.125rem solid white;
     }
 }
+
+.hover-link-footer:hover {
+    font-size: larger;
+}

@@ -176,6 +176,10 @@
     background-color: var(--green); /*black background-color*/
     color: var(--white); /*and white text*/
 }
+#form__button--home-booking:hover{
+    box-shadow: 0 8px 10px var(--box-shadow);
+}
+
 .room-box{
     display: flex;
 
