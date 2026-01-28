@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 1300px) {
-    .wrapper {
+    .spacing {
     width: 100%;
     }
 }
@@ -117,6 +117,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
         gap:2rem; /*more gap between boxes*/
+        place-items: center;
 
         padding: 2rem 0; /*less padding around info-boxes*/
     }
@@ -640,10 +641,6 @@
         align-items: center;
     }
 
-    .wrapper {
-        width: 100%;
-    }
-
     .About-Pictures-Grid {
         gap: 2rem;
     }
@@ -685,7 +682,7 @@
         grid-template-columns: 1fr;
         width: 100%;
     }
-    .wrapper {
+    .spacing {
     padding: 0.5rem;
     }
 }
