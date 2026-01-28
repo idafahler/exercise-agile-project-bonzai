@@ -126,6 +126,7 @@
     }
 
     #form__select--guests{
+        background-color: var(--grey-filter);
         grid-row: 2/3;
         grid-column: 3/4;
     }
@@ -134,8 +135,9 @@
         grid-column: 4/5;
         grid-row:1/2;
     }
- 
+    
     #form__select--room-type{
+        background-color: var(--grey-filter);
         grid-column: 4/5;
         grid-row: 2/3;
     }
