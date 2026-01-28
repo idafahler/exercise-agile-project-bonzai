@@ -1,8 +1,8 @@
-<<<<<<< HEAD
-=======
 /*---------------------------------------------------------------
 -------- SPECIFIC STYLING FOR ELEMENTS IN BOOKING.HTML-----------
 -----------------------------------------------------------------*/
+
+
 
 .Booking-Top-Article {
     display: flex;
@@ -26,6 +26,7 @@
 /*------------------------------ROOMS AVAILABLE------------------------------*/
 .main--booking{
     background-color: var(--turquoise);
+    min-height: 60vh;
 }
 
 .rooms-section{
@@ -382,4 +383,3 @@
         }
     }
 }
->>>>>>> the-last-pickle
