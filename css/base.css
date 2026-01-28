@@ -533,4 +533,5 @@ form {
 .hover-link-footer:hover {
     transition: font-size 0.2s ease; /*transition for scaling up text and box-shadow*/
     font-size: larger;
+    cursor:pointer;
 }
