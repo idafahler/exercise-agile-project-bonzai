@@ -6,7 +6,7 @@
 /*----------------------HERO------------------------------*/
 
 .hero--about{
-    height: 70vh;
+    height: 50vh;
     background: linear-gradient(var(--overlay), var(--overlay)), /*dark overlay to make picture appear darker*/
     url('../assets/photos/12.jpg'); /*picture set as background*/
     background-size: cover;
@@ -191,4 +191,3 @@
         font-size: 1.25rem;
     }
 }
-
