@@ -151,20 +151,30 @@ nav {
         padding: 0rem 1.2rem;
     }
     
-    a {
+    .link {
         text-decoration: none;
         font-size: 1.2rem;
         color: var(--black);
         font-weight: 600;
     }
+    .link:hover{
+        background-color: var(--grey-btn);
+        padding: 0.5rem 0;
+        border-radius: 10px;
+    }
 
     .link--active {
         color: var(--green);
     }
+    .link--active:hover{
+        background-color: var(--turquoise);
+        padding: 0.5rem 0;
+        border-radius: 10px;
+    }
 
     .button-nav {
         white-space: nowrap;
-        padding: 0.8rem 0.7rem;
+        padding: 0.8rem 1rem;
         background-color: var(--green);
         font-size: 1.2rem;
         color: var(--white);
@@ -173,6 +183,11 @@ nav {
         cursor: pointer;
         font-weight: 600;
     }
+       .button-nav:hover{
+        box-shadow: 0 8px 10px var(--box-shadow);
+        /* font-size: 1.5rem;
+        padding:0.8rem 0.5rem; */
+    } 
 }
 
 /* ----------------- READY TO TRANSFORM YOUR STAY ---------------------- */

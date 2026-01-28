@@ -50,6 +50,10 @@
         cursor: pointer;
         font-weight: 600;
     }
+    .button-undertext:hover{
+        font-size: 1.5rem;
+        padding: 0.8rem 0;
+    }
 
     .learnmore-button-undertext {
         padding: 0.8rem 0.6rem;
@@ -61,6 +65,10 @@
         color: var(--white);
         background-color: transparent;
         cursor: pointer;
+    }
+        .learnmore-button-undertext:hover{
+        font-size: 1.5rem;
+        padding: 0.6rem 0;
     }
 }
 
@@ -323,6 +331,10 @@
             --font-inter: "Inter", sans-serif;
             font-size: 1.2rem;
         }
+        .AI-button:hover{
+            box-shadow: 0 8px 10px var(--box-shadow);
+        }
+        
     }
     
     .yourai__img {
@@ -334,12 +346,21 @@
 }
 /* ------------------------Ready To Transform Your Stay-------------------------- */
 
-.rttys-button {
-    background: var(--grey-btn);
-    color: var(--green);
-    font-weight: 600;
-    font-size: 1.5rem;
-    padding: 0.5rem 0.4rem;
-    border-radius: 10px;
-    align-self: center;
+.rttys-center{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    
+    .rttys-button {
+        background: var(--grey-btn);
+        color: var(--green);
+        border: none;
+        font-weight: 600;
+        font-size: 1.5rem;
+        padding: 1rem 0.8rem;
+        border-radius: 10px;
+    }
+    .rttys-button:hover{
+        box-shadow: 0 8px 10px var(--box-shadow);
+    }
 }
