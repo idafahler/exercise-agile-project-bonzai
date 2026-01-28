@@ -19,11 +19,14 @@
     .yourai{
         padding: 5rem 2rem;
     }
+}
 
+@media (max-width: 1300px) {
     .wrapper {
-        width: 100%;
+    width: 100%;
     }
 }
+
 
 /* ----------------------- MAX-WIDTH:1130px ----------------------------- */
 @media (max-width: 1130px){
@@ -647,6 +650,9 @@
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
+    }
+    .wrapper {
+    padding: 0.5rem;
     }
 }
 
