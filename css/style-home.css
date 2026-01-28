@@ -50,12 +50,6 @@
         cursor: pointer;
         font-weight: 600;
     }
-    /*här*/
-    .button-undertext:hover{
-        transition: font-size 0.2s ease, padding 0.2s ease; /*transition for scaling up text and box-shadow*/
-        font-size: 1.5rem;
-        padding: 0.8rem 0;
-    }
     
     .learnmore-button-undertext {
         padding: 0.8rem 0.6rem;
@@ -68,11 +62,10 @@
         background-color: transparent;
         cursor: pointer;
     }
-    /*här*/
+    
     .learnmore-button-undertext:hover{
-        transition: font-size 0.2s ease, padding 0.2s ease; /*transition for scaling up text and box-shadow*/
-        font-size: 1.5rem;
-        padding: 0.6rem 0;
+        background-color: var(--box-shadow);
+        transform: translateY(-3px);
     }
 }
 
