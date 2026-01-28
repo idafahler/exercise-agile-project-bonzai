@@ -1,0 +1,141 @@
+<<<<<<< HEAD
+=======
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booking</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/style-booking.css">
+        <link rel="stylesheet" href="css/media.css">
+        <script src="js/Booking.js" defer></script>
+        <script src="./js/index.js" defer></script>
+        <link rel="icon" href="assets/logo/bonz.ai-logo-color-symbol.png" type="image">
+    </head>
+<body>
+    <!-- --------------------------HEADER------------------------------------ -->
+    <header class="header--nav">
+        <!--NAV-->
+        <nav class="wrapper nav">
+            <!--LOGO-->
+            <a href="index.html">
+                <img src="assets/logo/bonz.ai-logo-color-landscape.png" alt="Bonz.ai logo" class="nav-logo">
+            </a>
+                
+            <ul class="nav-links"> <!--NAV LINKS-->
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="booking.html" class="link link--active">Booking</a></li>
+                <li><a href="about.html" class="link">About</a></li>
+            </ul>
+            <!--BUTTON-->
+            <a href="booking.html">
+                <button class="button-nav">Book your stay</button>
+            </a>
+        </nav>
+     </header>
+
+     <!--BURGER MENU-->
+    <aside class="nav-burger" id="burgerBox">
+        <div class="burger__btn">
+            <span></span>   
+        </div>
+    </aside>    
+
+    <!-- --------------------------MAIN------------------------------------ -->
+    <main class="main--booking">
+    <!-- ---------------------------FORMS------------------------ -->
+
+    <section class="Booking-Top-Article">
+        <div class="wrapper Booking-second-to-top">
+            <h2 class="Booking-h2">Book Your Stay</h2>
+            <p class="Booking-p">Discover sustainable luxury powered by AI technology</p>
+        </div>
+    </section>
+
+        <!--FORM-->
+        <section id="form-section--home-booking">
+            <!--WRAPPER-->
+            <div class="wrapper" id="wrapper-form--home">
+                <!--FORM-->
+                <form id="form--home">
+                    
+                    <!--DATE elements-->
+                    <label for="form__date--checkin" class="form__label" id="form__label--home-checkin">Check in</label>
+                    <input type="date" class="form-element input-date" name="checkin" id="form__date--checkin">
+                    
+                    <label for="form__date--checkout" class="form__label" id="form__label--home-checkout">Check out</label>
+                    <input type="date" class="form-element input-date" name="checkout" id="form__date--checkout">
+                    
+                    <!--SELECT element with different options-->
+                    <label for="form__select--guests" class="form__label" id="form__label--home-select">Guests</label>
+                    <select class="form-element select-guests" name="guests" id="form__select--guests">
+                        <option value="1" class="option-guests">1 guest</option>
+                        <option value="2" class="option-guests">2 guests</option>
+                        <option value="3" class="option-guests">3 guests</option>
+                        <option value="4" class="option-guests">4 guests</option>
+                    </select>
+                    
+                    <!--SELECT element with different options-->
+                    <label for="form__select--Room__type" class="form__label" id="form__label--room-type">Room type</label>
+                    <select class="form-element select-room-type" name="Room-type" id="form__select--room-type">
+                        <option value="1" class="option-guests">Any</option>
+                        <option value="2" class="option-guests">Suite</option>
+                        <option value="3" class="option-guests">Relaxing</option>
+                        <option value="4" class="option-guests">Nature</option>
+                    </select>
+                    
+                    <!--BUTTON-->
+                    <button type="button" class="button form-element" id="form__button--home-booking">
+                        Book now
+                    </button>
+                    <!--when button is clicked, user is navigated to booking.html-->
+                </form>
+            </div>
+            <section id="grabbag"></section>
+        </section>
+        <!-- --------------------------FOOTER------------------------------------ -->
+        <footer class="footer">
+            
+            <!-- Wrapper-->
+        <section class="wrapper footer-grid">
+        
+            <!-- Top left box-->
+            <section class="top-left-footer-grid">
+                <section class="tlfg-img">
+                    <img src="assets/logo/bonz.ai-logo-color-portrait-full.png" alt="Bonx.ai logo">            
+                </section>
+                <p class="tlfg-text">
+                    The hotel of the future, where sustainability meets smart technology. Experience AI-driven hospitality with an eco-conscious heart.
+                </p>
+            </section>
+        
+            <!-- Top middle box -->
+            <section class="top-middle-footer-grid">
+                <h2>Contact</h2>
+                <p class="button hover-link-footer">123 Green Street, Eco City, EC 12345</p>
+                <p class="button hover-link-footer">+1 (555) 123-4567</p>
+                <p class="button hover-link-footer">hello@bonz.ai</p>
+            </section>
+        
+            <!-- Top right box -->
+            <section class="top-right-footer-grid">
+                <h2>Quick Links</h2>
+                <p class="button hover-link-footer">Privacy Policy</p>
+                <p class="button hover-link-footer">Terms of Service</p>
+                <p class="button hover-link-footer">Sustainablilty Report</p>
+                <p class="button hover-link-footer">Careers</p>
+            </section>
+        
+            <!-- Bottom box -->
+            <section class="bottom-footer-grid">
+                <p>
+                    © 2025 Bonz.ai. All rights reserved. Building a sustainable future, one stay at a time.
+                </p>
+            </section>
+        </section>
+    </footer>
+
+</body>
+</html>
+>>>>>>> the-last-pickle

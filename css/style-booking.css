@@ -1,0 +1,385 @@
+<<<<<<< HEAD
+=======
+/*---------------------------------------------------------------
+-------- SPECIFIC STYLING FOR ELEMENTS IN BOOKING.HTML-----------
+-----------------------------------------------------------------*/
+
+.Booking-Top-Article {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--turquoise);
+    padding: 5rem;
+
+    .Booking-h2 {
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 400;
+    }
+    
+    .Booking-p {
+        text-align: center;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+}
+
+/*------------------------------ROOMS AVAILABLE------------------------------*/
+.main--booking{
+    background-color: var(--turquoise);
+}
+
+.rooms-section{
+    display:flex; /*flexbox for placing out room boxes*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem; /*gap between each box*/
+
+    padding-bottom: 5rem; /*padding under section of rooms*/
+}
+
+.rooms__titles{
+    padding: 3rem 0 2rem 0; /*sokme padding around titles*/
+
+    h2, h3{
+        font-weight: 400; /*lighter font-weight for both titles*/
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+}
+
+/* -------------------- FORM ----------------------*/
+#form-section--home-booking{
+    background-color: var(--turquoise); /*background for whole section*/
+    /* height: 20vh;  */
+    /*setting height*/
+    padding-bottom: 5rem;
+}
+
+#wrapper-form--home{
+    display: flex; /*flexbox for positioning form inside of section*/
+    flex-direction: row;
+    align-content: center;
+    border-radius: 25px;
+    background-color: var(--white); /*background for whole section*/
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 8px 10px var(--box-shadow);
+}
+
+#form--home{
+    display:grid; /*layout with grid for form elements*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto); /*row with labels is smaller*/
+    align-items: flex-start; /*making sure label and element doesn't separate from each other*/
+    gap: 0.7rem; /*gap between elements*/
+
+    margin: 0 3rem; 
+    /* margin  only on sides */
+
+    /* All elements in form*/
+    .form-element{
+        padding:1rem 1rem; /*padding inside of element*/
+        width:100%; /*each element takes up its space*/
+
+        font-size: 1.5rem; /*increasing font-size and font-weight*/
+        font-weight:600;
+    }
+
+    .form__label{
+        display:flex;
+        align-self: flex-end; /*text is aligned with its element*/
+        justify-self: flex-start;
+
+        padding-left: 0.5rem;
+
+        font-size:1.5rem;
+        font-weight: 600;
+    }
+
+    /*placing out elements inside of grid*/
+    #form__label--home-checkin{
+        grid-column: 1/2;
+        grid-row:1/2;
+    }
+
+    #form__date--checkin{
+        grid-row:2/3;
+        grid-column: 1/2;
+    }
+
+    #form__label--home-checkout{
+        grid-column: 2/3;
+        grid-row:1/2;
+    }
+
+    #form__date--checkout{
+        grid-row:2/3;
+        grid-column: 2/3;
+    }
+
+    #form__label--home-select{
+        grid-column: 3/4;
+        grid-row:1/2;
+    }
+
+    #form__select--guests{
+        background-color: var(--grey-filter);
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+
+    #form__label--room-type{
+        grid-column: 4/5;
+        grid-row:1/2;
+    }
+    
+    #form__select--room-type{
+        background-color: var(--grey-filter);
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+    /* options in select menu*/
+    .option-guests{
+        font-weight: 400; /*lower font-weight than other elements inside option dropdown menu*/
+    }
+}
+
+#form--home-margin {
+    margin: 0 3rem;
+}
+
+.fill-out {
+    display: flex;
+    text-align: center;
+    color: var(--black);
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+/*---------------------------------------------ROOMS AVIABLE----------------------------------------------*/
+
+/* styling for date and select element */
+.input-date, .select-guests, .select-room-type{
+    border: 1px solid var(--black); /*black small border*/
+    border-radius: 1rem; /*rounds out edges*/
+}
+
+/*specific styling for button inside of form*/
+#form__button--home-booking{
+    grid-column: 5/span 1;
+    grid-row: 2/3;
+
+    padding: 0 0.6rem;
+
+    background-color: var(--green); /*black background-color*/
+    color: var(--white); /*and white text*/
+}
+#form__button--home-booking:hover{
+    transition: box-shadow 0.3s ease; /*transition for scaling up text and box-shadow*/
+    box-shadow: 0 8px 10px var(--box-shadow);
+}
+
+.room-box{
+    display: flex;
+
+    width:100%;/*box is taking up all available width space*/
+
+    background-color: var(--white);
+    box-shadow: 0 4px 10px var(--box-shadow); /*box-shadow beneath box*/
+    border-radius: 25px; /*rounded corners*/
+
+    .room__img-wrapper{
+        width:75%;
+        position: relative; /*makes it possible to place score inside of picture*/
+
+        .room__score:hover{
+            transform: scale(1.05, 1.05); /*scaling when hovering over score box*/
+        }
+
+        .room__score{
+            display:flex; /*flexbox for elements inside, star and score points*/
+            justify-content: center;
+            align-items: center;
+            gap:0.2rem; /*small gap between elements*/
+
+            position: absolute;
+            top:6%; /*placing out where score is positioned*/
+            left: 80%;
+
+            padding:0.5rem 0.7rem; /*some padding inside of score box*/
+
+            border-radius: 100px; /*rounded edges*/
+            background-color: var(--white);
+
+            transition: transform 0.3s ease; /*transition for scaling up box with score*/
+        }
+        
+        .room__img{
+            width:100%; /*taking up all of parents width*/
+            height:100%;
+            border-radius: 25px 0 0 25px; /*only round corners for left side*/
+        }
+
+        .room__text{ /*applies only to text in score box*/
+            font-size: 1.5rem;
+        }
+        
+    }
+
+    .room__content-wrapper{
+        display:grid; /*grid for layout*/
+        grid-template-columns: 1fr 2fr 1fr; /*grid for white box with text*/
+        grid-template-rows: repeat(5, 1fr);
+        gap:1rem; /*gap between sections*/
+
+        width:100%; /*takes upp all available width*/
+        padding:1rem; /*elements do not line up against borders*/
+
+        .room__icon{
+            max-width:1.4rem; /*setting max width to icons*/
+        }
+
+        h3{
+            grid-column: 1/3; /*placing out inside of grid*/
+            grid-row: 1/2;
+
+            align-self: flex-start; /*aligning titel and text in grid row*/
+
+            font-size: 2rem;
+            font-weight:400
+        }
+
+        .room__price{
+            grid-column: 3/4;
+            grid-row: 1/2;
+
+            justify-self: flex-end; /*aligning titel and text in grid row*/
+            margin-right:1rem; /*some margin to the right*/
+
+            transition: transform 0.2s ease; /*transition for scale*/
+
+            .room__price--dollar{
+                color:var(--green);
+                font-size: 2rem;
+                font-weight:400;
+            }
+        }
+        
+        .room__info--general{
+            grid-column: 1/3;
+            grid-row: 1/2;
+
+            display:flex; /*flexbox for elements inside of room__info*/
+            align-self: flex-end;
+            gap:1.5rem; /*some gap between elements*/
+        }
+
+        .room__text, .room__text--title{ /*same size for p elements*/
+            font-size:1.2rem;
+        }
+
+        /*styling for all text-containers*/
+        .room__info{
+            display:flex;
+            flex-direction: column;
+
+            .room__img-title{ /*styling for icon and text next to it*/
+                display:flex;
+                gap:0.5rem;
+                p{
+                    color: var(--black); /*making sure title is black and has no background-color*/
+                    background-color: transparent;
+                }
+            }
+
+            .room__text-container{
+                display:flex;
+                margin-top: 0.5rem;
+                gap:0.5rem;
+
+                p{
+                    transition: transform 0.2s ease, box-shadow 0.2s ease; /*transition for scaling up text and box-shadow*/
+                }
+            }
+        }
+
+        /*styling for both features and ai text*/
+        .room__info--features, .room__info--ai{
+            p{
+                background-color: var(--grey-box);
+                border-radius:5px;
+                padding: 0.2rem 0.4rem;
+            }
+        }
+
+        .room__info--features{
+            grid-column: 1/4; /*placing out text with grid*/
+            grid-row: 2/3;
+        }
+
+        .room__info--ai{
+            grid-column: 1/4;
+            grid-row: 3/4;
+            p{
+                color:var(--purple); /*purple text for ai*/
+            }
+        }
+
+        .room__info--sustainability{
+            grid-column: 1/3;
+            grid-row: 4/5;
+            p{
+                font-size: 1.2rem;
+            }
+        }
+
+
+        .room__button{
+            grid-column: 1/4;
+            grid-row: 5/6;
+
+            width:100%;
+            padding:0.7rem;
+
+            border-radius: 10px;
+            background-color: var(--green);
+            color: var(--white);
+            font-size: 1.5rem;
+            font-weight: 600;
+
+            transition: box-shadow 0.3s ease, font-size 0.3s ease; /*transition for box-shadow*/
+        }
+
+        /*---------HOVERING--------*/
+        .room__button:hover{
+            box-shadow: 0 4px 10px var(--box-shadow); /*box shadow appearing when hovering*/
+            font-size: 1.6rem; /*increasing font-size when hovering*/
+        }
+
+        .room__price:hover{
+            transform: scale(1.05, 1.05); /*subtle scale change when hovering over price*/
+        }
+
+        .room__text-container p:hover{
+            transform: scale(1.05, 1.05); /*changing scale when hovering over text boxes*/
+            box-shadow: 0 2px 10px var(--box-shadow); /*box-shadow when hovering over*/
+        }
+    }
+}
+
+.room-box:nth-child(even) {
+    flex-direction: row-reverse; /*even boxes change direction of img*/
+
+    .room__img-wrapper{
+        .room__img{
+            border-radius: 0 25px 25px 0; /*only round corners for right side*/
+        }
+    }
+}
+>>>>>>> the-last-pickle

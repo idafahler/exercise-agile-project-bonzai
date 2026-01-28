@@ -1,0 +1,539 @@
+<<<<<<< HEAD
+=======
+/* COLOUR & FONT VARIABLES */
+:root{
+    --black: #000000;
+    --dark-grey: #393939;
+    --box-shadow: #00000040;
+    --footer-color: #101828;
+    --white: #FFFFFF;
+    --grey-filter: #DBDBDB;
+    --grey-btn: #CBCBCB;
+    --grey-box: #D9D9D9;
+    --grey-border: #686868;
+    --overlay: #00000099;
+    --lightgrey: #F9FAFB;
+    --About-Selector:#ECECF0;
+
+    --green: #009966;
+    --darkgreen: #009688;
+    --lightgreen: #88DC84;
+    --turquoise: #D4FFF3;
+    --purple: #9810FA;
+    --linear-gradient: linear-gradient(90deg, rgba(0, 153, 102, 0.8) 0%, #009688 100%);
+
+    --font-inter: "Inter", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+}
+
+/* NORMALIZATION */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* BASE STYLING*/
+body{
+    font-family: var(--font-inter);
+
+    position: relative;
+}
+
+.wrapper{
+    max-width: 1240px; /*Content is never wider than 1240px*/
+    margin: 0 auto;
+}
+
+.button{
+    border-radius: 10px;
+    border-style: none;
+    cursor:pointer;
+}
+
+
+/* ----------------- HEADER ------------------- */
+.header--nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    background-color: var(--white);
+    z-index: 1000;
+    box-shadow: 0 4px 10px var(--box-shadow);
+}
+
+.nav-burger{
+    display: none; /*defualt for nav-burger is to not show*/
+    align-self: flex-start; /*aligning to start*/
+    padding:2rem;
+    position:fixed;
+    top:1rem;
+    left:1rem;
+    width:4rem;
+    border: 1px solid var(--black);
+    z-index: 2000;
+
+    .burger__btn{
+        display:flex; /*flexbox for lines*/
+        justify-content: center;
+        align-items: center;
+
+        max-width:3rem;
+        width:100%;
+        aspect-ratio: 1; /*making sure burger__btn is square*/
+        
+        z-index: 99; /*always showing*/
+        cursor:pointer; /*cursor changes to a pointer when hovering over button*/
+
+        position: relative;
+    }
+
+    .burger__btn > span,
+    .burger__btn > span::before,
+    .burger__btn > span::after{
+        width:100%; /*takes upp 100% of parent width*/
+        height:3px; /*thickness of lines*/
+        background-color: var(--black);
+        position: absolute; /*allows to place out lines*/
+        transition: all .3s ease; /*transforming style of hamburger button with transition*/
+    }
+    .burger__btn > span::before{
+        content: '';
+        top: -10px; /*placing out line*/
+    }
+    .burger__btn > span::after{
+        content: '';
+        top: 10px; /*placing out line*/
+    }
+
+    .burger__btn.open > span{
+        transform: rotate(45deg); /*when clicked lines move to form cross instead of hamburger menu*/
+    }
+    .burger__btn.open > span::before{
+        top:0;
+    }
+    .burger__btn.open > span::after{
+        top:0;
+        transform: rotate(90deg);
+    }
+}
+.burger__btn.open ~ .nav-links{
+    display:flex;
+}
+
+.burger__btn.open ~ .header--nav{
+    height:4rem;
+}
+
+/* -------------------- NAV ---------------------- */
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 0;
+    
+    .nav-logo {
+        max-width: 20.1rem;
+        height: 4.8rem;
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 3rem;
+    }
+    
+    li {
+        list-style: none;
+        padding: 0rem 1.2rem;
+    }
+    
+    .link {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: var(--black);
+        font-weight: 600;
+    }
+    .link:hover{
+        transition: background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease; /*transition for scaling up text and box-shadow*/
+        background-color: var(--grey-btn);
+        padding: 0.5rem 0;
+        border-radius: 10px;
+    }
+
+    .link--active {
+        color: var(--green);
+    }
+    .link--active:hover{
+        transition: background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease; /*transition for scaling up text and box-shadow*/
+        background-color: var(--turquoise);
+        padding: 0.5rem 0;
+        border-radius: 10px;
+    }
+
+    .button-nav {
+        white-space: nowrap;
+        padding: 0.8rem 1rem;
+        background-color: var(--green);
+        font-size: 1.2rem;
+        color: var(--white);
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+    }
+       .button-nav:hover{
+        transition: box-shadow 0.3s ease; /*transition for scaling up text and box-shadow*/
+        box-shadow: 0 8px 10px var(--box-shadow);
+    } 
+}
+
+/* ----------------- READY TO TRANSFORM YOUR STAY ---------------------- */
+
+.Ready-to-Transform-Your-Stay {
+    background: var(--linear-gradient);
+    padding: 5rem;
+    
+    /* aligning text and button */
+    .displayflex-column {
+        display: flex;
+        flex-direction: column;
+        color: var(--white);
+        
+        /* giving the <h2> unique atributes */
+        .rttys-text-h2 {
+            text-align: center;
+            align-self: center;
+            padding-bottom: 1.5rem;
+            font-weight: 400;
+            font-size: 3rem;
+        }
+
+        /* giving the <p> unique atributes */
+        .rttys-text-p {
+            text-align: center;
+            padding-bottom: 2rem;
+            font-weight: 400;
+            font-size: 2rem;
+            max-width: 100%;
+        }
+    }
+
+}
+
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    gap: 1rem;
+    position: relative;
+
+    .contact-us-rubrik {
+        font-weight: 400;
+        font-family: var(--font-inter);
+        font-size: 3rem;
+
+        .skicka-meddelande-knappen {
+            background-color: var(--green);
+            padding: 2rem;
+        }
+    }
+
+    .text-above-contacts {
+        font-weight: 400;
+        font-family: var(--font-inter);
+        font-size: 2rem;
+    }
+}
+
+.förälder-formulär {
+    /*Här*/
+    width: 1240px;
+    min-height: 33rem;
+    border: solid var(--black) 1px;
+    border-radius: 1.25rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    align-content: start;
+}
+
+form {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.form-group {
+    display: grid;
+    padding: 0.4rem 3rem;
+    transition: transform 0.2s ease , var(--box-shadow) 0.2s ease;
+    
+    label {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    input {
+        border: 1px solid var(--black);
+        border-radius: 0.3rem;
+        background-color: var(--lightgrey);
+        height: 2.5rem;
+        padding-left: 0.5rem;
+    }
+    
+    textarea {
+        border-radius: 0.6rem;
+        resize: none;
+        padding: 0.5rem;
+    }
+
+    button {
+        border-radius: 0.3rem;
+        margin-top: 2rem;
+        background-color: var(--green);
+        color: var(--white);
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: var(--font-inter);
+        padding: 0.7rem;
+        cursor: pointer;
+        border: none;
+    }
+}
+.form-group:has([required]) label {
+    display: flex;
+    gap: 3px;
+    
+    &::after {
+    color: var(--black);
+    content: '*';
+    }
+}
+
+.form-group:hover  input {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgb(235, 235, 235);
+    background-color: #f3f3f3;
+}
+
+.form-group textarea:focus, .form-group textarea:hover {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+    outline: none;
+}
+
+
+.Button-With-No-White:hover {
+    background-color: var(--white);
+    border-radius: 100px 100px;
+    transition: all .5s ease;
+}
+
+.pictures-and-text:hover {
+    transform: translateY(-10px);
+}
+
+
+
+#send-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    background-color: #28a745;
+    transition-duration: 500ms;
+}
+
+
+@layer layout {
+    .span-all {
+        grid-column: 1/ -1;
+    }
+}
+
+.confirmation-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #e6ffed;
+    border: 1px solid #0a8a0a;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a8a0a;
+    max-width: 500px;
+}
+
+.tick {
+    font-size: 2.5rem;
+    animation: bounceTick 0.5s ease;
+}
+
+@keyframes bounceTick {
+    0% { transform: scale(0); }
+    60% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+.fält {
+    display: grid;
+    width: 100%;
+    padding: 2rem 12rem 1rem 4rem;
+}
+
+.fält input {
+    background-color: var(--lightgrey);
+    border-radius: 0.3rem;
+    padding: 1rem 10rem;
+    gap: 1rem;
+    border: 1px solid var(--black);
+    box-sizing: border-box;
+}
+
+.fält label {
+    font-weight: 700;
+    font-style: var(--font-inter);
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.stora-fält-contacts {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    box-sizing: border-box;
+     gap: 2rem; 
+    height: 8rem;
+    padding: 2rem 12rem 1rem 4rem;
+    
+}
+
+.stora-fält-contacts textarea {
+    padding-top: 8rem;
+    padding-right: 55rem;
+    width: 100%;
+    background-color: var(--lightgrey);
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    border: 1px solid var(--black);
+    resize: none;
+}
+
+.stora-fält-contacts label {
+    font-size: 1.25rem;
+    --font-inter: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.skicka-meddelande-knappen {
+    width: 100%;
+    padding: 1rem 10rem;
+    cursor: pointer;
+    border-radius: 0.7rem;
+    background-color: var(--green);
+    color: var(--white);
+    --font-inter: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: none;
+    margin-top: 2rem;
+}
+
+/* ----------------- FOOTER ---------------------- */
+
+.footer {
+    display: flex;
+    background: var(--footer-color);
+    color: var(--white);
+    padding: 5rem;
+}
+
+/* The grid footer */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+
+    .footer-link{
+        text-decoration: none;
+        color: var(--white);
+    }
+    
+    /* Logo and filler text */
+    .top-left-footer-grid {
+        display: inline-grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10rem 1fr;
+
+        /* img */
+        .tlfg-img {
+            display:flex;   
+            grid-column: 1 / span 1;
+            grid-row: 1;
+        }
+        
+        /* filler text */
+        .tlfg-text {
+            display:flex; 
+            padding-top: 2rem;
+            grid-column: 1 / span 1;
+            grid-row: 2;
+            display: block;
+
+            @media (max-width: 1000px) {
+            display: none;
+        }
+        }
+    }
+
+    /* Contact box */
+    .top-middle-footer-grid {
+        padding-top: 3rem;
+        display:flex;   
+        flex-direction: column;
+        grid-column: 2 / span 1;
+        grid-row: 1;
+        gap: 1.5rem;
+    }
+
+    /* Quick Links box */
+    .top-right-footer-grid {
+        padding-top: 3rem;
+        display:flex;   
+        flex-direction: column;
+        grid-column: 3 / span 1;
+        grid-row: 1;
+        gap: 0.5rem;
+        
+        h2 {
+            padding-bottom: 1rem;
+        }
+    }
+    
+    /* Copyright text box + border */
+    .bottom-footer-grid {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+        padding-top: 2rem;
+        font-size: 1.5rem;
+        border-top: 0.125rem solid white;
+    }
+}
+
+.hover-link-footer:hover {
+    transition: font-size 0.2s ease; /*transition for scaling up text and box-shadow*/
+    font-size: larger;
+}
+>>>>>>> the-last-pickle
