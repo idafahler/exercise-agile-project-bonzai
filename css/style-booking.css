@@ -59,7 +59,7 @@
 }
 
 #wrapper-form--home{
-    display:flexbox; /*flexbox for positioning form inside of section*/
+    display: flex; /*flexbox for positioning form inside of section*/
     flex-direction: row;
     align-content: center;
     border-radius: 25px;
