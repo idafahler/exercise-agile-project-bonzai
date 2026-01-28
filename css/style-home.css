@@ -51,6 +51,7 @@
         font-weight: 600;
     }
     .button-undertext:hover{
+        transition: font-size 0.2s ease, padding 0.2s ease; /*transition for scaling up text and box-shadow*/
         font-size: 1.5rem;
         padding: 0.8rem 0;
     }
@@ -66,7 +67,8 @@
         background-color: transparent;
         cursor: pointer;
     }
-        .learnmore-button-undertext:hover{
+    .learnmore-button-undertext:hover{
+        transition: font-size 0.2s ease, padding 0.2s ease; /*transition for scaling up text and box-shadow*/
         font-size: 1.5rem;
         padding: 0.6rem 0;
     }
@@ -332,6 +334,7 @@
             font-size: 1.2rem;
         }
         .AI-button:hover{
+            transition: box-shadow 0.3s ease; /*transition for scaling up text and box-shadow*/
             box-shadow: 0 8px 10px var(--box-shadow);
         }
         
@@ -361,6 +364,7 @@
         border-radius: 10px;
     }
     .rttys-button:hover{
-        box-shadow: 0 8px 10px var(--box-shadow);
+        transition: box-shadow 0.3s ease; /*transition for scaling up text and box-shadow*/
+        box-shadow: 0 8px 12px var(--box-shadow);
     }
 }

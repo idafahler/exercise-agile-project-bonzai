@@ -177,6 +177,7 @@
     color: var(--white); /*and white text*/
 }
 #form__button--home-booking:hover{
+    transition: box-shadow 0.3s ease; /*transition for scaling up text and box-shadow*/
     box-shadow: 0 8px 10px var(--box-shadow);
 }
 
