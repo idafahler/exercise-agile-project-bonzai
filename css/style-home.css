@@ -49,30 +49,8 @@
         border: none;
         cursor: pointer;
         font-weight: 600;
-        animation: wobble 3s ease infinite;
     }
-    
-    @keyframes wobble {
-        0%, 90%, 100% {
-            transform: rotate(0deg);
-        }
-
-        92% {
-            transform: rotate(3deg);
-        }
-
-        94% {
-            transform: rotate(-3deg);
-        }
-        96% {
-            transform: rotate(2deg);
-        }
-
-        98% {
-            transform: rotate(-1deg);
-        }
-    }
-    
+                    
     .learnmore-button-undertext {
         padding: 0.8rem 0.6rem;
         border-radius: 10px;
@@ -83,24 +61,22 @@
         color: var(--white);
         background-color: transparent;
         cursor: pointer;
+        animation: slide-in 3s ease infinite;
     }
-
+                    
 }
 
 /* -------------------- FORM ----------------------*/
-#form-section--home, .form-section--home-booking{
+#form-section--home{
     background: linear-gradient(to right, var(--green), var(--darkgreen)); /*background for whole section*/
-    min-height: 20vh; /*setting height*/
 }
 
 #wrapper-form--home{
     display:flex; /*flexbox for positioning form inside of section*/
     justify-content: center;
+    align-items: center;
 
     height: 100%; /*taking all available height*/
-
-    align-items: flex-start; /*positioning with padding instead*/
-    padding-top:3vh; /*form is not centered, box/buttons is centered inside of section*/
 }
 
 #form--home{
@@ -110,7 +86,7 @@
     align-items: flex-start; /*making sure label and element doesn't separate from each other*/
     gap: 0.7rem; /*gap between elements*/
 
-    margin: 0 6rem; /*margin only on sides*/
+    padding: 3rem 5rem;
 
     #form__button--home:hover{
         box-shadow: 0 6px 10px var(--box-shadow); /*box-shadow when hovering over button*/
@@ -380,4 +356,33 @@
         transition: box-shadow 0.3s ease; /*transition for scaling up text and box-shadow*/
         box-shadow: 0 8px 12px var(--box-shadow);
     }
+}
+
+#wobble-effekt {
+  animation-duration: 3s;
+  animation-name: wobble;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes wobble {
+  0%, 90%, 100% {
+    transform: rotate(0deg);
+  }
+
+  92% {
+    transform: rotate(3deg);
+  }
+
+  94% {
+    transform: rotate(-3deg);
+  }
+
+  96% {
+    transform: rotate(2deg);
+  }
+
+  98% {
+    transform: rotate(-1deg);
+  }
 }
