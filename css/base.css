@@ -190,6 +190,16 @@ nav {
     } 
 }
 
+/* ----------------- FORM ------------------ */
+form {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+
 /* ----------------- READY TO TRANSFORM YOUR STAY ---------------------- */
 
 .Ready-to-Transform-Your-Stay {
