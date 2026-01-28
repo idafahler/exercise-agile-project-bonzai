@@ -29,7 +29,7 @@
 
     /*------------------ FORM ------------------------*/
     #wrapper-form--home{
-        /* padding:0; */
+        padding:0;
     }
   
     
@@ -204,6 +204,24 @@
 
         ul{
             margin:0; /*layout can keep shrinking without breaking*/
+        }
+    }
+
+    /*---------------------------ROOMS---------------------------------*/
+
+    .room-box:nth-child(even) {
+    flex-direction: column;
+    }
+
+    .room-box {
+        flex-direction: column;
+
+        .room__img-wrapper {
+            width: 100%;
+            
+            .room__img{
+               border-radius: 0;
+           }
         }
     }
 
@@ -387,7 +405,9 @@
     }
 }
 
-
+.Booking-Top-Article{
+    padding: 5rem 0;
+}
 
 /* ----------------------- MAX-WIDTH:500px -------------------------------- */
 @media (max-width:500px){
@@ -443,10 +463,10 @@
 
     #form--home{
         grid-template-columns:repeat(1, 1fr); /*new grid layout, for smaller widths*/
-        grid-template-rows: repeat(9, 1fr);
+        grid-template-rows: repeat(10, 1fr);
         
         align-items: center;
-        gap: 0;
+        gap: 0.2rem;
         
         /*placing out elements inside of grid*/
         #form__label--home-checkin{
@@ -491,12 +511,26 @@
         
         #form__button--home-booking {
             grid-column:1/2;
-            grid-row: 9/10;    
+            grid-row: 10/11;  
+            margin-bottom: 2rem;
+        }
+    }
+    
+    /*-----------------------ROOMS-------------------------------*/
+    .room-box{
+        .room__content-wrapper{
+            .room__price{
+                grid-column: 3/4;
+                grid-row: 4/5;
+            }
+            
+            h3{
+                grid-column: 1/4; /*placing out inside of grid*/
+                grid-row: 1/2;
+            }
         }
     }
 }
-
-
 
 /* ----------------------- MAX-WIDTH:400px -------------------------------- */
 @media(max-width:400px){
