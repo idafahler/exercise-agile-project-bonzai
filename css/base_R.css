@@ -1,0 +1,192 @@
+.förälder-formulär {
+    /*Här*/
+    width: 1240px;
+    min-height: 33rem;
+    border: solid var(--black) 1px;
+    border-radius: 1.25rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    align-content: start;
+}
+
+form {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.form-group {
+    display: grid;
+    padding: 0.4rem 3rem;
+    transition: transform 0.2s ease , var(--box-shadow) 0.2s ease;
+    
+    label {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    input {
+        border: 1px solid var(--black);
+        border-radius: 0.3rem;
+        background-color: var(--lightgrey);
+        height: 2.5rem;
+        padding-left: 0.5rem;
+    }
+    
+    textarea {
+        border-radius: 0.6rem;
+        resize: none;
+        padding: 0.5rem;
+    }
+
+    button {
+        border-radius: 0.3rem;
+        margin-top: 2rem;
+        background-color: var(--green);
+        color: var(--white);
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: var(--font-inter);
+        padding: 0.7rem;
+        cursor: pointer;
+        border: none;
+    }
+}
+.form-group:has([required]) label {
+    display: flex;
+    gap: 3px;
+    
+    &::after {
+    color: var(--black);
+    content: '*';
+    }
+}
+
+.form-group:hover  input {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgb(235, 235, 235);
+    background-color: #f3f3f3;
+}
+
+.form-group textarea:focus, .form-group textarea:hover {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+    outline: none;
+}
+
+
+.Button-With-No-White:hover {
+    background-color: var(--white);
+    border-radius: 100px 100px;
+    transition: all .5s ease;
+}
+
+.pictures-and-text:hover {
+    transform: translateY(-10px);
+}
+
+
+
+#send-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    background-color: #28a745;
+    transition-duration: 500ms;
+}
+
+
+@layer layout {
+    .span-all {
+        grid-column: 1/ -1;
+    }
+}
+
+.confirmation-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #e6ffed;
+    border: 1px solid #0a8a0a;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a8a0a;
+    max-width: 500px;
+}
+
+.tick {
+    font-size: 2.5rem;
+    animation: bounceTick 0.5s ease;
+}
+
+@keyframes bounceTick {
+    0% { transform: scale(0); }
+    60% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+.fält {
+    display: grid;
+    width: 100%;
+    padding: 2rem 12rem 1rem 4rem;
+}
+
+.fält input {
+    background-color: var(--lightgrey);
+    border-radius: 0.3rem;
+    padding: 1rem 10rem;
+    gap: 1rem;
+    border: 1px solid var(--black);
+    box-sizing: border-box;
+}
+
+.fält label {
+    font-weight: 700;
+    font-style: var(--font-inter);
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.stora-fält-contacts {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    box-sizing: border-box;
+     gap: 2rem; 
+    height: 8rem;
+    padding: 2rem 12rem 1rem 4rem;
+    
+}
+
+.stora-fält-contacts textarea {
+    padding-top: 8rem;
+    padding-right: 55rem;
+    width: 100%;
+    background-color: var(--lightgrey);
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    border: 1px solid var(--black);
+    resize: none;
+}
+
+.stora-fält-contacts label {
+    font-size: 1.25rem;
+    --font-inter: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.skicka-meddelande-knappen {
+    width: 100%;
+    padding: 1rem 10rem;
+    cursor: pointer;
+    border-radius: 0.7rem;
+    background-color: var(--green);
+    color: var(--white);
+    --font-inter: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: none;
+    margin-top: 2rem;
+}
