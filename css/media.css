@@ -21,7 +21,11 @@
     }
 }
 
-
+@media (max-width: 1300px) {
+    .wrapper {
+    width: 100%;
+    }
+}
 
 
 /* ----------------------- MAX-WIDTH:1130px ----------------------------- */
@@ -555,5 +559,228 @@
 @media (max-width: 500px) {
     .footer {
         padding: 1rem;
+    }
+}/* ---------------------- MOBIL LAYOUT ABOUT PAGE ----------------------- */
+
+@media (max-width: 1000px) {
+    .hero__text {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero__title {
+        font-size: 3rem;
+        font-weight: 200;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .displayflex-row {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .rttys-text-h2 {
+        display: none;
+    }
+
+    .displayflex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 4rem;
+        max-width: 100%;
+    }
+    
+    .displayflex-row > card {
+        display: grid;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 876px) {
+    .displayflex-row .card-h2 {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: start;
+    }
+
+    .card-p {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .displayflex-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .displayflex-row .card-h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rttys-text-p {
+        display: flex;
+        margin: 0;
+        width: 100%;
+    }
+
+    .displayflex-row p {
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .About-Pictures-Grid {
+        gap: 2rem;
+    }
+    .pictures-and-text {
+        height: 27.5rem;
+    }
+
+    .About-Menu {
+        width: 100%;
+    }
+
+    .Button-With-No-White 
+    .Button-With-No-White-Active {
+        width: auto;
+        padding: 0.5rem 1.5rem;
+        background-color: red;
+    }
+
+    .about-menu-font {
+        font-size: 2rem;
+    }
+
+    .About-Menu h2 {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .About-Pictures-Grid {
+        row-gap: 4rem;
+    }
+
+
+}
+
+
+@media (min-width: 375px) and (max-width: 576px) {
+    .förälder-formulär {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .wrapper {
+    padding: 0.5rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .text-above-contacts  {
+        padding-left: 1.5rem;
+    }
+
+    .förälder-formulär {    
+        min-height: auto;
+    }
+    
+    .form-group {
+        padding: 0;
+        margin: 1rem;
+    }
+    
+    .rttys-text-p {
+        width: 100%;
+        padding: 0;
+    }
+
+    .World-Class-p {
+        padding-left: 2rem;
+    }
+
+    .About-turquoise {
+        padding-bottom: 0.5rem;
+    }
+    .Ready-to-Transform-Your-Stay {
+        padding: 1rem;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+        .About-Menu {
+        width: 100%;
+
+    }
+
+    .Button-With-No-White-Active.About-Padding {
+        width: auto;
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: start;
+    }
+
+    .Button-With-No-White.About-Padding {
+        width: auto;
+        padding: 0.5rem 1rem;
+    }
+
+    .About-Menu h2 {
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+@media (max-width: 400px) {
+      .About-Menu {
+        width: 100%;
+
+    }
+
+    .Button-With-No-White-Active.About-Padding {
+        width: auto;
+        padding: 0.5rem 0.5rem;
+        display: flex;
+        justify-content: start;
+    }
+
+    .Button-With-No-White.About-Padding {
+        width: auto;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .About-Menu h2 {
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .About-Pictures-Grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 500px) {
+      .About-Pictures-Grid {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

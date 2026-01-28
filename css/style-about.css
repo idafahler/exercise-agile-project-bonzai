@@ -4,6 +4,7 @@
 
 
 /*----------------------HERO------------------------------*/
+
 .hero--about{
     height: 70vh;
     background: linear-gradient(var(--overlay), var(--overlay)), /*dark overlay to make picture appear darker*/
@@ -12,10 +13,10 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    display:flex; /*flexbox for wrapper*/
+    display: flex; /*flexbox for wrapper*/
     /*wrapper for hero, flexbox to center elements*/
     .wrapper--about-hero{
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -39,6 +40,7 @@
     .hero__text{
         font-size: 2.25rem;
     }
+
 }
 /*----------------------READY TO TRANSFORM YOUR STAY------------------------------*/
 .About-Our-Story {
@@ -65,24 +67,23 @@
     
 .About-turquoise {
     background-color: var(--turquoise);
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .About-Flex-Row {
     padding-bottom: 3rem;
-
 }
 
 .About-Menu {
-    justify-self: center;
-    align-items: center;
     display: flex;
     flex-direction: row;
+    justify-self: center;
+    align-items: center;
     border-radius: 100px 100px;
     justify-content: space-between;
     padding: 0.5rem 1rem;
     background-color: var(--About-Selector);
-
+}
     .about-menu-font {
         font-size: 1.5rem;
         font-weight: 600;
@@ -98,7 +99,6 @@
         padding: 1rem 3rem;
         border-radius: 100px 100px;
         background-color: var(--white);
-
     }
 
     .Button-With-No-White {
@@ -107,7 +107,6 @@
         border: none;
         cursor:pointer;
     }
-}
     
 .World-Class-h2 {
     font-size: 2rem;
@@ -141,6 +140,7 @@
         overflow: hidden;
         font-family: var(--font-inter);
         border: 1px solid black;
+        cursor: pointer;
         
         .img-size {
             height: 60%;
@@ -168,6 +168,7 @@
         }
     }
 }
+
 /*----------------------READY TO TRANSFORM YOUR STAY------------------------------*/
 /* flexes the elements in to a row */
 .displayflex-row {
