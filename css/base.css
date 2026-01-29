@@ -13,6 +13,9 @@
     --lightgrey: #F9FAFB;
     --About-Selector:#ECECF0;
 
+    --nav-grey: #f2f2f2;
+    --nav-turquoise: #e7fdf6;
+
     --green: #009966;
     --darkgreen: #009688;
     --lightgreen: #88DC84;
@@ -148,6 +151,7 @@ nav {
     li {
         list-style: none;
         padding: 0rem 1.2rem;
+        
     }
     
     .link {
@@ -158,8 +162,8 @@ nav {
     }
     .link:hover{
         transition: background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease; /*transition for scaling up text and box-shadow*/
-        background-color: var(--grey-btn);
-        padding: 0.5rem 0;
+        background-color: var(--nav-grey);
+        padding: 0.5rem 0rem;
         border-radius: 10px;
     }
 
@@ -168,7 +172,7 @@ nav {
     }
     .link--active:hover{
         transition: background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease; /*transition for scaling up text and box-shadow*/
-        background-color: var(--turquoise);
+        background-color: var(--nav-turquoise);
         padding: 0.5rem 0;
         border-radius: 10px;
     }
