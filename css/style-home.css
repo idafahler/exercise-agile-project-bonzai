@@ -76,10 +76,10 @@
 
 #wrapper-form--home{
     display:flex; /*flexbox for positioning form inside of section*/
-    justify-content: center;
+    justify-content: center; /*centering content inside of wrapper*/
     align-items: center;
 
-    height: 100%; /*taking all available height*/
+    height: 100%; /*taking all available height from parent*/
 }
 
 #form--home{
@@ -106,10 +106,10 @@
 
     .form__label{
         display:flex;
-        align-self: flex-end; /*text is aligned with its element*/
+        align-self: flex-end; /*text is aligned with box*/
         justify-self: flex-start;
 
-        padding-left: 0.5rem;
+        padding-left: 0.5rem; /*some padding-left to position in line with box*/
 
         font-size:1.5rem;
         font-weight: 600;
@@ -194,20 +194,20 @@
 /* Wrapper for title sections and their elements */
 .wrapper-info__title{
     display:flex; /*flexbox for titles and text*/
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; /*text segments on top of each other instead of beside*/
+    justify-content: center; /*centering elements and text*/
     align-items: center;
     text-align: center;
     
     .info-container__title{
-        padding:4rem 0 3rem 0;
+        padding:4rem 0 3rem 0; /*some padding top and bottom*/
 
         font-size: 3rem;
         font-weight: 400;
     }
 
     .info-container__text{
-        padding: 0 3rem;
+        padding: 0 3rem; /*some padding on sides*/
         font-size: 1.5rem;
         font-weight: 400;
     }
@@ -217,9 +217,9 @@
 .wrapper-info__box{
     display:flex; /*flexbox for placing out boxes*/
     flex:1; /*each box takes up even space*/
-    justify-content: space-between;
+    justify-content: space-between; /*spacing out elements*/
     gap:1rem; /*gap between boxes*/
-    padding: 4rem 0; /*padding around boxes*/
+    padding: 4rem 0; /*padding around boxes, top and bottom*/
 
     .info-box:hover{
         transform: scale(1.05, 1.05); /*scaling up boxes when mouse is hovered over*/
@@ -240,10 +240,10 @@
     
     .info-box__icon{
         max-width:4rem; /*styling icon inside of box*/
-        padding:1rem;
+        padding:1rem; /*takes up more space, making green background appear bigger behind icon*/
 
         background-color: var(--lightgreen); /*round, green background for icon*/
-        border-radius: 50%; /*makes it round*/
+        border-radius: 50%; /*makes green background round*/
     }
 
     .info-box__title{
