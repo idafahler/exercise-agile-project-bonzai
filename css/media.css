@@ -210,6 +210,7 @@
 
     /*---------------------------ROOMS---------------------------------*/
 
+    /*changing the layout of the roooms for mobil*/
     .room-box:nth-child(even) {
     flex-direction: column;
     }
@@ -470,7 +471,7 @@
         align-items: center;
         gap: 0.2rem;
         
-        /*placing out elements inside of grid*/
+        /*placing out elements inside of grid*9*/
         #form__label--home-checkin{
             grid-column:1/2;
             grid-row:1/2;
@@ -761,6 +762,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .footer-grid {
+        .top-left-footer-grid{
+            .tlfg-text {
+                display: none;
+            }    
+        }
+    }         
 }
 @media (max-width: 500px) {
       .About-Pictures-Grid {

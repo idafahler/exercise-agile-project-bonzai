@@ -341,6 +341,7 @@
 }
 /* ------------------------Ready To Transform Your Stay-------------------------- */
 
+/* Setting upp the enitial grid to place the elements in */
 .rttys-center{
     display: flex;
     justify-content: center;

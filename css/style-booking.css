@@ -2,6 +2,11 @@
 -------- SPECIFIC STYLING FOR ELEMENTS IN BOOKING.HTML-----------
 -----------------------------------------------------------------*/
 
+.main--booking{
+    background-color: var(--turquoise); /*background color for whole page*/
+    min-height: 60vh; /*making sure white does not show men rooms not showing*/
+}
+
 .Booking-Top-Article {
     display: flex;
     flex-direction: column;
@@ -17,36 +22,6 @@
     .Booking-p {
         text-align: center;
         font-weight: 400;
-        font-size: 2rem;
-    }
-}
-
-/*------------------------------ROOMS AVAILABLE------------------------------*/
-.main--booking{
-    background-color: var(--turquoise); /*background color for whole page*/
-    min-height: 60vh; /*making sure white does not show men rooms not showing*/
-}
-
-.rooms-section{
-    display:flex; /*flexbox for placing out room boxes*/
-    justify-content: center; /*centering boxes on page*/
-    align-items: center;
-    flex-direction: column; /*boxes is shown in columns*/
-    gap:2rem; /*gap between each box*/
-
-    padding-bottom: 5rem; /*padding under section of rooms*/
-}
-
-.rooms__titles{
-    padding: 3rem 0 2rem 0; /*sokme padding around titles*/
-
-    h2, h3{
-        font-weight: 400; /*lighter font-weight for both titles*/
-    }
-    h2{
-        font-size: 3rem;
-    }
-    h3{
         font-size: 2rem;
     }
 }
@@ -100,7 +75,7 @@
         font-weight: 600;
     }
 
-    /*placing out elements inside of grid*/
+    /*placing out elements inside of grid*8*/
     #form__label--home-checkin{
         grid-column: 1/2;
         grid-row:1/2;
@@ -149,19 +124,40 @@
     }
 }
 
-#form--home-margin {
-    margin: 0 3rem;
-}
-
 .fill-out {
     display: flex;
-    text-align: center;
+    justify-content: center;
     color: var(--black);
     font-size: 2.5rem;
     padding: 1rem;
 }
 
 /*---------------------------------------------ROOMS AVIABLE----------------------------------------------*/
+
+
+.rooms-section{
+    display:flex; /*flexbox for placing out room boxes*/
+    justify-content: center; /*centering boxes on page*/
+    align-items: center;
+    flex-direction: column; /*boxes is shown in columns*/
+    gap:2rem; /*gap between each box*/
+
+    padding-bottom: 5rem; /*padding under section of rooms*/
+}
+
+.rooms__titles{
+    padding: 3rem 0 2rem 0; /*sokme padding around titles*/
+
+    h2, h3{
+        font-weight: 400; /*lighter font-weight for both titles*/
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+}
 
 /* styling for date and select element */
 .input-date, .select-guests, .select-room-type{

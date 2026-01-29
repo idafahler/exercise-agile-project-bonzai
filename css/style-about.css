@@ -43,10 +43,11 @@
     }
 
 }
-/*----------------------READY TO TRANSFORM YOUR STAY------------------------------*/
+/*----------------------OUR STORY------------------------------*/
 .About-Our-Story {
-    background-color: var(--white);
+    background-color: var(--white); /* Background colors for this segment */
 
+    /* Adding styling to this segment */
     .Our-Story {
         display: flex;
         flex-direction: column;
@@ -55,6 +56,8 @@
         padding: 5rem 0;
         font-weight: 400;
         
+
+        /* Styling the h2 tag  */
         .Our-Story-h2 {
             font-size: 3rem;
             padding-bottom: 3rem;
@@ -65,16 +68,18 @@
         }
     }
 }
-    
+/* Backgrond color */ 
 .About-turquoise {
     background-color: var(--turquoise);
     padding: 3rem 0;
 }
-
+    
+/* padding to extend the untill the next section */ 
 .About-Flex-Row {
     padding-bottom: 3rem;
 }
 
+/* positioning the elements in the bar above the pictures on the about page */ 
 .About-Menu {
     display: flex;
     flex-direction: row;
@@ -85,30 +90,36 @@
     padding: 0.5rem 1rem;
     background-color: var(--About-Selector);
 }
-    .about-menu-font {
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
-    
-    .About-Padding {
-        padding: 0 3rem;
-    }
-    
-    .Button-With-No-White-Active {
-        border: none;
-        cursor:pointer;
-        padding: 1rem 3rem;
-        border-radius: 100px 100px;
-        background-color: var(--white);
-    }
 
-    .Button-With-No-White {
-        background-color: var(--About-Selector);
-        padding: 1rem 3rem;
-        border: none;
-        cursor:pointer;
-    }
-    
+/* styling all the elements */
+.about-menu-font {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* spacing the elements */
+.About-Padding {
+    padding: 0 3rem;
+}
+
+/* styling the active element */
+.Button-With-No-White-Active {
+    border: none;
+    cursor:pointer;
+    padding: 1rem 3rem;
+    border-radius: 100px 100px;
+    background-color: var(--white);
+}
+
+/* styling the none active elements */
+.Button-With-No-White {
+    background-color: var(--About-Selector);
+    padding: 1rem 3rem;
+    border: none;
+    cursor:pointer;
+}
+
+/* styling the h2 tag  */
 .World-Class-h2 {
     font-size: 2rem;
     font-weight: 500;
@@ -116,14 +127,17 @@
     padding: 0.5rem;
 }
 
+/* styling the p tag  */
 .World-Class-p {
     font-size: 1.5rem;
     font-weight: 400;
-    justify-self: center;
+    justify-content: center;
+    text-align: center;
     padding: 0.5rem;
 }
 
 
+/* positioning the boxes where the img and text is going to be */
 .About-Pictures-Grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -131,8 +145,9 @@
     gap: 2rem;
     padding: 5rem 0;
     border: 10px black;
-
     
+    
+    /* flexing the img to be above the text section and not a row  */
     .pictures-and-text {
         display: flex;
         flex-direction: column;
@@ -140,21 +155,22 @@
         border-radius: 15px;
         overflow: hidden;
         font-family: var(--font-inter);
-        border: 1px solid black;
+        border: 1px solid black; /*Adding a border*/
         cursor: pointer;
         
         .img-size {
             height: 60%;
         }
-
+        
+        /* Hade to style these pictures specificly to take up less space */
         .img-size-12 {
             max-width:100%;
             height: 60%;
             object-fit: cover;
         }
-
+        
         .About-text-border {
-            border-top: 1px solid black;
+            border-top: 1px solid black; /*Adding a border above the text to 'contain' the picture*/
         }
         
         .about-pictures-h2 {
