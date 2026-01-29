@@ -10,13 +10,13 @@
     background-position: center;
     background-repeat: no-repeat;
     height:70vh; 
-
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     
+    /* ------------------- THE TEXT OVER THE BACKGROUND PICTURE (HERO SECTION) ------------------ */
     .hero-text {
         position: absolute;
         color: var(--white);
@@ -39,6 +39,7 @@
         margin-top: 2rem;
     }
 
+    /* -------- THIS BUTTON TAKES YOU TO THE SECOND SITE TO BOOK A ROOM ---------- */
     .button-undertext {
         white-space: nowrap;
         padding: 1rem 0.7rem;
@@ -50,7 +51,7 @@
         cursor: pointer;
         font-weight: 600;
     }
-    
+    /* ------------ THIS BUTTON TAKES YOU TO THE THIRD SITE TO GET MORE INFORMATION ABOUT THE HOTEL------------- */
     .learnmore-button-undertext {
         padding: 0.8rem 0.6rem;
         border-radius: 10px;
@@ -62,7 +63,7 @@
         background-color: transparent;
         cursor: pointer;
     }
-    
+    /*--------------------- WHEN YOU HOVER OVER THE "LEARN MORE"-BUTTON ----------------- */
     .learnmore-button-undertext:hover{
         background-color: var(--box-shadow);
         transform: translateY(-3px);
@@ -284,7 +285,8 @@
 }
 
 /*-------------------------AI-INFO-BOX---------------------------------*/
- 
+
+ /*-----------------YOUR AI-ENHANCED-STAY-----------------*/
 .yourai {
     display: flex;
     flex-direction: row;
@@ -292,8 +294,8 @@
     width: auto;
     padding: 5rem 0;
     justify-content: space-between;
-    
 
+    /*------------YOUR AI-ENHANCED-STAY TEXT LAYOUT---------------*/
     .AI-text {
         display: flex;
         flex-direction: column;
@@ -304,6 +306,8 @@
             font-weight: 400;
             font-size: 3rem;
         }  
+
+        /* YOUR AI-ENHANCED-STAY TEXT */
         .AI-text-p {
             padding-top: 2rem;
             font-size: 1.25rem;
@@ -312,6 +316,7 @@
                 color: var(--dark-grey);
             }
         }
+        /*----------------- THE BUTTON TO EXPERIENCE THE HOTEL----------------- */
         .AI-button {
             display: flex;
             align-self: flex-start;
@@ -325,6 +330,7 @@
             --font-inter: "Inter", sans-serif;
             font-size: 1.2rem;
         }
+        /*---------------------THE HOVER EFFECT-------------- */
         .AI-button:hover{
             transition: box-shadow 0.3s ease; /*transition for scaling up text and box-shadow*/
             box-shadow: 0 8px 10px var(--box-shadow);
@@ -362,6 +368,8 @@
     }
 }
 
+ /*-------------- AN INFINITE WOBBLE EFFECT ON THE BOOK-YOUR STAY BUTTON ON THE HERO SECTION ------------*/
+
 #wobble-effekt {
   animation-duration: 3s;
   animation-name: wobble;
@@ -369,6 +377,7 @@
   animation-direction: alternate;
 }
 
+ /*------------------ KEYFRAME ANIMATION OF THE WOBBLE-EFFECT --------------------*/
 @keyframes wobble {
   0%, 90%, 100% {
     transform: rotate(0deg);
