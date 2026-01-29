@@ -284,7 +284,8 @@
 }
 
 /*-------------------------AI-INFO-BOX---------------------------------*/
- 
+
+ /*-----------------YOUR AI-ENHANCED-STAY-----------------*/
 .yourai {
     display: flex;
     flex-direction: row;
@@ -292,8 +293,8 @@
     width: auto;
     padding: 5rem 0;
     justify-content: space-between;
-    
 
+    /*------------YOUR AI-ENHANCED-STAY TEXT LAYOUT---------------*/
     .AI-text {
         display: flex;
         flex-direction: column;
@@ -304,6 +305,8 @@
             font-weight: 400;
             font-size: 3rem;
         }  
+
+        /* YOUR AI-ENHANCED-STAY TEXT */
         .AI-text-p {
             padding-top: 2rem;
             font-size: 1.25rem;
@@ -312,6 +315,7 @@
                 color: var(--dark-grey);
             }
         }
+        /*----------------- THE BUTTON TO EXPERIENCE THE HOTEL----------------- */
         .AI-button {
             display: flex;
             align-self: flex-start;
@@ -325,6 +329,7 @@
             --font-inter: "Inter", sans-serif;
             font-size: 1.2rem;
         }
+        /*---------------------THE HOVER EFFECT-------------- */
         .AI-button:hover{
             transition: box-shadow 0.3s ease; /*transition for scaling up text and box-shadow*/
             box-shadow: 0 8px 10px var(--box-shadow);
