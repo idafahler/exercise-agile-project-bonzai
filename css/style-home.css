@@ -39,7 +39,7 @@
         margin-top: 2rem;
     }
 
-    /* -------- THIS BUTTON TAKES YOU TO THE SECOND SITE TO BOOK A ROOM ---------- */
+    /* -------- THIS BUTTON TAKES YOU TO THE SECOND PAGE TO BOOK A ROOM ---------- */
     .button-undertext {
         white-space: nowrap;
         padding: 1rem 0.7rem;
@@ -51,7 +51,7 @@
         cursor: pointer;
         font-weight: 600;
     }
-    /* ------------ THIS BUTTON TAKES YOU TO THE THIRD SITE TO GET MORE INFORMATION ABOUT THE HOTEL------------- */
+    /* ------------ THIS BUTTON TAKES YOU TO THE THIRD PAGE TO GET MORE INFORMATION ABOUT THE HOTEL------------- */
     .learnmore-button-undertext {
         padding: 0.8rem 0.6rem;
         border-radius: 10px;
@@ -337,7 +337,7 @@
         }
         
     }
-    
+    /*-------------- TO THE RIGHT, THE PICTURE OF ONE OF THE ROOMS IN THE HOTEL -------------*/
     .yourai__img {
     max-width: 100%;
     width: 31.5rem;

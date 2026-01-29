@@ -139,12 +139,13 @@ nav {
     align-items: center;
     padding: 1rem 0;
     
-    /*Loga*/
+    /*Logo*/
     .nav-logo {
         max-width: 20.1rem;
         height: 4.8rem;
     }
 
+    /*-------------------- THE MENU ---------------------*/
     ul {
         width: 100%;
         display: flex;
@@ -152,7 +153,8 @@ nav {
         justify-content: flex-end;
         margin-right: 3rem;
     }
-    
+
+    /*-------------- THE LIST OF THE LINKS ----------------*/
     li {
         list-style: none;
         padding: 0rem 1.2rem;
@@ -237,7 +239,7 @@ nav {
     }
 
 }
-                /* --------------------- CONTAINER CONTACT US --------------- */
+            /* --------------------- CONTAINER CONTACT US --------------- */
 .contact-us-container {
     display: flex;
     flex-direction: column;

@@ -417,7 +417,7 @@
 
     /*------------------ HERO ------------------------*/
     .Hero-section{
-
+        /*--------- TEXT GETS SMALLER FOR A SMALLER LAYOUT ----------*/
         .welcome{
             font-size: 2.5rem;
         }
@@ -565,7 +565,7 @@
 @media (max-width: 1000px) {
 
     .hero__text {
-        display: none; /*Hero-texten längst upp på sida 3 försvinner när man gör skärmen mindre än 1000px.*/
+        display: none; /*HERO-TEXT UNDER TITLE IN PAGE 3 VANISHES WHEN YOU MAKE THE SCREEN LESS THAN 1000px.*/
     }
 
     .displayflex-row {
@@ -574,6 +574,7 @@
     }
 }
 
+/* ----------------------- MAX-WIDTH:900px -------------------------------- */
 
 @media (max-width: 900px) {
 
@@ -596,19 +597,19 @@
 }
 
 @media (max-width: 876px) {
-    /*------------------ READY TO TRANSFORM YOUR STAY-TEXTEN OCH DESS INNEHÅLL HAMNAR I OVANPÅ VARANDRA---------------- */
+    /*------------------ READY TO TRANSFORM YOUR STAY-TEXT AND IT'S CONTENT LAYS ON TOP OF EACH OTHER---------------- */
     .displayflex-row {
         display: flex;
         flex-direction: column;
     }
 
-    /* --------------- SAMT ATT INNEHÅLL CENTRERAS ------------ */
+    /* --------------- AND THE CONTENT GETS CENTERED ------------ */
     .displayflex-row .card-h2 {
         display: flex;
         justify-content: center;
     }
 
-    /* --------------- SAMT ATT INNEHÅLL CENTRERAS ------------ */
+    /* --------------- AND THE CONTENT GETS CENTERED ------------ */
     .displayflex-row p {
         white-space: nowrap;
         display: flex;
@@ -618,7 +619,7 @@
 } 
 
 @media (max-width: 768px) {
-
+        /*----------- THE SMALLER THE LAYOUT, THE LESS PICTURES YOU SEE IN ONE ROW -----------*/
     .rttys-text-p {
         display: flex;
         margin: 0;
@@ -628,6 +629,7 @@
     .About-Pictures-Grid {
         gap: 2rem;
     }
+
     .pictures-and-text {
         height: 27.5rem;
     }
@@ -670,7 +672,6 @@
     padding: 0.5rem;
     }
 }
-
 
 @media (max-width: 500px) {
     .text-above-contacts  {
@@ -753,6 +754,7 @@
     }
 }
 
+    /*------------ LESS THAN 1000 PIXELS, IT'S TWO PICTURE A ROW ----------*/
 @media (max-width: 1000px) {
     .About-Pictures-Grid {
         display: grid;
@@ -761,11 +763,13 @@
     .footer-grid {
         .top-left-footer-grid{
             .tlfg-text {
-                display: none;
+                display: none; /*FOOTER-TEXT VANISHES*/
             }    
         }
     }         
 }
+
+    /*------------ LESS THAN 500 PIXELS, IT'S ONE PICTURE A ROW ----------*/
 @media (max-width: 500px) {
       .About-Pictures-Grid {
         display: grid;
