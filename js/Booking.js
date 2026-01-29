@@ -24,24 +24,24 @@ document.addEventListener("DOMContentLoaded", () => {
         <section class="wrapper">
 
             <!--TITLES-->
-            <article class="rooms__titles">
+            <section class="rooms__titles">
                 <h2>6 Rooms Available</h2>
                 <h3>Select dates to see availability</h3>
-            </article>
+            </section>
 
 
             
             <section class="rooms-section">
 
             <!--ROOM 1-->
-                <article class="room-box">
+                <section class="room-box">
                     <!--IMG AND SCORE-->
                     <aside class="room__img-wrapper">
                         <img src="assets/photos/01-day.jpg" alt="EcoSmart Suite" class="room__img">
-                        <article class="room__score">
+                        <section class="room__score">
                             <img src="assets/icons/star.png" alt="Star" class="room__score-icon">
                             <p class="room__text">4.9</p>
-                        </article>
+                        </section>
                     </aside>
  
                     <!--WHITE BOX WRAPPER (TEXT & INFO)-->
@@ -55,64 +55,64 @@ document.addEventListener("DOMContentLoaded", () => {
                         </aside>
 
                         <!--GENERAL TEXT-->
-                        <article class="room__info--general">
+                        <section class="room__info--general">
                             <img src="assets/icons/users-round.svg" alt="People" class="room__icon">
                             <p class="room__text">Up to 2</p>
                             <p class="room__text">45 m2</p>
-                        </article>
+                        </section>
                         
                         <!--FEATURES-->
-                        <article class="room__info room__info--features">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--features">
+                            <section class="room__img-title">
                                 <img src="assets/icons/wifi.svg" alt="Wifi" class="room__icon">
                                 <p class="room__text--title">Features</p>
-                            </article>
-                            <article class="room__text-container">
+                            </section>
+                            <section class="room__text-container">
                                 <p>King size bed</p>
                                 <p>Ocean View</p>
                                 <p>Smart climate</p>
                                 <p>Premium Toiletries</p>
-                            </article>
-                        </article>
+                            </section>
+                        </section>
                         
                         <!--AI FEATURES-->
-                        <article class="room__info room__info--ai">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--ai">
+                            <section class="room__img-title">
                                 <img src="assets/icons/brain-purple.svg" alt="Brain" class="room__icon">
                                 <p class="room__text--title">AI Features</p>
-                            </article>
-                            <article class="room__text-container">
+                            </section>
+                            <section class="room__text-container">
                                 <p>Voice Control</p>
                                 <p>Smart Lighting</p>
                                 <p>Digital Concierge</p>
-                            </article>
-                        </article>
+                            </section>
+                        </section>
 
                         <!--SUSTAINABILITY-->
-                        <article class="room__info room__info--sustainability">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--sustainability">
+                            <section class="room__img-title">
                                 <img src="assets/icons/leaf.svg" alt="Leaf" class="room__icon">
                                 <p class="room__text--title">Sustainability</p>
-                            </article>
+                            </section>
                             <p class="room__text-container">
                                 100% renewable energy, recycled materials
                             </p>
-                        </article>
+                        </section>
 
                         <!--BUTTON-->
                         <button class="button room__button">Reserve Room</button>
                     </section>
-                </article>
+                </section>
 
                 <!--ROOM 2-->
-                <article class="room-box">
+                <section class="room-box">
                     <!--IMG AND SCORE-->
                     <aside class="room__img-wrapper">
                         <img src="assets/photos/02-day.jpg" alt="GreenTech Deluxe" class="room__img">
-                        <article class="room__score">
+                        <section class="room__score">
                             <img src="assets/icons/star.png" alt="Star" class="room__score-icon">
                             <p class="room__text">4.7</p>
-                        </article>
+                        </section>
                     </aside>
 
                     <!--WHITE BOX WRAPPER (TEXT & INFO)-->
@@ -126,64 +126,64 @@ document.addEventListener("DOMContentLoaded", () => {
                         </aside>
 
                         <!--GENERAL TEXT-->
-                        <article class="room__info--general">
+                        <section class="room__info--general">
                             <img src="assets/icons/users-round.svg" alt="People" class="room__icon">
                             <p class="room__text">Up to 2</p>
                             <p class="room__text">35 m2</p>
-                        </article>
+                        </section>
                         
                         <!--FEATURES-->
-                        <article class="room__info room__info--features">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--features">
+                            <section class="room__img-title">
                                 <img src="assets/icons/wifi.svg" alt="Wifi" class="room__icon">
                                 <p class="room__text--title">Features</p>
-                            </article>
-                            <article class="room__text-container">
+                            </section>
+                            <section class="room__text-container">
                                 <p>Queen size bed</p>
                                 <p>City View</p>
                                 <p>Smart TV</p>
                                 <p>Premium Toiletries</p>
-                            </article>
-                        </article>
+                            </section>
+                        </section>
                         
                         <!--AI FEATURES-->
-                        <article class="room__info room__info--ai">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--ai">
+                            <section class="room__img-title">
                                 <img src="assets/icons/brain-purple.svg" alt="Brain" class="room__icon">
                                 <p class="room__text--title">AI Features</p>
-                            </article>
-                            <article class="room__text-container">
+                            </section>
+                            <section class="room__text-container">
                                 <p>Voice Control</p>
                                 <p>Smart Lighting</p>
                                 <p>Predictive Climate</p>
-                            </article>
-                        </article>
+                            </section>
+                        </section>
 
                         <!--SUSTAINABILITY-->
-                        <article class="room__info room__info--sustainability">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--sustainability">
+                            <section class="room__img-title">
                                 <img src="assets/icons/leaf.svg" alt="Leaf" class="room__icon">
                                 <p class="room__text--title">Sustainability</p>
-                            </article>
+                            </section>
                             <p class="room__text-container">
                                 Solar powered, low-flow water systems
                             </p>
-                        </article>
+                        </section>
 
                         <!--BUTTON-->
                         <button class="button room__button">Reserve Room</button>
                     </section>
-                </article>
+                </section>
 
                 <!--ROOM 3-->
-                <article class="room-box">
+                <section class="room-box">
                     <!--IMG AND SCORE-->
                     <aside class="room__img-wrapper">
                         <img src="assets/photos/04-day.jpg" alt="Sustainable Studio" class="room__img">
-                        <article class="room__score">
+                        <section class="room__score">
                             <img src="assets/icons/star.png" alt="Star" class="room__score-icon">
                             <p class="room__text">4.2</p>
-                        </article>
+                        </section>
                     </aside>
 
                     <!--WHITE BOX WRAPPER (TEXT & INFO)-->
@@ -197,62 +197,62 @@ document.addEventListener("DOMContentLoaded", () => {
                         </aside>
 
                         <!--GENERAL TEXT-->
-                        <article class="room__info--general">
+                        <section class="room__info--general">
                             <img src="assets/icons/users-round.svg" alt="People" class="room__icon">
                             <p class="room__text">Up to 2</p>
                             <p class="room__text">25 m2</p>
-                        </article>
+                        </section>
                         
                         <!--FEATURES-->
-                        <article class="room__info room__info--features">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--features">
+                            <section class="room__img-title">
                                 <img src="assets/icons/wifi.svg" alt="Wifi" class="room__icon">
                                 <p class="room__text--title">Features</p>
-                            </article>
-                            <article class="room__text-container">
+                            </section>
+                            <section class="room__text-container">
                                 <p>Double bed</p>
                                 <p>Garden view</p>
                                 <p>Eco-friendly Bath</p>
-                            </article>
-                        </article>
+                            </section>
+                        </section>
                         
                         <!--AI FEATURES-->
-                        <article class="room__info room__info--ai">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--ai">
+                            <section class="room__img-title">
                                 <img src="assets/icons/brain-purple.svg" alt="Brain" class="room__icon">
                                 <p class="room__text--title">AI Features</p>
-                            </article>
-                            <article class="room__text-container">
+                            </section>
+                            <section class="room__text-container">
                                 <p>Smart Lighting</p>
                                 <p>Digital Concierge</p>
-                            </article>
-                        </article>
+                            </section>
+                        </section>
 
                         <!--SUSTAINABILITY-->
-                        <article class="room__info room__info--sustainability">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--sustainability">
+                            <section class="room__img-title">
                                 <img src="assets/icons/leaf.svg" alt="Leaf" class="room__icon">
                                 <p class="room__text--title">Sustainability</p>
-                            </article>
+                            </section>
                             <p class="room__text-container">
                                 Bamboo furniture, organic linens
                             </p>
-                        </article>
+                        </section>
 
                         <!--BUTTON-->
                         <button class="button room__button">Reserve Room</button>
                     </section>
-                </article>
+                </section>
 
                 <!--ROOM 4-->
-                <article class="room-box">
+                <section class="room-box">
                     <!--IMG AND SCORE-->
                     <aside class="room__img-wrapper">
                         <img src="assets/photos/05-day.jpg" alt="Nature's Haven" class="room__img">
-                        <article class="room__score">
+                        <section class="room__score">
                             <img src="assets/icons/star.png" alt="Star" class="room__icon">
                             <p class="room__text">4.6</p>
-                        </article>
+                        </section>
                     </aside>
 
                     <!--WHITE BOX WRAPPER (TEXT & INFO)-->
@@ -266,64 +266,64 @@ document.addEventListener("DOMContentLoaded", () => {
                         </aside>
 
                         <!--GENERAL TEXT-->
-                        <article class="room__info--general">
+                        <section class="room__info--general">
                             <img src="assets/icons/users-round.svg" alt="People" class="room__icon">
                             <p class="room__text">Up to 3</p>
                             <p class="room__text">40 m2</p>
-                        </article>
+                        </section>
                         
                         <!--FEATURES-->
-                        <article class="room__info room__info--features">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--features">
+                            <section class="room__img-title">
                                 <img src="assets/icons/wifi.svg" alt="Wifi" class="room__icon">
                                 <p class="room__text--title">Features</p>
-                            </article>
-                            <article class="room__text-container">
+                            </section>
+                            <section class="room__text-container">
                                 <p>King size bed</p>
                                 <p>Forest View</p>
                                 <p>Balcony</p>
                                 <p>Air Purifier</p>
-                            </article>
-                        </article>
+                            </section>
+                        </section>
                         
                         <!--AI FEATURES-->
-                        <article class="room__info room__info--ai">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--ai">
+                            <section class="room__img-title">
                                 <img src="assets/icons/brain-purple.svg" alt="Brain" class="room__icon">
                                 <p class="room__text--title">AI Features</p>
-                            </article>
-                            <article class="room__text-container">
+                            </section>
+                            <section class="room__text-container">
                                 <p>Voice Control</p>
                                 <p>Smart Lighting</p>
                                 <p>Wellness Monitoring</p>
-                            </article>
-                        </article>
+                            </section>
+                        </section>
 
                         <!--SUSTAINABILITY-->
-                        <article class="room__info room__info--sustainability">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--sustainability">
+                            <section class="room__img-title">
                                 <img src="assets/icons/leaf.svg" alt="Leaf" class="room__icon">
                                 <p class="room__text--title">Sustainability</p>
-                            </article>
+                            </section>
                             <p class="room__text-container">
                                 Living plant walls, carbon-negative
                             </p>
-                        </article>
+                        </section>
 
                         <!--BUTTON-->
                         <button class="button room__button">Reserve Room</button>
                     </section>
-                </article>
+                </section>
 
                 <!--ROOM 5-->
-                <article class="room-box">
+                <section class="room-box">
                     <!--IMG AND SCORE-->
                     <aside class="room__img-wrapper">
                         <img src="assets/photos/07-day.jpg" alt="AI Presidential Suite" class="room__img">
-                        <article class="room__score">
+                        <section class="room__score">
                             <img src="assets/icons/star.png" alt="Star" class="room__score-icon">
                             <p class="room__text">5.0</p>
-                        </article>
+                        </section>
                     </aside>
 
                     <!--WHITE BOX WRAPPER (TEXT & INFO)-->
@@ -337,65 +337,65 @@ document.addEventListener("DOMContentLoaded", () => {
                         </aside>
 
                         <!--GENERAL TEXT-->
-                        <article class="room__info--general">
+                        <section class="room__info--general">
                             <img src="assets/icons/users-round.svg" alt="People" class="room__icon">
                             <p class="room__text">Up to 4</p>
                             <p class="room__text">80 m2</p>
-                        </article>
+                        </section>
                         
                         <!--FEATURES-->
-                        <article class="room__info room__info--features">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--features">
+                            <section class="room__img-title">
                                 <img src="assets/icons/wifi.svg" alt="Wifi" class="room__icon">
                                 <p class="room__text--title">Features</p>
-                            </article>
-                            <article class="room__text-container">
+                            </section>
+                            <section class="room__text-container">
                                 <p>2 King size beds</p>
                                 <p>Panoramic View</p>
                                 <p>Private Terrace</p>
                                 <p>Luxury Bath</p>
-                            </article>
-                        </article>
+                            </section>
+                        </section>
                         
                         <!--AI FEATURES-->
-                        <article class="room__info room__info--ai">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--ai">
+                            <section class="room__img-title">
                                 <img src="assets/icons/brain-purple.svg" alt="Brain" class="room__icon">
                                 <p class="room__text--title">AI Features</p>
-                            </article>
-                            <article class="room__text-container">
+                            </section>
+                            <section class="room__text-container">
                                 <p>Full AI Suite</p>
                                 <p>Predictive Service</p>
                                 <p>Holographic Display</p>
-                            </article>
-                        </article>
+                            </section>
+                        </section>
 
                         <!--SUSTAINABILITY-->
-                        <article class="room__info room__info--sustainability">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--sustainability">
+                            <section class="room__img-title">
                                 <img src="assets/icons/leaf.svg" alt="Leaf" class="room__icon">
                                 <p class="room__text--title">Sustainability</p>
-                            </article>
+                            </section>
                             <p class="room__text-container">
                                 Net-zero carbon, rainwater harvesting
                             </p>
-                        </article>
+                        </section>
 
                         <!--BUTTON-->
                         <button class="button room__button">Reserve Room</button>
                     </section>
-                </article>
+                </section>
 
 
                 <!--ROOM 6-->
-                <article class="room-box">
+                <section class="room-box">
                     <!--IMG AND SCORE-->
                     <aside class="room__img-wrapper">
                         <img src="assets/photos/09-day.jpg" alt="Urban EcoLoft" class="room__img">
-                        <article class="room__score">
+                        <section class="room__score">
                             <img src="assets/icons/star.png" alt="Star" class="room__score-icon">
                             <p class="room__text">5.0</p>
-                        </article>
+                        </section>
                     </aside>
 
                     <!--WHITE BOX WRAPPER (TEXT & INFO)-->
@@ -409,52 +409,52 @@ document.addEventListener("DOMContentLoaded", () => {
                         </aside>
 
                         <!--GENERAL TEXT-->
-                        <article class="room__info--general">
+                        <section class="room__info--general">
                             <img src="assets/icons/users-round.svg" alt="People" class="room__icon">
                             <p class="room__text">Up to 2</p>
                             <p class="room__text">30 m2</p>
-                        </article>
+                        </section>
                         
                         <!--FEATURES-->
-                        <article class="room__info room__info--features">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--features">
+                            <section class="room__img-title">
                                 <img src="assets/icons/wifi.svg" alt="Wifi" class="room__icon">
                                 <p class="room__text--title">Features</p>
-                            </article>
-                            <article class="room__text-container">
+                            </section>
+                            <section class="room__text-container">
                                 <p>Queen size bed</p>
                                 <p>High Ceiling</p>
                                 <p>Natural Light</p>
-                            </article>
-                        </article>
+                            </section>
+                        </section>
                         
                         <!--AI FEATURES-->
-                        <article class="room__info room__info--ai">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--ai">
+                            <section class="room__img-title">
                                 <img src="assets/icons/brain-purple.svg" alt="Brain" class="room__icon">
                                 <p class="room__text--title">AI Features</p>
-                            </article>
-                            <article class="room__text-container">
+                            </section>
+                            <section class="room__text-container">
                                 <p>Smart Lighting</p>
                                 <p>Digital Concierge</p>
-                            </article>
-                        </article>
+                            </section>
+                        </section>
 
                         <!--SUSTAINABILITY-->
-                        <article class="room__info room__info--sustainability">
-                            <article class="room__img-title">
+                        <section class="room__info room__info--sustainability">
+                            <section class="room__img-title">
                                 <img src="assets/icons/leaf.svg" alt="Leaf" class="room__icon">
                                 <p class="room__text--title">Sustainability</p>
-                            </article>
+                            </section>
                             <p class="room__text-container">
                                 Upcycled furniture, zero waste
                             </p>
-                        </article>
+                        </section>
 
                         <!--BUTTON-->
                         <button class="button room__button">Reserve Room</button>
                     </section>
-                </article>
+                </section>
             </section>`;
                    
                 container.style.opacity = "1";
