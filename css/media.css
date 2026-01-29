@@ -192,10 +192,6 @@
     }
 }
 
-/* .room-box {
-    flex-direction: column;
-} */
-
 
 
 /* ----------------------- MAX-WIDTH:1000px ----------------------------- */
@@ -253,16 +249,16 @@
         .AI-text{
             margin-top: 1rem; /*less margin for smaller units*/
             display:flex; /*flexbox for text, centering*/
-            justify-content: center;
+            justify-content: center; /*centering contents*/
             align-items: center;
             text-align: center;
 
-            .yourai--text{ /*hiding p elements*/
+            .yourai--text{ /*hiding p elements for smaller screens*/
                 display:none;
             }
         }
         .yourai__img{
-            align-self: center;
+            align-self: center; /*centering image*/
             max-width:732px; /*aligning different sections*/
         }
         
@@ -294,30 +290,31 @@
         height: 0;
 
         .nav {
-            .nav-links {
-                flex-direction: column;
+            .nav-links { /*for smaller sizes, nav-links is shown different*/
+                flex-direction: column; /*stacking nav-links in columns*/
                 position: fixed;
                 display: flex;
-                top: 0;
+                top: 0; /*aligning menu to top and left*/
                 left: 0;
-                width: 100%;
+                width: 100%; /*taking up all space on screen*/
                 height: 100vh;
                 background: var(--white);
-                justify-content: center;
+                justify-content: center; /*centering contents*/
                 align-items: center;
-                gap: 2rem;
+                gap: 2rem; /*gap between links*/
                 z-index: 10;
 
-                transform: translateX(-100%);
+                transform: translateX(-100%); /*hiding menu initially*/
                 opacity: 0;
 
-                transition: transform .4s ease, opacity .3s ease;
+                transition: transform .4s ease, opacity .3s ease; /*transition for when burger
+                button is clicked and nav-links appear*/
             }
         }
     }
 
     .header--nav.open .nav-links {
-        transform: translateX(0);
+        transform: translateX(0); /*when burger button is clicked nav links appear*/
         opacity: 1;
     }
     
@@ -325,7 +322,7 @@
             display:block; /*displaying burger menu*/
             background-color: var(--white);
             padding:1rem;
-            border-radius: 50%;
+            border-radius: 50%; /*round*/
         }
     /*------------------ HERO ------------------------*/
     .Hero-section{
@@ -437,13 +434,13 @@
         }
     }
     /*------------------ INFO BOXES ------------------*/
-    .wrapper-info__box{
+    .wrapper-info__box{ /*different grid for smaller layouts*/
         display:grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4,1fr);
     }
     .info-box{
-        grid-column: auto / span 1;
+        grid-column: auto / span 1; /*placing out boxes in grid*/
         grid-row: auto / span 1;
     }
     .info-box--vision{
@@ -541,7 +538,7 @@
 @media(max-width:400px){
     /*--------------------- HERO ------------------*/
     .Hero-section{
-        .hero-text{
+        .hero-text{ /*styling for smallest units so that text does not appear to be behind burger button*/
             padding-top: 3rem;
             p{
             padding:0;
