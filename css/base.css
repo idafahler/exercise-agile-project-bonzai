@@ -263,7 +263,7 @@ nav {
     /*-------------------------- TEXT UNDER CONTACTS TITLE ------------------------*/
     .text-under-contacts {
         font-weight: 400;
-        /* text-align: center; */
+        text-align: center;
         font-family: var(--font-inter);
         font-size: 2rem;
     }
