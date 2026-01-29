@@ -53,36 +53,36 @@ body{
 
 /* ----------------- HEADER ------------------- */
 .header--nav {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /*layout with flexbox for nav menu*/
+    justify-content: space-between; /*spacing between elements*/
     position: relative;
     top: 0;
     background-color: var(--white);
     z-index: 1000;
-    box-shadow: 0 4px 10px var(--box-shadow);
+    box-shadow: 0 4px 10px var(--box-shadow); /*shadowing behing menu*/
 }
 
 .nav-burger{
     display: none; /*defualt for nav-burger is to not show*/
     align-self: flex-start; /*aligning to start*/
     padding:2rem;
-    position:fixed;
-    top:1rem;
+    position:fixed; /*burger menu is fixed on screen when scrolling*/
+    top:1rem; /*positioning out menu on screen*/
     left:1rem;
-    width:4rem;
+    width:4rem; /*fixed width*/
     border: 1px solid var(--black);
-    z-index: 2000;
+    z-index: 2000; /*making sure burger menu sits above*/
 
     .burger__btn{
         display:flex; /*flexbox for lines*/
-        justify-content: center;
+        justify-content: center; /*centering lines*/
         align-items: center;
 
         max-width:3rem;
-        width:100%;
-        aspect-ratio: 1; /*making sure burger__btn is square*/
+        width:100%; /*taking all available space of container*/
+        aspect-ratio: 1; /*making sure burger button is square*/
         
-        z-index: 99; /*always showing*/
+        z-index: 99; /*making sure lines is above*/
         cursor:pointer; /*cursor changes to a pointer when hovering over button*/
 
         position: relative;
@@ -99,11 +99,11 @@ body{
     }
     .burger__btn > span::before{
         content: '';
-        top: -10px; /*placing out line*/
+        top: -10px; /*placing out before line*/
     }
     .burger__btn > span::after{
         content: '';
-        top: 10px; /*placing out line*/
+        top: 10px; /*placing out after line*/
     }
 
     .burger__btn.open > span{
@@ -163,7 +163,7 @@ nav {
         border-radius: 10px;
     }
 
-    .link--active {
+    .link--active { /*active link/page shows as green to keep track*/
         color: var(--green);
     }
     .link--active:hover{
