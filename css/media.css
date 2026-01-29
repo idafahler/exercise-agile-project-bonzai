@@ -558,23 +558,15 @@
     .footer {
         padding: 1rem;
     }
-}/* ---------------------- MOBIL LAYOUT ABOUT PAGE ----------------------- */
+}
+/* ---------------------- MOBIL LAYOUT ABOUT PAGE ----------------------- */
 
 @media (max-width: 1000px) {
+
     .hero__text {
-        display: none;
+        display: none; /*Hero-texten längst upp på sida 3 försvinner när man gör skärmen mindre än 1000px.*/
     }
-}
 
-@media (max-width: 1000px) {
-    .hero__title {
-        font-size: 3rem;
-        font-weight: 200;
-        width: 100%;
-    }
-}
-
-@media (max-width: 1000px) {
     .displayflex-row {
         display: flex;
         justify-content: space-around;
@@ -583,6 +575,7 @@
 
 
 @media (max-width: 900px) {
+
     .rttys-text-h2 {
         display: none;
     }
@@ -602,16 +595,19 @@
 }
 
 @media (max-width: 876px) {
+    /*------------------ READY TO TRANSFORM YOUR STAY-TEXTEN OCH DESS INNEHÅLL HAMNAR I OVANPÅ VARANDRA---------------- */
     .displayflex-row {
         display: flex;
         flex-direction: column;
     }
 
+    /* --------------- SAMT ATT INNEHÅLL CENTRERAS ------------ */
     .displayflex-row .card-h2 {
         display: flex;
         justify-content: center;
     }
 
+    /* --------------- SAMT ATT INNEHÅLL CENTRERAS ------------ */
     .displayflex-row p {
         white-space: nowrap;
         display: flex;

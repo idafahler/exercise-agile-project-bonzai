@@ -222,7 +222,7 @@ nav {
     }
 
 }
-
+                /* --------------------- CONTAINER CONTACT US --------------- */
 .contact-us-container {
     display: flex;
     flex-direction: column;
@@ -233,6 +233,7 @@ nav {
     gap: 1rem;
     position: relative;
 
+    /*----------------------- CONTACT US AS TITLE -------------------*/
     .contact-us-rubrik {
         font-weight: 400;
         font-family: var(--font-inter);
@@ -244,7 +245,8 @@ nav {
         }
     }
 
-    .text-above-contacts {
+    /*-------------------------- TEXT UNDER CONTACTS TITLE ------------------------*/
+    .text-under-contacts {
         font-weight: 400;
         font-family: var(--font-inter);
         font-size: 2rem;
