@@ -249,7 +249,7 @@ nav {
     position: relative;
 
     /*----------------------- CONTACT US AS TITLE -------------------*/
-    .contact-us-rubrik {
+    .contact-us-title {
         font-weight: 400;
         font-family: var(--font-inter);
         font-size: 3rem;
